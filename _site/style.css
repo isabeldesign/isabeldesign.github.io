@@ -1,0 +1,92 @@
+body {
+    padding-bottom: 0px;
+    background-color: pink; /*defined background colour*/
+    color: black;
+    font-family: "Rubik";
+  }
+  
+  .dark-mode{
+    background-color:black;
+    color: pink;
+  }
+  
+  .navbar {
+    margin-bottom: 0px;
+    background-color: pink;
+  }
+  
+  .page-footer{
+    background-color: cyan;
+  }
+  
+  /* The sections */
+  .section1{
+    /*background-color: pink;*/
+    height: 100vh;
+    width: 100vw;
+  }
+  .section2{
+    background-color: violet;
+    height: 100vh;
+    width: 100vw;
+  }
+  .section3{
+    background-color: orange;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /*this defines a three column grid*/
+  .wrapper {
+    display: grid;
+    grid-template-columns:  
+    1fr min(60ch, calc(100% - 64px)) 1fr; /*this is a width of 65 characters*/
+    grid-column-gap: 3px;
+  }
+  .wrapper > * {      /*this places children in middle column*/
+    grid-column: 2;
+    background-color: white;
+  }
+  .full-bleed {         /*allows a specific child to go full bleed on page (take u all columns)*/
+    width: 100%;
+    grid-column: 1 / -1;
+    background-color: salmon;
+  }    
+
+  .box{
+    padding:10px;
+    margin: 10px;
+    background-color: red;
+  }
+
+  .box1{
+    background-color: pink;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .dropdown-menu{
+    background-color: red;
+  }
+
+  /*.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    top: 50px;
+    background-color: green;
+} */
+
+
+
+
+/* Change text selection color */
+  ::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  ::selection {
+    color: red;
+    background: yellow;
+  }
+
+  
