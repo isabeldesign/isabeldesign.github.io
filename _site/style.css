@@ -3,8 +3,18 @@ body {
     background-color: pink; /*defined background colour*/
     color: black;
     font-family: "Rubik";
+    display:flex; 
+    flex-direction:column; 
   }
   
+  
+  .main-container{
+    min-height: 100vh; /* will cover the 100% of viewport */
+    display: block;
+    position: relative;
+    padding-bottom: 30px;  /* height of your footer */
+  }
+
   .dark-mode{
     background-color:black;
     color: pink;
@@ -13,12 +23,19 @@ body {
   .navbar {
     margin-bottom: 0px;
     background-color: pink;
+    color: red;
   }
   
   .page-footer{
-    background-color: cyan;
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
   }
   
+
   /* The sections */
   .section1{
     /*background-color: pink;*/
@@ -40,9 +57,13 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns:  
-    1fr min(60ch, calc(100% - 64px)) 1fr; /*this is a width of 65 characters*/
+    1fr 
+    min(80ch, calc(100% - 64px)) 
+    1fr; /*this is a width of 65 characters*/
     grid-column-gap: 3px;
   }
+
+
   .wrapper > * {      /*this places children in middle column*/
     grid-column: 2;
     background-color: white;
@@ -53,6 +74,8 @@ body {
     background-color: salmon;
   }    
 
+
+  /*
   .box{
     padding:10px;
     margin: 10px;
@@ -63,11 +86,13 @@ body {
     background-color: pink;
     height: 100vh;
     width: 100vw;
-  }
+  }*/
 
   .dropdown-menu{
     background-color: red;
   }
+
+
 
   /*.dropdown:hover .dropdown-menu {
     display: block;
@@ -90,3 +115,32 @@ body {
   }
 
   
+
+  .hide {
+    display: none;
+  }
+  
+  .myDIV:hover + .hide {
+    display: block;
+  }
+
+
+
+  .back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+
+.btn-static {
+  background-color: white;
+  border: 1px solid lightgrey;
+  cursor: default;
+}
+.btn-static:active {
+  -moz-box-shadow:    inset 0 0 0px white;
+  -webkit-box-shadow: inset 0 0 0px white;
+  box-shadow:         inset 0 0 0px white;
+}

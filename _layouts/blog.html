@@ -2,7 +2,90 @@
 layout: default
 ---
 
-<div class="container">
+<div class="wrapper">
+
+  <div class="blog-posts">
+  <div class="row mb-1">
+    <div class="col-md-6">
+      {% for post in site.posts %}
+        <div class="blog-post card flex-md-row mb-3 box-shadow h-md-300">
+          
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">{{ post.category }}</strong> <!--this would be where categoties go!-->
+          <h3 class="mb-0">
+            <a class="text-dark" href="{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          <div class="mb-1 text-muted">{{ post.date | date: '%B %d, %Y' }}</div>
+          <div class="btn btn-static btn-sm">{{ post.category }}</div>
+          
+          {{ post.excerpt }}
+        </div>
+      </div>
+        {% endfor %}
+      
+
+
+
+    
+</div>
+</div>
+
+
+<div class="wrapper">
+    <h2 class="spacing">Blog</h2>
+  
+    <div class="blog-posts">
+      {% for post in site.posts %}
+        <div class="blog-post spacing">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="summary">
+            {{ post.category }}
+            <span class="date">
+              {{ post.date | date: '%B %d, %Y' }}
+            </span>
+          </p>
+          {{ post.excerpt }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="wrapper">
+    <h2 class="spacing">Blog</h2>
+  
+    <div class="blog-posts">
+      {% for post in site.posts %}
+        <div class="blog-post spacing">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="summary">
+            {{ post.category }}
+            <span class="date">
+              {{ post.date | date: '%B %d, %Y' }}
+            </span>
+          </p>
+          {{ post.excerpt }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="wrapper">
+    <h2 class="spacing">Blog</h2>
+  
+    <div class="blog-posts">
+      {% for post in site.posts %}
+        <div class="blog-post spacing">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="summary">
+            {{ post.category }}
+            <span class="date">
+              {{ post.date | date: '%B %d, %Y' }}
+            </span>
+          </p>
+          {{ post.excerpt }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="wrapper">
     <h2 class="spacing">Blog</h2>
   
     <div class="blog-posts">

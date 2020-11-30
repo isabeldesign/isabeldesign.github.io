@@ -1,6 +1,6 @@
 ---
 title: about!
-layout: default
+layout: pages
 permalink: /about
 order: 2
 ---

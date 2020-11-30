@@ -1,6 +1,6 @@
 ---
 title: resources
-layout: pages
+layout: resources
 order: 3
 ---
 

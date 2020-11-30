@@ -2,6 +2,7 @@
 title: home
 layout: homepage
 order: 1
+permalink: /
 ---
 
 # {{ page.title }}
