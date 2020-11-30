@@ -1,6 +1,7 @@
 ---
 title: home
-layout: default
+layout: homepage
+order: 1
 ---
 
 # {{ page.title }}
