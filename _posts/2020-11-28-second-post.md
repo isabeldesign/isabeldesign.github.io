@@ -1,8 +1,9 @@
 ---
-title: My second Post
-layout: default
-category: test
-tags: tests
+title: blender donut
+layout: pages
+category: blender 
+tags: donut, blender
+img: /assets/images/donut.png
 ---
 
 Some sample content...

@@ -1,0 +1,14 @@
+GEM
+  specs:
+    jekyll-tagging (1.1.0)
+      nuggets
+    nuggets (1.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jekyll-tagging
+
+BUNDLED WITH
+   2.1.4

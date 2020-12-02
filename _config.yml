@@ -1,3 +1,11 @@
 name: My Jekyll Website
 title: Isabel Design
-#baseurl: "isabeldesign"
+url: https://isabeldesign.github.io
+
+
+gems:
+- jekyll/tagging
+
+
+tag_page_layout: tagpage
+tag_page_dir: post

@@ -1,0 +1,50 @@
+<ul>
+    {% for tag in site.tags %}
+    {% assign t = tag | first %}
+      <li><a href="/{{ site.tag_page_dir }}/{{ t | slugify: 'pretty' }}/">{{ t }}</a></li>
+    {% endfor %}
+  </ul>
+  
+  <div class="home-wrapper">
+    <h1>Some Headiffdsfdsng</h1>
+    <p>Some content and stuff</p>
+
+   
+  
+  
+
+
+
+    <div class="card-deck">
+      {% for post in site.posts %}
+
+      <div class="card">
+          <div class="project-image-container">
+            <img class="card-img-top card-img" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.title }}">
+        </div>
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
+            
+          </div>
+        <div class="card-body">
+          <strong class="d-inline-block mb-2 text-primary">{{ post.category }}</strong>
+          <h5><a class="card-title" href="{{ post.url }}">{{ post.title }}</a></h5>
+          <p class="card-text">{{ post.excerpt | truncate: 150}}.</p>
+          <p class="card-text tags"><small class="text-muted">
+            {% for tag in post.tags %}
+              <a href="{{site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+            {% endfor %}
+            </small>
+          </p>
+        </div>
+      </div>
+      
+      {% endfor %}
+    </div>
+  
+    
+     
+  
+  </div>
+  
