@@ -3,16 +3,15 @@ layout: default
 ---
 
 
-
 <div class="home-wrapper">
 
 
-  <h1>blog</h1>
+  <h1>blogggg</h1>
   <h4>this will not host my projects, but rather lil trials and things</h4>
   <h5>tags:</h4>
   <a href="/tag/blender">blender</a>
   <div>
-    
+    <!--
     <div class="well sidebar-nav">
       <ul class="nav nav-list">
         <li class="nav-header">Archives</li>
@@ -22,12 +21,12 @@ layout: default
             {% assign prevyear = post.previous.date | date: "%Y" %}
             {% assign counter = counter | plus: 1 %}
             {% if thisyear != prevyear %}
-              <li><a href="/archive/#{{ post.date | date:"%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
+              <li><a href="/archive/#{{ post.date | date:"%Y " }}">{{ thisyear }} ({{ counter }})</a></li>
               {% assign counter = 0 %}
             {% endif %}
           {% endfor %}
       </ul>
-    </div><!--/.well -->
+    </div>--><!--/.well -->
     <div class="well sidebar-nav">
       <ul class="nav nav-list">
         <li class="nav-header">Tags</li>

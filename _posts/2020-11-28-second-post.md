@@ -1,6 +1,6 @@
 ---
 title: blender donut
-layout: pages
+layout: post
 category: blender 
 tags: donut blender visualisation
 img: /assets/images/donut.png

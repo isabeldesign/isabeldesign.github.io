@@ -1,9 +1,9 @@
 ---
-layout: pages
+layout: post
 title:  archivis resi
 date:   2020-11-27 13:34:25 +1100
 category: blender
-tags: undergrad, blender
+tags: undergrad blender
 img: /assets/images/windows.gif
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
