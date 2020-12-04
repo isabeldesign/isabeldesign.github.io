@@ -1,6 +1,6 @@
 ---
 title: Blender Chair
-layout: pages
+layout: post
 category: testcategory
 tags: tag, chair, bender
 img: /assets/images/blenderchair.png

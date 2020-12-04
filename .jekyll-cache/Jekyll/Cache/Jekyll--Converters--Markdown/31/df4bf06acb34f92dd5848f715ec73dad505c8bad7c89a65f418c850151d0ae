@@ -1,0 +1,6 @@
+I"~<p>for post in site.posts
+      if post.tags contains ‘Travel’
+         <a href="#">post.title</a>
+      endif
+endfor</p>
+:ET
