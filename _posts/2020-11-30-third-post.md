@@ -2,7 +2,7 @@
 title: Blender Chair
 layout: post
 category: testcategory
-tags: tag chair blender
+tags: visualisation blender
 img: /assets/images/blenderchair.png
 ---
 

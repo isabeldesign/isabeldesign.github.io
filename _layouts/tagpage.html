@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<br>
+<div class="home-wrapper">
+
+  {%- include blogheader.html -%}
+    
+
+      <br>
+
+
+
+
+<div class="post">
+<h1>Tag: {{ page.tag }}</h1>
+<ul>
+{% for post in site.tags[page.tag] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    {{ post.description }}
+  </li>
+  {% endfor %}
+</ul>
+</div>
+
+
+
+
+    
+      <div class="blog-posts">
+        {% for post in site.tags[page.tag] %}
+          <div class="blog-post spacing">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="summary">
+              {{ post.category }}
+              <span class="date">
+                {{ post.date | date: '%B %d, %Y' }}
+              </span>
+            </p>
+            {{ post.excerpt }}
+          </div>
+        {% endfor %}
+      </div>
+
+      <!--<div class="blog-posts">
+        {% for post in site.posts %}
+          <div class="blog-post spacing">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="summary">
+              {{ post.category }}
+              <span class="date">
+                {{ post.date | date: '%B %d, %Y' }}
+              </span>
+            </p>
+            {{ post.excerpt }}
+          </div>
+        {% endfor %}
+      </div>-->
+   
+<hr>
+</div>

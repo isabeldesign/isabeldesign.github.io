@@ -1,11 +1,13 @@
 body {
     padding-bottom: 0px;
-    background-color: rgb(252, 245, 246); /*defined background colour*/
-    color: black;
-    font-family: "Rubik";
+    background-color: rgb(255, 255, 255); /*defined background colour*/
+    color: rgb(43, 43, 43);
+    font-family: "Roboto";
     display:flex; 
     flex-direction:column; 
+    
   }
+  
   
   
   .main-container{
@@ -64,6 +66,61 @@ body {
     align-items: center;
   }
 
+
+
+  /* ----- BLOG STUFF -----*/
+  /*blog posts cards*/
+  .blog-card{
+    background: white;
+    height: 300px;
+    right: 15px;
+    width: 100%;
+  }
+
+  .blog-card:hover{
+    transition: all 0.4s ease 0s;
+    /*transform: translateY(-0.1em);*/
+    -webkit-box-shadow: 0px 2px 10px -5px #A39EFF; 
+    box-shadow: 0px 2px 10px -5px #A39EFF;
+  }
+
+  .blog-card-img{
+    height: 298px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .tag-badge{
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-color: #e8f0f3;
+    color: rgba(82, 96, 109, 0.7);
+    padding: 6px 10px;
+    margin-right: 5px;
+    box-shadow: 5px;
+    transition: all 0.2s ease 0s;
+  }
+
+  .tag-badge:hover {
+    color: #4e22d0;
+    box-shadow: 1px;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+   /* transform: translateY(-0.05em);*/
+    -webkit-box-shadow: 0px 2px 10px -5px #A39EFF; 
+    box-shadow: 0px 2px 10px -5px #A39EFF;
+    transition: all 0.5s ease 0s;
+    }
+  .tag-badge:focus {
+    background-color: #514988 !important;
+    color: #fff;
+    }
+
+  .tag-badge-small{
+    font-size: 9px;
+  }
+
+
+  
   .card-img-right{
     background-color: red;
     height: 30vh;
@@ -93,7 +150,7 @@ body {
     display: grid;
     grid-template-columns:  
     1fr 
-    min(65ch, calc(100% - 64px)) 
+    min(75ch, calc(100% - 75px)) 
     1fr; /*this is a width of 65 characters*/
     grid-column-gap: 3px;
   }
@@ -113,7 +170,7 @@ body {
     display: grid;
     grid-template-columns:  
     1fr 
-    min(100ch, calc(100% - 64px)) 
+    min(100ch, calc(100% - 100px)) 
     1fr; /*this is a width of 65 characters*/
     grid-column-gap: 3px;
   }
@@ -153,8 +210,29 @@ body {
 
   .dropdown-menu{
     background-color: white;
+    
   }
 
+  .dropdown-menu::before {
+    border-bottom: 9px solid rgba(0, 0, 0, 0.2);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 86px;
+    position: absolute;
+    top: -8px;
+}
+  .dropdown-menu::after {
+    border-bottom: 8px solid white;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 86px;
+    position: absolute;
+    top: -7px;
+  }
 
 
   /*.dropdown:hover .dropdown-menu {

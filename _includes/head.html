@@ -9,3 +9,10 @@
 <!-- My CSS -->
 <link rel="stylesheet" href="/style.css">
 <title>{{ page.title }} | {{ site.title }}</title>
+
+
+
+
+{% if site.tags != "" %}
+  {% include collecttags.html %}
+{% endif %}

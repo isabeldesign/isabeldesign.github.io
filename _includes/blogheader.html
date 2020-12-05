@@ -1,0 +1,18 @@
+<h2>PROCESS</h2>
+    <p>At any given time, I am always trialling or learning something new - whether it be a new technique, software or style. Most often these trials won't form a cohesive project or design outcome, but are worthwhile to share and catalogue</p>
+
+    <div>
+      <!--tags listing-->  
+      Tags:   
+      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small ">all</a>
+        {% capture tags %}
+          {% for tag in site.tags %}
+            {{ tag[0] }}#{{ tag[1].size}}
+          {% endfor %}
+        {% endcapture %}
+        {% assign sortedtags = tags | split:' ' | sort %}
+        {% for tag in sortedtags %}
+            {% assign tagitems = tag | split: '#' %}
+        <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small ">{{ tagitems[0] }} ({{ tagitems[1] }})</a>
+        {% endfor %}
+    </div>
