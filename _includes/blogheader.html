@@ -4,7 +4,10 @@
     <div>
       <!--tags listing-->  
       Tags:   
-      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small ">all</a>
+      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small mb-2" style="{% if page.url == "/blog" %} color: #4e22d0 {% endif %} ">all</a>
+    
+
+
         {% capture tags %}
           {% for tag in site.tags %}
             {{ tag[0] }}#{{ tag[1].size}}
@@ -13,6 +16,11 @@
         {% assign sortedtags = tags | split:' ' | sort %}
         {% for tag in sortedtags %}
             {% assign tagitems = tag | split: '#' %}
-        <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small ">{{ tagitems[0] }} ({{ tagitems[1] }})</a>
+    
+     
+    <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small" style="{% if tagitems[0] == page.title %} color: #4e22d0 {% endif %}">{{ tagitems[0] }} ({{ tagitems[1] }}) </a>
+        
         {% endfor %}
+     
     </div>
+   

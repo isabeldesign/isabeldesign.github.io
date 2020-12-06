@@ -1,5 +1,5 @@
 ---
-layout: tagpagealt
-title: "Tag: visualisation"
+layout: tagpage
+title: visualisation
 tag: visualisation
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  Residential Visualisation
 date:   2020-11-27 13:34:25 +1100
 tags: visualisation 3dsmax

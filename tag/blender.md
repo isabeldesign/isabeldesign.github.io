@@ -1,5 +1,5 @@
 ---
-layout: tagpagealt
-title: "Tag: blender"
+layout: tagpage
+title: blender
 tag: blender
 ---

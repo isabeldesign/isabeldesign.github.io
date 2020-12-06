@@ -1,6 +1,18 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --pink:  rgb(250, 236, 236);
+
+  --gold: #ffd200;
+  --lime: #dcff7f;
+
+  --highlight:#dcff7f;
+  --back: #f1f1f1;
+}
+
 body {
     padding-bottom: 0px;
-    background-color: rgb(255, 255, 255); /*defined background colour*/
+    background-color: var(--back); /*defined background colour*/
     color: rgb(43, 43, 43);
     font-family: "Roboto";
     display:flex; 
@@ -29,7 +41,7 @@ body {
   }
   
   .page-footer{
-    background-color: white;
+    background-color: var(--back);
     position: absolute;
     height: 30px;
     bottom: 0px;
@@ -119,7 +131,9 @@ body {
     font-size: 9px;
   }
 
-
+  .tag-badge-active{
+    background-color: #c9c6f8;
+  }
   
   .card-img-right{
     background-color: red;
@@ -148,6 +162,7 @@ body {
   /*this defines a three column grid for article pages*/
   .wrapper {
     display: grid;
+    
     grid-template-columns:  
     1fr 
     min(75ch, calc(100% - 75px)) 
@@ -157,7 +172,8 @@ body {
 
   .wrapper > * {      /*this places children in middle column*/
     grid-column: 2;
-    background-color: white;
+    
+    
   }
   .full-bleed {         /*allows a specific child to go full bleed on page (take u all columns)*/
     width: 100%;
@@ -177,7 +193,7 @@ body {
 
   .home-wrapper > * {      /*this places children in middle column*/
     grid-column: 2;
-    background-color: white;
+    
   }
 
 
@@ -207,6 +223,10 @@ body {
     height: 100vh;
     width: 100vw;
   }*/
+
+  .checked {
+    color: orange;
+  }
 
   .dropdown-menu{
     background-color: white;
@@ -247,12 +267,12 @@ body {
 
 /* Change text selection color */
   ::-moz-selection { /* Code for Firefox */
-    color: red;
-    background: yellow;
+    color: blue;
+    background: var(--highlight);
   }
   ::selection {
-    color: red;
-    background: yellow;
+    color: blue;
+    background: var(--highlight);
   }
 
   

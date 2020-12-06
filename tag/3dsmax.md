@@ -1,5 +1,5 @@
 ---
-layout: tagpagealt
-title: "Tag: 3dsmax"
+layout: tagpage
+title: 3dsmax
 tag: 3dsmax
 ---

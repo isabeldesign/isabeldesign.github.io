@@ -1,22 +1,30 @@
 ---
 layout: default
 ---
-here we are 
-
-
+<br>
 
 <div class="wrapper">
-
+  
+<div>
+  <p class="date">{{ page.date | date_to_string }}</p>
   <h2 class="spacing">{{ page.title }}</h2>
+  <p>
+  {% include readtime.html %}
+  </p>
+
+
+
+  <p>
+    {% for tag in page.tags %}
+      <a class="badge badge-pill tag-badge tag-badge-small mb-2" href="{{site.baseurl}}/tag/{{tag | slugify }}">{{ tag }}</a>
+    {% endfor %}
+  </p>
+  
 
   <div class="blog-post spacing">
-    <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
+    
     {{ content }}
   </div>
 </div>
-<span>[
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-  {% endfor %}
-]</span>
+</div>
+
