@@ -1,0 +1,11 @@
+
+<span>Rating:</span>
+{% for i in (1..5) %}
+{% if i <= include.rating %}
+<!--{% assign stars = stars | append: 'st' %}-->
+{%- include star-checked.html -%}
+{% else %}
+<!--{% assign stars = stars | append: '&#9734;' %}-->
+{%- include star.html -%}
+{% endif %}
+{% endfor %}

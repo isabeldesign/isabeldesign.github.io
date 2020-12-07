@@ -1,27 +1,4 @@
 
-
-
-    
-    <div>
-      <!--
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <li class="nav-header">Archives</li>
-            {% assign counter = 0 %}
-            {% for post in site.posts %}
-              {% assign thisyear = post.date | date: "%Y" %}
-              {% assign prevyear = post.previous.date | date: "%Y" %}
-              {% assign counter = counter | plus: 1 %}
-              {% if thisyear != prevyear %}
-                <li><a href="/archive/#{{ post.date | date:"%Y " }}">{{ thisyear }} ({{ counter }})</a></li>
-                {% assign counter = 0 %}
-              {% endif %}
-            {% endfor %}
-        </ul>
-      </div>--><!--/.well -->
-      
-  
-    </div>
   
     
     <br>
@@ -54,13 +31,13 @@
             <div class="text-break text-wrap">
               {{ post.excerpt | strip_html | truncate: 150}}
             </div>
-            <div>
+           <!-- <div>
               <span class="fa fa-star checked"></span>
              <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star"></span>
               <span class="fa fa-star"></span>
-</div>
+</div>-->
           </div>
           <!--<img class="card card-img-right flex-auto d-none d-md-block" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.title }}">-->
         </div>

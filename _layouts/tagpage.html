@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<br>
 <div class="home-wrapper">
 
-  {%- include blogheader.html -%}
+ {%- include blogheader.html -%}
   
    <br><br>
 
@@ -26,7 +25,7 @@ layout: default
                 <div class="mb-2 text-muted"> {{ post.date | date_to_string }}
                 </div>
                 <div class="text-break text-wrap">
-                  {{ post.excerpt | truncate: 150}}
+                  {{ post.excerpt | strip_html | truncate: 150}}
                 </div>
           </div>
         </div>
@@ -34,7 +33,4 @@ layout: default
         </div>
       </div>
 
-      
-   
-<hr>
 </div>

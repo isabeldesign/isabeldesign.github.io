@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- My CSS -->
 <link rel="stylesheet" href="/style.css">
+
 <title>resources | Isabel Design</title>
 
 
@@ -32,6 +33,7 @@
 
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <!--BRAND--> 
+    
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,7 +41,7 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
@@ -68,7 +70,8 @@
           </div>
         </li>
         <li class="nav-item">
-          <li class="nav-link" href="#" onclick="myFunction()">darker</li>
+          
+          <li class="nav-link" href="#" onclick="myFunction()"><button>darker</button></li>
           <!--<button class="nav-link" href="#" onclick="myFunction()">dark</button>-->
         </li>
       </ul>
@@ -173,12 +176,16 @@
 
   
   </main><div class="page-footer">
+    <div>
     <footer>Footer - Isabel copyright</footer>
+    <!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="review" data-ef_voting="push" data-identifier="like-button" data-dislike_enabled="false"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+</div>
+<!-- LikeBtn.com END -->
+
 </div><a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   
-  <!--<div class="page-footer">
-    <footer>Footer - Isabel copyright</footer>
-</div>-->
 
 
     <!-- Optional JavaScript -->
@@ -186,14 +193,37 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Import Particles.js and app.js files -->
+    <!--scripts-->
+<script src="/particles.js"></script>
+<script src="/app.js"></script>
+
     <script>
-      function myFunction() {
+      function darkmode() {
          var element = document.body;
          element.classList.toggle("dark-mode");
       }
+
+      $(function () { 
+            $(`.nav-link[href="${location.pathname}"]`).parent().addClass("actives"); 
+          });
+      
+      
+      $("#particle-button").click(function(){
+          toggle.particlesJS.load('particles-js','particles.json');  
+      });
+
+      $("#end-button").click(function() {
+        $("#particles-js-side").toggle();
+      });
+
+
       </script>
+      
+      
     
   </body>
 

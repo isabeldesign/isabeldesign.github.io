@@ -1,10 +1,13 @@
-<h2>PROCESS</h2>
-    <p>At any given time, I am always trialling or learning something new - whether it be a new technique, software or style. Most often these trials won't form a cohesive project or design outcome, but are worthwhile to share and catalogue</p>
+
+
+<h2 class="title titleunderline">PROCESS</h2>
+<br><br>
+<h5 class="sub-para ">At any given time, I am always trialling or learning something new - whether it be a new technique, software or style. Most often these trials won't form a cohesive project or design outcome, but are worthwhile to share and catalogue</h5>
 
     <div>
       <!--tags listing-->  
       Tags:   
-      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small mb-2" style="{% if page.url == "/blog" %} color: #4e22d0 {% endif %} ">all</a>
+      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small mb-2" style="{% if page.url == "/blog" %} color: var(--text) {% endif %} ">all</a>
     
 
 
@@ -18,7 +21,7 @@
             {% assign tagitems = tag | split: '#' %}
     
      
-    <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small" style="{% if tagitems[0] == page.title %} color: #4e22d0 {% endif %}">{{ tagitems[0] }} ({{ tagitems[1] }}) </a>
+    <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small" style="{% if tagitems[0] == page.title %} color: var(--text) {% endif %}">{{ tagitems[0] }} ({{ tagitems[1] }}) </a>
         
         {% endfor %}
      

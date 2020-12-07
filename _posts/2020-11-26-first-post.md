@@ -2,9 +2,12 @@
 layout: post
 title:  Residential Visualisation
 date:   2020-11-27 13:34:25 +1100
-tags: visualisation 3dsmax
+tags: visualisation 3dsmax blender
 img: /assets/images/windows.gif
 ---
+
+{% include star-rating.html rating=1 %}
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:
