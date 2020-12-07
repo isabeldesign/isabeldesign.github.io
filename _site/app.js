@@ -14,10 +14,10 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS("particles-js-side", {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 100,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 800
       }
     },
     "color": {
@@ -49,7 +49,7 @@ particlesJS("particles-js-side", {
       }
     },
     "size": {
-      "value": 2,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": true,
@@ -60,7 +60,7 @@ particlesJS("particles-js-side", {
     },
     "line_linked": {
       "enable": true,
-      "distance": 200,
+      "distance": 100,
       "color": "#fff",
       "opacity": 1,
       "width": 0.7
@@ -71,7 +71,7 @@ particlesJS("particles-js-side", {
       "direction": "none",
       "random": false,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
       "bounce": false,
       "attract": {
         "enable": false,
