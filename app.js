@@ -49,7 +49,7 @@ particlesJS("particles-js-side", {
       }
     },
     "size": {
-      "value": 3,
+      "value": 4,
       "random": true,
       "anim": {
         "enable": true,
@@ -85,7 +85,7 @@ particlesJS("particles-js-side", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": ['grab', 'bubble']
+        "mode": "[bubble', 'grab']"
         
       },
       "onclick": {
@@ -103,7 +103,7 @@ particlesJS("particles-js-side", {
       },
       "bubble": {
         "distance": 100,
-        "size": 3,
+        "size": 6,
         "duration": 2,
         "opacity": 8,
         "speed": 10

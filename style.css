@@ -45,7 +45,7 @@
 
 
   --indigo9: #402a98;
-  --neon: #f006f0;
+  --neon: #2e2e2e;
   --shadow: #ffffff;
   --section1: #f4f4fc;
 }
@@ -55,7 +55,7 @@ body {
     padding-bottom: 0px;
     /*background-color: var(--back); defined background colour
     color: var(--text);*/
-    font-family: Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     display:flex; 
     flex-direction:column;
 
@@ -82,7 +82,7 @@ body {
     text-align: center;
     color: var(--text);
     font-size: 35px;
-    font-family: helvetica;
+    font-family: "roboto";
     font-weight: bold;
     font-weight: 900;
     letter-spacing: 2px;
@@ -161,27 +161,53 @@ body {
   .dark-mode{
     background-color:rgb(22, 24, 58);
     color: pink;
+    --subtext: #ffffff;
     --section1: #050d33;
-    --neon: #ff00ea;
-    --shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    
+    --neon: #ffffff;
+    --shadow: 0 0 5px #FFF,
+              0 0 10px #FFF, 
+              0 0 15px #fb8fff, 
+              0 0 20px #fb8fff, 
+              0 0 30px #fb8fff, 
+              0 0 40px #fb8fff; 
+              /*0 0 55px #ffffff, 
+              0 0 75px #ffffff*/
+    
+              
   }
   
   .navbar {
     margin-bottom: 0px;
-    background-color: pink;
-    color: white;
+    color: var(--subtext);
   }
 
   .actives {
-    color: silver;
     background-color: silver;
+ 
+
+  }
+
+  .nav-link{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: var(--subtext);
   }
 
   .nav-item:hover{
     background-color: grey;
   }
 
-  
+  .navbar-brand{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: var(--subtext);
+    font-weight: 900;
+    /*margin-right: 100px;*/
+  }
+
+
+
   .page-footer{
     background-color: var(--back);
     position: absolute;
@@ -193,9 +219,8 @@ body {
 
   #particles-js-side {
     margin: auto;
-    padding: 20px;
-    width: 90vw;
-    height: 80vh;
+    width: 97vw;
+    height: 90vh;
 }
 /*
 #particles-js {
@@ -205,13 +230,40 @@ body {
 }*/
 
 
-.text{
+.landing{
   text-align: left;
+  align-items: center;
   position: absolute;
   top: 50%;
 	right: 50%;
   transform: translate(50%,-50%);
+  line-height: 1.2em;
 }
+
+.landingtitle{
+  font-size: 5vw;
+  font-weight: 900;
+  line-height: 1.1em;
+  text-shadow: var(--shadow); 
+  color: var(--neon);
+  transition: all 0.4s ease 0s;
+}
+
+.landingsubtext{
+  line-height: 1.7em;
+  color: var(--subtext);
+  
+}
+
+.landingcaption{
+  line-height: 1.5em;
+}
+
+/*
+.landingtitle:hover{
+  text-shadow: 0 0 10px rgba(0, 0, 225, 0.5);
+  -webkit-text-shadow: 0px 0px 10px -5 rgba(0, 0, 225,0.5);  ;
+}*/
 
   /* The sections */
   .section1{

@@ -3,24 +3,26 @@
  <!-- SECTION 1 -->
  <div class="section1">
     
-  <div id="particles-js"></div>
+  <div id="particles-js-side"></div>
+    
+    <div class="landing home-wrapper">
+        
+        <div>
+        <h1 class="landingtitle">Howdy! I'm Isabel</h1>
+       
+        
+        <p class="landingsubtext">Welcome to my ePortfolio. I'm a design student who likes to learn and make fun things. I dare you to see what happens when you enable dark mode. Happy exploring!</p>
+        
 
+        <button id="end-button" class="btn btn-primary btn-sm">Seeing stars?</button>
+    </div>
+        
+        
+    </div>
   
-  
-  
-  <div class="text wrapper">
-      <h1 id="some-headings" style="text-shadow: var(--shadow); color: var(--neon)">Howdy! Welcome to my ePortfolio.</h1>
-      <p>Some content and stuff</p>
-      <h2>Toggle Dark/Light Mode</h2>
-      <p>Click the button to toggle between dark and light mode for this page.</p>
-      <button>Toggle particles</button>
-  </div>
-  
-
-
-
 </div>
 
+ <!-- SECTION 2 -->
  <div class="section2 flex-container center">
    <div class="home-wrapper">
   <h1>See what I am currently learning/working on: ....{link to the process page}</h1>
@@ -43,7 +45,7 @@
 
 
     <div class="card-deck">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:3%}
 
       <div class="card">
           <div class="project-image-container">
