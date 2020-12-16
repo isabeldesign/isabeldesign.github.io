@@ -1,7 +1,6 @@
 ---
-title: resources
+title: Resources
 layout: resources
 order: 3
 ---
 
-resources for you

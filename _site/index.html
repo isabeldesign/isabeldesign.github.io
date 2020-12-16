@@ -4,24 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <!-- Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:400,300,700,500,100' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 <!--icons-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- My CSS -->
 <link rel="stylesheet" href="/style.css">
 
-<title>home | Isabel Design</title>
-
-
-
-
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
+  
+<title>Home | Isabel Design</title>
 
 
 
   
+
 
 
 
@@ -30,78 +31,52 @@
 </head>
   
   <body class="main-container">
-
-  <nav class="navbar navbar-expand-sm">
-    <!--<nav class="navbar navbar-expand-sm navbar-light bg-light">--> 
-    
-    <a class="navbar-brand" href="#">Isabel Design</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+<nav class="navbar navbar-expand-md ">
+  <a href="/" class="navbar-brand d-flex mr-auto w-25">Isabel Design</a>
+  <button class="navbar-toggler ustify-content-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+      menu
+  </button>
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 " id="collapsingNavbar3">
+      <ul class="navbar-nav w-100 justify-content-center" style="align-items: center;">
+          <li class="nav-item nav-a">
+              <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item nav-a">
+              <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item nav-a">
+              <a class="nav-link actives" href="/resources">Resources</a>
+          </li>
+          <li class="nav-item nav-a">
+            <a class="nav-link" href="/blog">Stuff I do</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="/about">About</a>
+        <li class="nav-item nav-a">
+            <a class="nav-link nav-hov" href="/process">Process</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/resources">Toolbox</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/process">Process</a>
-        </li>
-        
-        <!--DROP DOWN--> 
+        <!--dropdown-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Projects
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/about#pills-home">Mothership</a>
-            <a class="dropdown-item" href="/about#pills-profile">Onyx Tower</a>
+            <a class="dropdown-item" href="/projects/mothership">Mothership</a>
+            <a class="dropdown-item" href="/projects/pantosphere">The Pantosphere</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/about#pills-contact">Something else here</a>
+            <a class="dropdown-item disabled" href="/projects/onyx-tower">Onyx Tower (coming soon)</a>
           </div>
         </li>
-        <li class="nav-item">
-          
-          <li class="nav-link my-2 my-lg-0" href="#" onclick="myFunction()"><button class="badge badge-dark">darker</button></li>
-          <!--<button class="nav-link" href="#" onclick="myFunction()">dark</button>-->
-        </li>
       </ul>
-      <!--to iterate
-      <ul class="navbar-nav mr-auto">
-        
-          
-          <li><a href="http://localhost:4000/tag/3dsmax.html">3dsmax</a></li>
-          
-          <li><a href="http://localhost:4000/tag/blender.html">blender</a></li>
-          
-          <li><a href="http://localhost:4000/process"></a></li>
-          
-          <li><a href="http://localhost:4000/tag/visualisation.html">visualisation</a></li>
-          
-          <li><a href="http://localhost:4000/">home</a></li>
-          
-          <li><a href="http://localhost:4000/about">about</a></li>
-          
-          <li><a href="http://localhost:4000/resources.html">resources</a></li>
-          
-          <li><a href="http://localhost:4000/blog">Blog</a></li>
-          
-          <li><a href="http://localhost:4000/projects.html">project</a></li>
-          
-      </ul>-->
     </div>
-  </nav>
-
-  <main>
+      <ul class="nav navbar-nav ml-auto w-25 justify-content-end">
+          
+          <li class="nav-item">
+            <button onclick="myFunction()" class="badge badge-dark" style="display: block;">Dark Mode</button>
+          </li>
+          
+      </ul>
+  
+</nav>
+<main>
     
     
  
@@ -111,15 +86,17 @@
   <div id="particles-js-side"></div>
     
     <div class="landing home-wrapper">
+      
         
         <div>
         <h1 class="landingtitle">Howdy! I'm Isabel</h1>
        
         
-        <p class="landingsubtext">Welcome to my ePortfolio. I'm a design student who likes to learn and make fun things. I dare you to see what happens when you enable dark mode. Happy exploring!</p>
+        <p class="landingsubtext">Welcome to my ePortfolio. I'm a design student who likes to learn, try new things and make fun stuff. I dare you to see what happens when you enable dark mode. Happy exploring!</p>
+        
         
 
-        <button id="end-button" class="btn btn-primary btn-sm">Seeing stars?</button>
+        <button id="end-button" class="btn btn-outline-dark star-button btn-sm">Toggle stars</button>
     </div>
         
         
@@ -139,153 +116,60 @@
 
 
   
-  <div class="home-wrapper">
+  <div class="wrapper">
     <h1>Most recent projects</h1>
-    <p>update this to reflect most recent projects, not lil trials</p>
+    <p>or lil trials? maybe filter just items tagged as projects?</p>
 
-   
-  
-  
-
-
-
-    <div class="card-deck">
+    <div class="row">
       
 
-      <div class="card">
-          <div class="project-image-container">
-            <img class="card-img-top card-img" src="/assets/images/blenderchair.png" alt="Blender Chair">
-        </div>
-        <!--
-          <div class="card-img-overlay">
-            <a class="text-dark" href="/testcategory/2020/11/30/third-post.html">Blender Chair</a>
-            <p class="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
-            
-          </div>-->
-        <div class="card-body">
-          <!--<strong class="d-inline-block mb-2 text-primary">testcategory</strong>-->
-          <h3>
-          <a class="text-dark" href="/testcategory/2020/11/30/third-post.html">Blender Chair</a>
-        </h3>
-          <p class="card-text">
-<p><span>Rating:</span></p>
-
-<!---->
-<p class="fa fa-star checked"></p>
-
-<!---->
-<p class="fa fa-star"></p>
-
-<!---->
-<p class="fa fa-star"></p>
-
-<....</p>
-          <p class="card-text tags"><small class="text-muted">
-            
-              <a href="/tags/#visualisation">visualisation</a>
-            
-              <a href="/tags/#blender">blender</a>
-            
-            </small>
-          </p>
-        </div>
+      <div class="col-sm-4">
+      <div>
         
+          <div class="project-image-container" href="/projects/Onyx-Tower">
+            <a href="/projects/Onyx-Tower"><img class="card-img-top card-img" src="/assets/images/crown.png" alt="Onyx Tower"></a>
+            <div class="card-img-overlay">
+             <a href="/projects/Onyx-Tower">Onyx Tower</a>
+            </div>
+          </div>
       </div>
-      
-      
-
-      <div class="card">
-          <div class="project-image-container">
-            <img class="card-img-top card-img" src="/assets/images/donut.png" alt="Blender Donut">
-        </div>
-        <!--
-          <div class="card-img-overlay">
-            <a class="text-dark" href="/blender/2020/11/28/second-post.html">Blender Donut</a>
-            <p class="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
-            
-          </div>-->
-        <div class="card-body">
-          <!--<strong class="d-inline-block mb-2 text-primary">blender</strong>-->
-          <h3>
-          <a class="text-dark" href="/blender/2020/11/28/second-post.html">Blender Donut</a>
-        </h3>
-          <p class="card-text">
-<p><span>Rating:</span></p>
-
-<!---->
-<p class="fa fa-star checked"></p>
-
-<!---->
-<p class="fa fa-star checked"></p>
-
-<!---->
-<p class="fa fa-star ....</p>
-          <p class="card-text tags"><small class="text-muted">
-            
-              <a href="/tags/#blender">blender</a>
-            
-              <a href="/tags/#visualisation">visualisation</a>
-            
-            </small>
-          </p>
-        </div>
-        
-      </div>
-      
-      
-
-      <div class="card">
-          <div class="project-image-container">
-            <img class="card-img-top card-img" src="/assets/images/windows.gif" alt="Residential Visualisation">
-        </div>
-        <!--
-          <div class="card-img-overlay">
-            <a class="text-dark" href="/2020/11/27/first-post.html">Residential Visualisation</a>
-            <p class="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
-            
-          </div>-->
-        <div class="card-body">
-          <!--<strong class="d-inline-block mb-2 text-primary"></strong>-->
-          <h3>
-          <a class="text-dark" href="/2020/11/27/first-post.html">Residential Visualisation</a>
-        </h3>
-          <p class="card-text">
-<p><span>Rating:</span></p>
-
-<!---->
-<p class="fa fa-star checked"></p>
-
-<!---->
-<p class="fa fa-star"></p>
-
-<!---->
-<p class="fa fa-star"></p>
-
-<....</p>
-          <p class="card-text tags"><small class="text-muted">
-            
-              <a href="/tags/#visualisation">visualisation</a>
-            
-              <a href="/tags/#3dsmax">3dsmax</a>
-            
-              <a href="/tags/#blender">blender</a>
-            
-            </small>
-          </p>
-        </div>
-        
-      </div>
-      
-      
     </div>
-  
     
-     
-  
-  </div>
-  
 
+      <div class="col-sm-4">
+      <div>
+        
+          <div class="project-image-container" href="/learn/2020/11/27/Residential-Visualisation.html">
+            <a href="/learn/2020/11/27/Residential-Visualisation.html"><img class="card-img-top card-img" src="/assets/images/residential-vis/windows.gif" alt="Residential Visualisation"></a>
+            <div class="card-img-overlay">
+             <a href="/learn/2020/11/27/Residential-Visualisation.html">Residential Visualisation</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+
+      <div class="col-sm-4">
+      <div>
+        
+          <div class="project-image-container" href="/learn/2020/06/25/Blender-Chair.html">
+            <a href="/learn/2020/06/25/Blender-Chair.html"><img class="card-img-top card-img" src="/assets/images/blender/blenderchair.png" alt="Blender Chair"></a>
+            <div class="card-img-overlay">
+             <a href="/learn/2020/06/25/Blender-Chair.html">Blender Chair</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    </div>
 </div>
+</div>
+
+
+
+
+
+
 <div class="section4">
   <div class="home-wrapper">
  <h1>Find out more about me!</h1>
@@ -294,28 +178,33 @@
 </div>
   
   </main><div class="page-footer">
-    <div>
-    <footer>Footer - Isabel copyright</footer>
-    <!-- LikeBtn.com BEGIN -->
-<span class="likebtn-wrapper" data-theme="review" data-ef_voting="push" data-identifier="like-button" data-dislike_enabled="false"></span>
-<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+    <div class="row">
+        <footer class="small-text">
+            <a>© 2020 Isabel Solin. All Rights Reserved</a>
+            <!-- LikeBtn.com BEGIN --><small>
+            <a class="likebtn-wrapper small-text" data-theme="review" data-ef_voting="push" data-identifier="like-button" data-dislike_enabled="false"></a></small>
+            <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+            <!-- LikeBtn.com END -->
+        </footer>
 </div>
-<!-- LikeBtn.com END -->
+
 
 </div><a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   
 
+<!--scripts-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="/script.js"></script>
+    
 
     <!-- Import Particles.js and app.js files -->
-    <!--scripts-->
+    
 <script src="/particles.js"></script>
 <script src="/app.js"></script>
 
@@ -338,8 +227,14 @@
         $("#particles-js-side").toggle();
       });
 
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
+      
       </script>
+      
+     
       
       
     

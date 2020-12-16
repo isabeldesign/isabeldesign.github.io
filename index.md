@@ -1,5 +1,5 @@
 ---
-title: home
+title: Home
 layout: homepage
 order: 1
 permalink: /

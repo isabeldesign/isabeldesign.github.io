@@ -1,5 +1,6 @@
 
-<span>Rating:</span>
+<div>
+<p style="font-size: small;">Fun:
 {% for i in (1..5) %}
 {% if i <= include.rating %}
 <!--{% assign stars = stars | append: 'st' %}-->
@@ -9,3 +10,5 @@
 {%- include star.html -%}
 {% endif %}
 {% endfor %}
+</p>
+</div>

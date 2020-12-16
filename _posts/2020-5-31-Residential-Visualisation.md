@@ -1,0 +1,32 @@
+---
+layout: post
+title:  Residential Visualisation
+date:   2020-11-27 13:34:25 +1100
+tags: visualisation 3dsmax blender
+img: /assets/images/residential-vis/windows.gif
+category: learn
+rating: 2
+---
+
+{% include star-rating.html rating=1 %}
+<div>
+In April/May 2020 I undertook a internship at a small Architecture firm in Melbourne. I was tasked with producing a set of architectural visualisations of a social housing proposal. The renders were to be presented to the client of the building project, as well as used in promoting the firms capabilites and experience in social housing typologies. As market swiftly changes in response to the COVID-19 pandemic, the firm's director identified this area as being the most valuable and potentially lucrative focus for small firms.   
+
+
+This was my first experience in producing rendered visualisations for a client/wider audience in a professional setting. Working towards (and sometimes against) the preferences and creative visions of others was something I was not used to, and posed an expected challenge that I learnt to reconcile.  These images were producced using 3DS Max + Vray.
+</div>
+<div>
+    <img class="d-block w-100 mb-4" src="/assets/images/residential-vis/windows.gif" alt="Windows gif">  
+</div>
+
+<div class="row">
+    <div class="col-sm-6 d-flex align-items-center">
+        <div>
+            <img class="d-block w-100" src="/assets/images/residential-vis/viewc.jpg" alt="View C">  
+        </div>
+    </div>
+    <br>
+    <div class="col-sm-6 d-flex align-items-center">
+            <img class="d-block w-100" src="/assets/images/residential-vis/viewe.jpg" alt="View E">   
+    </div>
+</div>

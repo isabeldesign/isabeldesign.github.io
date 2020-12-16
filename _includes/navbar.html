@@ -1,57 +1,46 @@
 
-
-  <nav class="navbar navbar-expand-sm">
-    <!--<nav class="navbar navbar-expand-sm navbar-light bg-light">--> 
-    
-    <a class="navbar-brand" href="#">Isabel Design</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+<nav class="navbar navbar-expand-md ">
+  <a href="/" class="navbar-brand d-flex mr-auto w-25">Isabel Design</a>
+  <button class="navbar-toggler ustify-content-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+      menu
+  </button>
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 " id="collapsingNavbar3">
+      <ul class="navbar-nav w-100 justify-content-center" style="align-items: center;">
+          <li class="nav-item nav-a">
+              <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item nav-a">
+              <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item nav-a">
+              <a class="nav-link actives" href="/resources">Resources</a>
+          </li>
+          <li class="nav-item nav-a">
+            <a class="nav-link" href="/blog">Stuff I do</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="/about">About</a>
+        <li class="nav-item nav-a">
+            <a class="nav-link nav-hov" href="/process">Process</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/resources">Toolbox</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/process">Process</a>
-        </li>
-        
-        <!--DROP DOWN--> 
+        <!--dropdown-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Projects
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/about#pills-home">Mothership</a>
-            <a class="dropdown-item" href="/about#pills-profile">Onyx Tower</a>
+            <a class="dropdown-item" href="/projects/mothership">Mothership</a>
+            <a class="dropdown-item" href="/projects/pantosphere">The Pantosphere</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/about#pills-contact">Something else here</a>
+            <a class="dropdown-item disabled" href="/projects/onyx-tower">Onyx Tower (coming soon)</a>
           </div>
         </li>
-        <li class="nav-item">
-          
-          <li class="nav-link my-2 my-lg-0" href="#" onclick="myFunction()"><button class="badge badge-dark">darker</button></li>
-          <!--<button class="nav-link" href="#" onclick="myFunction()">dark</button>-->
-        </li>
       </ul>
-      <!--to iterate
-      <ul class="navbar-nav mr-auto">
-        {% assign mypages = site.pages | sort: "order" %}
-          {% for page in mypages %}
-          <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-          {% endfor %}
-      </ul>-->
     </div>
-  </nav>
-
+      <ul class="nav navbar-nav ml-auto w-25 justify-content-end">
+          
+          <li class="nav-item">
+            <button onclick="myFunction()" class="badge badge-dark" style="display: block;">Dark Mode</button>
+          </li>
+          
+      </ul>
   
+</nav>

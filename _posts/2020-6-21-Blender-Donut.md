@@ -1,0 +1,27 @@
+---
+title: Blender Donut
+layout: post
+category: blender 
+tags: blender visualisation
+img: /assets/images/blender/donut.png
+stars: 4
+rating: 4
+category: learn
+---
+ {% include star-rating.html rating=4 %}
+
+
+
+Luck would have it that when I decided that it was time to explore new CG horizons, youtube user BlenderGuru began uploading a updated 2020 version of his iconic <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U" class=" link">'Blender Donut' series</a>. 
+Blender 2.8 is a 'free and open source 3D creation suite'. BlenderGuru (Andrew) is a young Aussie CG enthusist, whose videos are well paced and thorough, and charmingly complemented by his commentary. I'd reccomend his series to anyone interested in learning Blender, starting from any level. 
+
+Blender has exploded in popularity amoung hobbiests, students and professionals alike. Blender sets itself apart from the antiquated, buggy and bloated ~conventional industry standard~ platforms such as Autodesk 3Ds Max. After compleing my recent set of social housing renders in 3Ds Max - I realised that I couldn't go on trying to wrangle technology that was just not up to scratch, and maintain any form of good mental health if I wanted to continue dabbling with CG. 
+
+In contrast to 3Ds Max, it is wholly free and includes a proper in-built render engine (no $VRay or $Corona necessary), and has a mass following of enthusaistic CGI fanatics online. It is on a trajectory to becoming the next big thing. The presence of a Blender community was alone enough to push me towards trialling the software. On Reddit, <a href="https://www.reddit.com/r/blender/" class="link">r/blender</a> has the largest and most active community of all the CG/rendering software subreddit pages. The 'Blender Donut' series from BlenderGuru has become such a staple in the community, it has merited its own <a href="https://www.reddit.com/r/BlenderDoughnuts/" class="link">r/blenderdonuts</a> subreddit with 10k followers.  
+
+Young, and consistently updated, Blender is ahead of the curve, easy to use, and to this day has not crashed ONCE (putting it miles ahead of 3Ds Max). 
+
+
+<img class="d-block w-100" src="/assets/images/blender/donut.png" alt="Donut">
+
+
