@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<!--
+<div class="wrapper" style="background-color: aliceblue; align-items: center;">
+  <h1>{{ page.title }}</h1>
+  <p>Some content and stuff</p>
+  <p class="full-bleed">SOME TEXT HERE</p>
+</div>
+
+
+<div class="blog-full-bleed">
+  <h1>{{ page.title }}</h1>
+</div>
+-->
+  
+<div class="blog-header container-fluid">
+  <div class="blog-wrapper">
+      <h2 class="blog-title" style="align-items: center;">{{ page.title }}</h2>
+
+      
+  
+  </div>
+  
+</div>
+<div class="wrapper">
+  
+
+
+  
+    <div>
+      <p class="date">{{ page.date | date_to_string }}</p>
+      
+      
+      <p>
+      {% include readtime.html %}
+      </p>
+    
+    
+    
+      <p>
+        {% for tag in page.tags %}
+          <a class="badge badge-pill tag-badge tag-badge-small mb-2" href="{{site.baseurl}}/tag/{{tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </p>
+      
+    
+      <div class="blog-post spacing">
+        
+        {{ content }}
+      </div>
+      
+    </div>
+    
+    
+    <div class="PageNavigation">
+      {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </div>
+    </div>
+    
+

@@ -1,73 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    {%- include head.html -%}
-  </head>
-  
-  <body class="main-container">
-    {%- include navbar.html -%}
+    <head>
+        {%- include head.html -%}
+        
+        
+    </head>
 
-  <main>
-    
-    {{ content }}
-  
-  </main>
-
-
-  {%- include footer.html -%}
-  
-
-  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-  
-
-<!--scripts-->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <script src="/script.js"></script>
-    
-
-    <!-- Import Particles.js and app.js files -->
-    
-<script src="/particles.js"></script>
-<script src="/app.js"></script>
-
-    <script>
-      function darkmode() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
-
-      $(function () { 
-            $(`.nav-link[href="${location.pathname}"]`).parent().addClass("actives"); 
-          });
+    <body class="main-container">
       
       
-      $("#particle-button").click(function(){
-          toggle.particlesJS.load('particles-js','particles.json');  
-      });
+        {%- include navbar.html -%}
 
-      $("#end-button").click(function() {
-        $("#particles-js-side").toggle();
-      });
+        <main>
+            {{ content }}
+        </main>
 
-      $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+        {%- include footer.html -%}
 
-      
-      </script>
-      
-     
-      
-      
-    
-  </body>
+        <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
+        <!--scripts-->
+        
 
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="/script.js"></script>
+        
+        
+
+        <!-- Import Particles.js and app.js files -->
+
+        <script src="/particles.js"></script>
+        <script src="/app.js"></script>
+        
+        <script>
+            function darkmode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+
+            $(function () {
+                $(`.nav-link[href="${location.pathname}"]`).parent().addClass("actives");
+            });
+
+            $("#particle-button").click(function () {
+                toggle.particlesJS.load("particles-js", "particles.json");
+            });
+
+            $("#end-button").click(function () {
+                $("#particles-js-side").toggle();
+            });
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+        {%- include dark-mode.html -%}
+        
+    </body>
 </html>

@@ -1,16 +1,18 @@
 ---
 title: Blender Chair
-layout: post
-category: learn
+layout: process-post
+
 tags: visualisation blender
 img: /assets/images/blender/blenderchair.png
+header-color: hsla(84,50%,74%,0.1)
+rating: 4
 ---
- {% include star-rating.html rating=1 %}
+ {% include star-rating.html rating=4 %}
 
 
 
-<div class="post-paragraph">
-Back at it again with another <a href="https://www.youtube.com/watch?v=Hf2esGA7vCc&list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR" class="para-link ">BenderGuru tutorial series</a> - but this time, a  chair. The tutorial followed a set of refence photos to model wooden chair with a focus on accuracy. This series involved more modelling than my previous Blender Donut render. Thanks to my experience using 3DS Max and VRay, am already fairly familar and competent when it comes to 3D Modelling and Visualisation principles and concepts (UV unwrapping, material properties/textures). However, I still am learning how to apply these concepts to a new platform. 
+<div>
+Back at it again with another <a href="https://www.youtube.com/watch?v=Hf2esGA7vCc&list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR" class="link">BenderGuru tutorial series</a> - but this time, a  chair. The tutorial followed a set of refence photos to model wooden chair with a focus on accuracy. This series involved more modelling than my previous Blender Donut render. Thanks to my experience using 3DS Max and VRay, am already fairly familar and competent when it comes to 3D Modelling and Visualisation principles and concepts (UV unwrapping, material properties/textures). However, I still am learning how to apply these concepts to a new platform. 
 
 
 There are some things that Blender just does so much better in than Max+VRay. For example, Blender has preset 'shaders' (materials) for things like hair, glass and velvet. It also has an integrated denoisifier component that can be composited with render outputs (inlcuding animation frames!). This made it SUPER easy to produce a 100 frame animation, with an end result that was fairly fast and noise free. 

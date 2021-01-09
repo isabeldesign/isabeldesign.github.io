@@ -1,72 +1,52 @@
-
- 
- <!-- SECTION 1 -->
- <div class="section1">
-    
+<!-- SECTION 1 -->
+<div class="section1">
   <div id="particles-js-side"></div>
-    
-    <div class="landing home-wrapper">
-      
-        
-        <div>
-        <h1 class="landingtitle">Howdy! I'm Isabel</h1>
-       
-        
-        <p class="landingsubtext">Welcome to my ePortfolio. I'm a design student who likes to learn, try new things and make fun stuff. I dare you to see what happens when you enable dark mode. Happy exploring!</p>
-        
-        
 
-        <button id="end-button" class="btn btn-outline-dark star-button btn-sm">Toggle stars</button>
-    </div>
-        
-        
-    </div>
-  
-</div>
-
- <!-- SECTION 2 -->
- <div class="section2 flex-container center">
-   <div class="home-wrapper">
-  <h1>See what I am currently learning/working on: ....{link to the process page}</h1>
-  <p>Some content and stuff</p>
-  </div>
- </div>
-
- <div class="section3 flex-container center">
-
-
-  
-  <div class="wrapper">
-    <h1>Most recent projects</h1>
-    <p>or lil trials? maybe filter just items tagged as projects?</p>
-
-    <div class="row">
-      {% for post in site.posts limit:3%}
-
-      <div class="col-sm-4">
+  <div class="landing home-wrapper">
       <div>
-        
-          <div class="project-image-container" href="{{ post.url }}">
-            <a href="{{ post.url }}"><img class="card-img-top card-img" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.title }}"></a>
-            <div class="card-img-overlay">
-             <a href="{{ post.url }}">{{ post.title }}</a>
-            </div>
-          </div>
+          <h1 class="landingtitle">Howdy! I'm Isabel</h1>
+
+          <p class="landingsubtext">Welcome to my ePortfolio. I'm a design student who likes to learn, try new things and make fun stuff. I dare you to see what happens when you enable dark mode. Happy exploring!</p>
+
+          <button id="end-button" class="btn btn-outline-dark star-button btn-sm">Toggle stars</button>
       </div>
-    </div>
-    {% endfor %}
-    </div>
-</div>
+  </div>
 </div>
 
+<!-- SECTION 2 -->
+<div class="section2 flex-container center">
+  <div class="home-wrapper">
+      <h1>See what I am currently learning/working on: ....{link to the process page}</h1>
+      <p>Some content and stuff</p>
+  </div>
+</div>
 
+<div class="section3 flex-container center">
+  <div class="wrapper">
+      <h1>Most recent projects</h1>
+      <p>or lil trials? maybe filter just items tagged as projects?</p>
 
+      <div class="row">
+          {% for post in site.posts limit:3%}
 
-
+          <div class="col-sm-4">
+              <div>
+                  <div class="project-image-container" href="{{ post.url }}">
+                      <a href="{{ post.url }}"><img class="card-img-top card-img" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.title }}" /></a>
+                      <div class="card-img-overlay">
+                          <a href="{{ post.url }}">{{ post.title }}</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+</div>
 
 <div class="section4">
   <div class="home-wrapper">
- <h1>Find out more about me!</h1>
- <p>and what I like to do and what inspires me! {link to about/passions?}</p>
- </div>
+      <h1>Find out more about me!</h1>
+      <p>and what I like to do and what inspires me! {link to about/passions?}</p>
+  </div>
 </div>

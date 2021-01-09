@@ -1,10 +1,9 @@
-
-<nav class="navbar navbar-expand-md ">
+<nav class="navbar navbar-expand-md">
   <a href="/" class="navbar-brand d-flex mr-auto w-25">Isabel Design</a>
   <button class="navbar-toggler ustify-content-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
       menu
   </button>
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 " id="collapsingNavbar3">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="collapsingNavbar3">
       <ul class="navbar-nav w-100 justify-content-center" style="align-items: center;">
           <li class="nav-item nav-a">
               <a class="nav-link" href="/">Home</a>
@@ -16,31 +15,36 @@
               <a class="nav-link actives" href="/resources">Resources</a>
           </li>
           <li class="nav-item nav-a">
-            <a class="nav-link" href="/blog">Stuff I do</a>
-        </li>
-        <li class="nav-item nav-a">
-            <a class="nav-link nav-hov" href="/process">Process</a>
-        </li>
-        <!--dropdown-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/projects/mothership">Mothership</a>
-            <a class="dropdown-item" href="/projects/pantosphere">The Pantosphere</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item disabled" href="/projects/onyx-tower">Onyx Tower (coming soon)</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-      <ul class="nav navbar-nav ml-auto w-25 justify-content-end">
-          
-          <li class="nav-item">
-            <button onclick="myFunction()" class="badge badge-dark" style="display: block;">Dark Mode</button>
+              <a class="nav-link" href="/blog">Stuff I do</a>
           </li>
-          
+          <li class="nav-item nav-a">
+              <a class="nav-link nav-hov" href="/process">Process</a>
+          </li>
+          <li class="nav-item nav-a">
+              <a class="nav-link nav-hov" href="/chart">Chart</a>
+          </li>
+          <!--dropdown
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/projects/mothership">Mothership</a>
+                  <a class="dropdown-item" href="/projects/pantosphere">The Pantosphere</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="/projects/onyx-tower">Onyx Tower (coming soon)</a>
+              </div>
+          </li>-->
       </ul>
-  
+  </div>
+  <ul class="nav navbar-nav ml-auto w-25 justify-content-end">
+    <!--
+      <li class="nav-item">
+          <button onclick="myFunction()" class="badge badge-dark" style="display: block;">Dark Mode</button>
+      </li>
+    -->
+      <li class="nav-item">
+        <button id="theme-toggle" class="badge btn btn-outline-warning" style="display: block;" onclick="modeSwitcher()"></button>
+      </li>
+  </ul>
 </nav>

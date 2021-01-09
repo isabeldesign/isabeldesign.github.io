@@ -1,0 +1,183 @@
+---
+layout: default
+---
+<style>
+
+.header{
+    background-color: red;
+    width: 800px;
+    
+}  
+.cell {
+  border: 1px solid #cccccc;
+  height: 50px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.bar {
+  position: relative;
+  height: 40px;
+  background: #bbdcff;
+  margin: 5px;
+
+  opacity: 0.4;
+}
+
+.arrow-connector {
+  /* four params to position respectively parent element */
+  bottom: 11px;
+  right: -20px;
+  width: 15px;
+  height: 20px;
+  /******************************/
+  position: absolute;
+  border-top: 2px solid rgb(0, 255, 255);
+  border-right: 2px solid rgb(110, 201, 201);
+  border-top-right-radius: 4px;
+}
+
+.arrow-connector:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -12px;
+  right: -6px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 12px solid rgb(82, 53, 247);
+}
+
+.arrow-connector {
+  border-color: rgb(0, 132, 255)
+}
+
+.arrow-connector:before {
+  border-top-color: rgb(70, 53, 69)
+}
+
+.arrow-connector.critical {
+  border-color: #ff8888;
+}
+
+.arrow-connector.critical:before {
+  border-top-color: #ff8888;
+}
+
+/*****************************************************/
+.bar-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.bar:hover{
+    opacity: 1;
+}
+
+
+
+
+.mystyle {
+  background-color: coral;
+  color: white;
+ 
+  opacity: 1;
+}
+.year-bar {
+  min-height: 50px;
+  overflow: auto;
+  list-style: none;
+}
+.year-bar li {
+  width: calc(100%/7);
+  text-align: center;
+  float: left;
+  border-left: 1px solid rgb(51, 53, 165);
+  padding: 1em;
+}
+
+.idk1{
+background-color: var(--accent1);
+  padding: 10px;
+  border-radius: .5em;
+  
+  
+}
+
+.the-chart{
+    float: right;
+    overflow-y: scroll;
+    display: inline;
+    position: absolute;
+    max-width: 400px;
+}
+
+</style>
+<!--
+<script>
+    function myFunctions() {
+       var element = document.getElementById("myDIV");
+       element.classList.toggle("mystyle");
+    }
+    </script>-->
+
+<div class="wrapper">
+<div class="idk1">
+<h4>Gantt Chart</h4>
+<div class="the-chart">
+<div class="header">
+    <ul class="year-bar">
+        <li data-year="2014">2014</li>
+        <li data-year="2015">2015</li>
+        <li data-year="2016">2016</li>
+        <li data-year="2018">2018</li>
+        <li data-year="2019">2019</li>
+        <li data-year="2020">2020</li>
+        <li data-year="2021">2021</li>
+      </ul>
+    
+</div>
+<div class="cell">
+    <div class="bar" style="width: 50px;" ></div>
+</div>
+
+<div class="cell">
+    <div class="bar" onclick="myFunctions()" id="myDIV" style="margin-left: 50px; width: 100px; ">
+        <div class="bar-arrow">
+            <div class="arrow-connector"></div>
+        </div>
+    </div>
+</div>
+
+<div class="cell">
+    <div class="bar" style="margin-left: 145px; width: 400px; background-color:#f29742" >
+        <div class="bar-arrow">
+            <div class="arrow-connector"></div>
+        </div>
+    </div>
+</div>
+<div class="cell">
+    <div class="bar" style="margin-left: 640px; width: 100px; background-color:#f25742">
+        <div class="bar-arrow">
+            <div class="arrow-connector" style="height: 80px; width: 92px; right: -13px"></div>
+        </div>
+    </div>
+</div>
+<div class="cell">
+    <div class="bar" style="margin-left: 400px; width: 90px; background-color:#428ef2">
+        <div class="bar-arrow">
+            <div class="arrow-connector critical"
+                style="height: 80px; width: 92px; right: -13px">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>

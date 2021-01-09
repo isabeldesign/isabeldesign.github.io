@@ -1,4 +1,6 @@
-:root {
+---
+---
+html {
   --blue: #1e90ff;
   --white: #ffffff;
   --pink:  rgb(250, 236, 236);
@@ -42,11 +44,9 @@
 
   --bluegrey: #f4f4fc;
 
-
-
   --indigo9: #402a98;
   --neon: #2e2e2e;
-  --shadow: #ffffff;
+  
   --section1: #f4f4fc;
   --hr: rgb(218, 218, 218);
   --link:rgb(255, 93, 87);
@@ -55,20 +55,95 @@
   --subtext: rgba(46, 46, 46);
   --subtext-light:  rgba(46, 46, 46, 0.4);
   --link-hover: #ffffff;
+
+  /*restart variable. you need to declare them here to prevent load flash */
+  --site-background: #f8f8fa;
+  --main-text: #2e2e2e;
+  --shadow: #f8f8fa;
+ 
+
 }
+/*
+.dark-mode{
+  background-color:rgb(22, 24, 58);
+  color: white;
+  --subtext: #ffffff;
+  --section1: #050d33;
+  --hr: rgb(255, 255, 255);
+  --neon: #ffffff;
+  --link: #d3eaff;
+  --link-hover: #242424;
+  --back: rgb(17, 19, 43);
+  --shadow: 0 0 5px #FFF,
+            0 0 10px #FFF, 
+            0 0 15px #fb8fff, 
+            0 0 20px #fb8fff, 
+            0 0 30px #fb8fff, 
+            0 0 40px #fb8fff; 
+              
+}*/
+
+
+html, html[data-theme="light"] { 
+  --site-background: #f8f8fa;
+  --accent1: hsl(255, 53%, 96%);
+  --accent2: hsl(255, 53%, 96%);
+  --em: hsl(253, 100%, 90%);
+  --main-text: #2e2e2e;
+  --link: #4133ff;
+  --link-alt: #fb8fff;
+ 
+
+  --shadow: #ffffff;
+  color: #2e2e2e;
+}
+
+html[data-theme="dark"] {
+  --site-background: #100427;
+  --accent1: #271D3C;/*#16183a was used for a time */
+  --accent2: hsl(260, 52%, 50%);
+  --em: hsl(253, 100%, 80%);
+  --main-text: #F8F8FA;
+  --link: #fb8fff;
+  --link-alt: #5F33FF;
+  
+
+  --shadow: 0 0 5px #FFF, 0 0 10px #fb8fff, 0 0 30px #fb8fff;
+  color: #F8F8FA;
+	}
+
+/* to fill in once I finalise the upper dark mode variables*/
+/*
+@media (prefers-color-scheme: dark) {
+  html, html[data-theme="dark"] {
+    --site-background: #16183a;
+    --text-colour: black;
+  }
+  
+  html[data-theme="light"] { 
+    --site-background: #f8f8fas;
+    --text-colour: purple;
+  }
+}*/
+
 
 
 body {
     padding-bottom: 0px;
-    /*background-color: var(--back); defined background colour
-    color: var(--text);*/
+    background-color: var(--site-background); 
+    color: var(--text-colour);
     font-family: Roboto, sans-serif;
     display:flex; 
     flex-direction:column;
-    background-color: #f8f8fa;
+
+    /*background-color: #f8f8fa;*/
   }
-  
-  /* text classes*/
+
+  /*---------------------------------*/
+
+      /* THE TEXT CLASS SECTION */
+
+  /*---------------------------------*/
   h1{
     color: var(--text);
     font-size: 60px;
@@ -84,18 +159,58 @@ body {
     border: 1px;
   }
   
-
-  .title{
+  
+  .title{ /*h2*/
     text-align: center;
-    color: var(--subtext);
+    color: var(--main-text);
     font-size: 2.5em;
     font-weight: bold;
     font-weight: 400;
     letter-spacing: 2px;
-    transition: all 0.4s ease 0s;
     padding: 10px;
     text-transform: capitalize;
     line-height: 1.1em;
+  }
+
+
+  .blog-title{
+    text-align: center;
+    color: var(--main-text);
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  
+  }
+
+  @media only screen and (max-width: 950px) {
+    .blog-title {
+      font-size: 2.5em;
+    }
+  }
+
+  .blog-title-sub{
+    align-self: center;
+    font-size: .9em;
+  }
+
+  .blog-title-tags{
+    color: red;
+    align-self: end;
+
+  }
+
+
+  .blog-paragraph{
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+
+  .project-paragraph{
+    font-size: 1.1em;
+    line-height: 1.5;
+    font-weight: 400;
   }
 
 /*
@@ -141,12 +256,12 @@ body {
 
 
   .sub-para{
+    color: var(--main-text);
     font-size: .95em;
     text-align: left;
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: .01em;
-    
   }
 
 
@@ -166,32 +281,11 @@ body {
     padding-bottom: 30px;  /* height of your footer */
   }
 
-  .dark-mode{
-    background-color:rgb(22, 24, 58);
-    color: white;
-    --subtext: #ffffff;
-    --section1: #050d33;
-    --hr: rgb(255, 255, 255);
-    --neon: #ffffff;
-    --link: #d3eaff;
-    --link-hover: #242424;
-    --back: rgb(17, 19, 43);
-    --shadow: 0 0 5px #FFF,
-              0 0 10px #FFF, 
-              0 0 15px #fb8fff, 
-              0 0 20px #fb8fff, 
-              0 0 30px #fb8fff, 
-              0 0 40px #fb8fff; 
-              /*0 0 55px #ffffff, 
-              0 0 75px #ffffff*/
-    
-              
-  }
   
   
 
   .navbar {
-    color: var(--subtext);
+    color: var(--main-text);
     z-index: 1;
   }
 
@@ -200,18 +294,18 @@ body {
   .nav-link{
     font-size: 15px;
     letter-spacing: 0.05em;
-    color: var(--subtext);
+    color: var(--main-text);
   }
 
   
   
 
   .navbar-nav{
-    color: var(--subtext);
+    color: var(--main-text);
   }
 
   .nav-link:hover{
-    color: var(--subtext);
+    color: var(--main-text);
   }
 
   .navbar-nav > li{
@@ -223,7 +317,7 @@ body {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 0.1em;
-    color: var(--subtext);
+    color: var(--main-text);
     font-weight: 400;
     /*margin-right: 100px;*/
   }
@@ -255,7 +349,7 @@ body {
     display: block;
     height: 1px;
     bottom: 0px;
-    background: rgba(201, 50, 50);
+    background: var(--link-alt); /*rgba(201, 50, 50)*/
     content: '';
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -280,7 +374,7 @@ body {
     display: block;
     height: 1px;
     bottom: 0px;
-    background: rgb(102, 7, 255);
+    background: var(--link);
     content: '';
     opacity: 1;
     -webkit-transition: opacity 0s, -webkit-transform 0s;
@@ -334,14 +428,14 @@ body {
   font-weight: 900;
   line-height: 1.1em;
   text-shadow: var(--shadow); 
-  color: var(--neon);
-  transition: all 0.4s ease 0s;
+  color: var(--main-text);
+  transition: all 0.9s ease 0s;
   white-space: nowrap;
 }
 
 .landingsubtext{
   line-height: 1.7em;
-  color: var(--subtext);
+  color: var(--main-text);
   
 }
 
@@ -395,7 +489,34 @@ body {
 
 
   /* ----- BLOG STUFF -----*/
+
+  /*normal blog post stuff*/
+  .blog-header{
+    margin: 0 auto;
+    background-color: wheat;
+    height: 30vw;
+    width: 100%;  
+    padding: 10%;
+  }
+
+  @media only screen and (max-width: 950px) {
+    .blog-header {
+      background-color: lightblue;
+    }
+  }
+  
+  .process-header{
+    margin: 0 auto;
+    background-color: rgb(255, 212, 131);
+    
+    width: 100%;  
+   
+  }
+
+
+
   /*blog posts cards*/
+
   .blogcard{
     background: var(--back);
     border: 1px rgb(226, 226, 226) solid;
@@ -427,26 +548,33 @@ body {
     text-transform: uppercase;
     /*background-color:var(--bluegrey);
     color: var(--blue7);*/
-    background-color: var(--back);
+    background-color: var(--accent1);
     color: var(--blue7);
     border: 0.2px rgba(49, 0, 139, 0.25) solid;
     padding: 6px 10px;
     margin-right: 5px;
     box-shadow: 5px;
-    transition: all 0.2s ease 0s;
+    /*transition: all 0.6s ease 0s;*/
     
   }
 
   .tag-badge:hover {
     /*color: var(--text);*/
-    color: var(--subtext);
+    color: var(--main-text);
     box-shadow: 1px;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
    /* transform: translateY(-0.05em);*/
     -webkit-box-shadow: 0px 2px 10px -5px #A39EFF; 
     box-shadow: 0px 2px 10px -5px #A39EFF;
-    transition: all 0.5s ease 0s;
+    transition-timing-function: ease-in-out;
     }
+
+  .badge{
+    font-family: roboto;
+    transition: all 0.0s ease 0s;
+  }
+
+  
   .tag-badge:focus {
     background-color: #514988 !important;
     color: #fff;
@@ -457,7 +585,7 @@ body {
   }
 
   .tag-badge-active{
-    background-color: var(--subtext);
+    background-color: var(--main-text);
   }
   
   .card-img-right{
@@ -484,21 +612,27 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/*---------------------------------*/
+
+      /* THE WRAPPER SECTION */
+
+/*---------------------------------*/
+
+
   /*this defines a three column grid for article pages*/
   .wrapper {
     display: grid;
-    
     grid-template-columns:  
     1fr 
     min(75ch, calc(100% - 75px)) 
     1fr; /*this is a width of 65 characters*/
     grid-column-gap: 3px;
+    
   }
 
   .wrapper > * {      /*this places children in middle column*/
     grid-column: 2;
-   
-    
   }
   .full-bleed {         /*allows a specific child to go full bleed on page (take u all columns)*/
     width: 100%;
@@ -536,6 +670,73 @@ body {
     
   }
 
+
+  
+  .blog-wrapper {
+    display: grid;
+    grid-template-columns:  
+    1fr 
+    min(75ch, calc(100% - 75px)) 
+    1fr; 
+    grid-column-gap: 3px;
+    background-color: #d9dfff;
+    
+  }
+
+  .blog-wrapper > * {      /*this places children in middle column*/
+    grid-column: 2;
+  }
+
+  .blog-full-bleed {         /*allows a specific child to go full bleed on page (take u all columns)*/
+    display: grid;
+    width: 100%;
+    grid-column: 1 / -1;
+    background-color: rgb(255, 233, 217);
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 2%;
+    min-height: 15em;
+    justify-content: center;
+    justify-content: space-evenly; 
+    
+  }    
+
+  .process-full-bleed {         /*allows a specific child to go full bleed on page (take u all columns)*/
+    display: grid;
+    width: 100%;
+    grid-column: 1 / -1;
+    background-color: var(--accent1);
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    min-height: 16em;
+    margin-bottom: 2em;
+    justify-content: center;
+    justify-content: space-evenly; 
+    
+  }  
+
+  .dashboard-wrapper {
+    display: grid;
+    grid-template-columns:  
+    1fr 
+    min(100ch, calc(100% - 100px)) 
+    1fr; 
+    grid-column-gap: 3px;
+    
+  }
+
+  .dashboard-wrapper > * {      /*this places children in middle column*/
+    grid-column: 2;
+   
+  }
+
+
+
+
+
+
   /*
   .box{
     padding:10px;
@@ -553,7 +754,7 @@ body {
     color: orange;
   }
   .unchecked{
-    color: var(--subtext);
+    color: var(--main-text);
   }
 /*
   .dropdown-menu{
@@ -620,6 +821,9 @@ body {
     bottom: 25px;
     right: 25px;
     display: none;
+    border: 1px solid rgb(233, 233, 233);
+    color: var(--main-text);
+    background-color: var(--site-background);
 }
 
 
@@ -693,7 +897,9 @@ body {
   font-size: 14px;
   display: block;
   width: auto;
-  overflow: hidden;
+  
+  
+  transition: all 0.5s;
 }
 
 .PageNavigation a {
@@ -701,11 +907,35 @@ body {
   width: 50%;
   float: left;
   margin: 1em 0;
+  background-color: var(--accent1);
+  color: var(--main-text);
+  padding: 10px;
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 10px;
 }
 
 .PageNavigation .next {
-  text-align: right;
+  text-align: center;
+  float: right;
+  transition: all 0.5s;
+  border-radius: 10px;
 }
+
+.PageNavigation .next:hover {
+  -webkit-transform: translateX(.8em);
+  -moz-transform: translateX(.8em);
+  transform: translateX(.8em);
+}
+
+.PageNavigation a:hover {
+  text-decoration: none;
+  -webkit-transform: translateX(-.8em);
+  -moz-transform: translateX(-.8em);
+  transform: translateX(-.8em);
+
+}
+
 
 .nav-pills .nav-link{
   border: 1px solid var(--subtext-light);
@@ -727,7 +957,7 @@ body {
 
 .nav-pills .nav-link.active{
   background-color:rgb(102, 7, 255, 0.1);
-  color:var(--subtext);
+  color:var(--main-text);
 }
 
 /*
@@ -793,7 +1023,7 @@ hr{
   padding-left: 0;
   /*color: rgb(240, 98, 98) !important;*/
   text-decoration: none;
-  color: #5538cc !important;
+  color: var(--link) !important;
 }
 
 .sublink{
@@ -840,12 +1070,12 @@ ul.sublink:before {
   
   font-weight: 400;
   
-  color: var(--subtext)
+  color: var(--main-text)
 }
 
 .para-emphasis{
-  
-  color: rgb(119, 61, 211);
+  text-emphasis: ;
+  font-weight: 700;
 }
 
 
@@ -923,8 +1153,8 @@ ul.sublink:before {
 }
 
 #end-button{
-  border: 1px solid var(--subtext);
-  color: var(--subtext);
+  border: 1px solid var(--main-text);
+  color: var(--main-text);
 }
 
 #end-button:hover{
@@ -932,4 +1162,552 @@ ul.sublink:before {
   -webkit-box-shadow: 0px 2px 10px -5px #050d33; 
     box-shadow: 0px 2px 10px -5px #050d33;
     transition: all 0.5s ease 0s;
+}
+
+/*
+#theme-toggle{
+  color: red;
+
+}*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--accent1); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+/*---------------------------------*/
+
+      /* THE CHARTS GANNT */ 
+
+/*---------------------------------*/
+
+.dashboard-header{
+  border-radius: .5em;
+  position: relative;
+  height: 100%;
+}
+
+.contain{
+  background-color: rgb(209, 240, 232);
+  width:100%;
+  display:flex;
+  padding: 30px 10px 10px 10px;
+  border-radius: 0.5em;
+}
+.cell1 {
+  background:rgb(255, 211, 211);
+  overflow: none;
+  min-width: 5em;
+  width: 200px;
+}
+
+.cell2 {
+  background:blue;
+  overflow: auto;
+  
+}
+
+.dashboard-item{
+  background-color: var(--accent1);
+  padding: 40px 10px 10px 10px;
+  border-radius: .5em;
+  margin: 15px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+
+.idk{
+  background-color: var(--accent1);
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  width: 800xp;
+}
+
+
+
+#timetable {
+  height: auto;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  direction: rtl;
+  background-color: var(--site-background);
+}
+#timetable ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 0 0 0;
+}
+#timetable .timetable_content {
+  width: 100em;/*this controls width of inner timetable*/
+}
+
+.half-year {
+  min-height: 40px;
+  overflow: auto;
+ 
+}
+.half-year li {
+  width: calc(100%/14);
+  text-align: center;
+  float: left;
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid rgb(51, 53, 165);
+  padding: 1em;
+  
+}
+
+.years {
+  min-height: 20px;
+  overflow: auto;
+ 
+}
+.years li {
+  width: calc(100%/7);
+  text-align: center;
+  float: left;
+  border-left: 0px solid rgb(51, 53, 165);
+  border-bottom: 1px solid rgb(201, 202, 255);
+  padding: 0.5em;
+  
+}
+.timeslots li {
+  border-top: 1px solid rgb(196, 196, 196);
+  padding: 0.5em;
+  width: 100%;
+  background-color: beige;
+}
+.timeslots .time-bar {
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.categories{
+  background-color: wheat;
+  list-style-type: none;
+  align-items: center;
+  padding: 0.5em 0 0 0;
+}
+
+.categories li{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5em;
+  align-items: center;
+  height: calc(100%/4);
+  padding: 1em;
+  color: var(--main-text);
+  
+}
+
+.categories-text{
+  font-size: 1em;
+}
+
+
+.time-bar{
+  border: 1px solid red;
+  position: relative;
+  z-index: 4;
+  background-color: rgb(255, 255, 255);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+li.timebar:after {
+  content: " ";
+  position: relative;
+  display: block;
+  
+  height: 5px;
+  background-color: rgb(133, 70, 70);
+  width: 40px;
+}
+
+
+/*
+.timeslots .time-bar:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  border-style: solid;
+  border-width: 7px 0 7px 20px;
+  border-color: transparent transparent transparent rgb(0, 68, 255);
+  right: -50px;
+  transform: translateY(-50%);
+}*/
+
+
+/* s othis acctually woorks
+.timeslots .time-bar:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  top: 50%;
+  border-style: solid;
+  border-color:  rgb(255, 0, 200);
+  right: -10px;
+  
+}*/
+
+
+
+/* THIS WORKS BUT IT ADDS ARROWS TO ALL OF THE BARS
+.timeslots .time-bar:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  top: 50%;
+  border-top: 2px solid orange;
+  border-right: 2px solid orange;
+  border-top-right-radius: 4px;
+  right: -15px;
+}*/
+
+.arrow-con{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  top: 50%;
+  border-top: 2px solid green;
+  border-right: 2px solid green;
+  border-top-right-radius: 4px;
+  right: -15px;
+
+}
+
+.arrow-con:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -12px;
+  right: -6px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 12px solid rgb(82, 53, 247);
+}
+
+.divider{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  background-color: rgb(213, 170, 255);
+  top: -97px;
+  height: 500px;
+  border: 0px solid rgb(247, 53, 199);
+  z-index: 2;
+}
+
+.sub-divider{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  background-color: rgb(238, 220, 255);
+  top: -10px;
+  height: 413px;
+  border: 0px solid rgb(247, 53, 199);
+  z-index: 2;
+}
+
+.school{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  background-color: rgb(72, 46, 97);
+  top: -10px;
+  height: 0px;
+  z-index: 0;
+  left:10px;
+  color: var(--main-text);
+}
+
+
+/* ---- */
+/* TIME LINE BAR IDs */
+/* ---- */
+
+/*
+.divider{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: calc((1)00em/7)+1);
+  background-color: rgba(213, 170, 255, 0.1);
+  top: -105px;
+  height: 500px;
+  border: 1px solid rgb(247, 53, 199);
+  z-index: 2;
+}
+*/
+
+/*
+.divider:before {
+  content: "";
+  
+  position: absolute;
+  top: -12px;
+  right: -3px;
+  width: 30px;
+  height: 4px;
+  border: 2px solid rgb(43, 43, 43);
+  z-index: 2;
+}*/
+/*
+.timeslots .time-bar:after {
+  content: '';
+  height: 1px;
+  background: rgb(207, 66, 66);
+  width: 0px;
+  
+  
+  right: -20px;
+  top: 50%;
+  z-index: 20;
+}
+*/
+
+#item6:hover{
+  background-color: #000;
+  
+}
+
+/*---------------------------------*/
+
+      /* THE CHARTS GANNT 1 */ 
+
+/*---------------------------------*/
+
+
+.wrapper_imported {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  
+  overflow: hidden;
+}
+ 
+ .gantt {
+	 display: grid;
+	 border: 0;
+	 border-radius: 12px;
+	 position: relative;
+	 overflow: hidden;
+	 box-sizing: border-box;
+   box-shadow: 0 75px 125px -57px #7e8f94;
+   border: 1px solid red;
+   grid-auto-flow: dense;
+   max-width: 500px;
+}
+ .gantt__row {
+	 display: grid;
+	 grid-template-columns: 150px 1fr;
+	 background-color: #fff;
+}
+ .gantt__row:nth-child(odd) {
+	 background-color: #f5f5f5;
+}
+ .gantt__row:nth-child(odd) .gantt__row-first {
+	 background-color: #f5f5f5;
+}
+ .gantt__row:nth-child(3) .gantt__row-bars {
+	 border-top: 0;
+}
+ .gantt__row:nth-child(3) .gantt__row-first {
+	 border-top: 0;
+}
+ .gantt__row--empty {
+	 background-color: #ffd6d2 !important;
+	 z-index: 1;
+}
+ .gantt__row--empty .gantt__row-first {
+	 border-width: 1px 1px 0 0;
+}
+/*
+ .gantt__row--lines {
+	 position: absolute;
+	 height: 100%;
+	 width: 100%;
+	 background-color: transparent;
+	 grid-template-columns: 150px repeat(12, 1fr);
+}
+*/
+ .gantt__row--lines span {
+	 display: block;
+	 border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+ .gantt__row--lines span.marker {
+	 background-color: rgba(10, 52, 68, 0.13);
+	 z-index: 2;
+}
+ .gantt__row--lines:after {
+	 grid-row: 1;
+	 grid-column: 0;
+	 background-color: #1688b3 45;
+	 z-index: 2;
+	 height: 100%;
+}
+ .gantt__row--months {
+	 color: #fff;
+	 background-color: #0a3444 !important;
+	 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	 grid-template-columns: 150px repeat(12, 1fr);
+}
+ .gantt__row--months .gantt__row-first {
+	 border-top: 0 !important;
+	 background-color: #0a3444 !important;
+}
+ .gantt__row--months span {
+	 text-align: center;
+	 font-size: 13px;
+	 align-self: center;
+	 font-weight: bold;
+	 padding: 20px 0;
+}
+ .gantt__row-first {
+	 background-color: #fff;
+	 border-width: 1px 0 0 0;
+	 border-color: rgba(0, 0, 0, 0.1);
+	 border-style: solid;
+	 padding: 15px 0;
+	 font-size: 13px;
+	 font-weight: bold;
+	 text-align: center;
+}
+ .gantt__row-bars {
+	 list-style: none;
+   display: grid;
+   display: inline;
+	 padding: 9px 0;
+	 margin: 0;
+	 grid-template-columns: repeat(12, 1fr);
+	 grid-gap: 8px 0;
+	 border-top: 1px solid rgba(221, 221, 221, 0.8);
+}
+ .gantt__row-bars li {
+	 font-weight: 500;
+	 text-align: left;
+	 font-size: 14px;
+	 min-height: 15px;
+	 background-color: #55de84;
+	 padding: 5px 12px;
+	 color: #fff;
+	 overflow: hidden;
+	 position: relative;
+	 cursor: pointer;
+	 border-radius: 20px;
+}
+ .gantt__row-bars li.stripes {
+	 background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255, 255, 255, .1) 5px, rgba(255, 255, 255, .1) 12px);
+}
+ .gantt__row-bars li:before, .gantt__row-bars li:after {
+	 content: "";
+	 height: 100%;
+	 top: 0;
+	 z-index: 4;
+	 position: absolute;
+	 background-color: rgba(0, 0, 0, 0.3);
+}
+ .gantt__row-bars li:before {
+	 left: 0;
+}
+ .gantt__row-bars li:after {
+	 right: 0;
+}
+ 
+/*---------------------------------*/
+
+      /* THE CHARTS GANNT 2 */ 
+
+/*---------------------------------*/
+
+
+
+.gantt-container{
+  max-width: 1200px;
+  max-width: 600px;
+  margin: 0 auto;
+  position: absolute;
+}
+.chart { 
+	display: grid;  
+	border: 2px solid #000;  
+	position: absolute;  
+	overflow: hidden; 
+} 
+.chart-row {  
+	display: grid; 
+	grid-template-columns: 50px 1fr; 
+  background-color: orange;
+}
+.chart-period { 
+	color:  #fff;  
+	background-color:  #4d7aa8 !important;  
+	border-bottom: 2px solid #000;  
+	grid-template-columns: 50px repeat(12, 1fr);
+
+}
+
+.chart-period > span {
+	text-align: center;  
+	font-size: 13px;  
+	align-self: center;  
+	font-weight: bold;  
+	padding: 15px 0;   
+}
+
+.chart-lines { 
+	position: absolute;  
+	height: 100%;  
+	width: 100%;  
+	background-color: transparent;  
+	grid-template-columns: 50px repeat(12, 1fr);}
+
+.chart-lines > span {  
+	display: block;  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.chart-row-item { 
+	background-color: #808080;  
+	border: 1px solid #000;  
+	border-top: 0;  border-left: 0;  
+	padding: 20px 0;  font-size: 15px;  
+	font-weight: bold;  
+  text-align: center;
+  display: fixed;
+  position: sticky;
 }

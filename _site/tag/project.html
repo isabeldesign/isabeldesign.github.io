@@ -1,42 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head><!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head><!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
 <!-- Fonts -->
-<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:400,300,700,500,100' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:400,300,700,500,100" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
 <!--icons-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <!-- My CSS -->
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css" />
 
-<link rel="icon" type="image/png" href="/favicon.png"/>
-<link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
-  
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="icon" type="image/png" href="https://example.com/favicon.png" />
+
 <title>Project | Isabel Design</title>
 
-
-
-  
-
+ 
 
 
 
 
+ 
 
 </head>
-  
-  <body class="main-container">
-<nav class="navbar navbar-expand-md ">
+
+    <body class="main-container"><nav class="navbar navbar-expand-md">
   <a href="/" class="navbar-brand d-flex mr-auto w-25">Isabel Design</a>
   <button class="navbar-toggler ustify-content-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
       menu
   </button>
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 " id="collapsingNavbar3">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="collapsingNavbar3">
       <ul class="navbar-nav w-100 justify-content-center" style="align-items: center;">
           <li class="nav-item nav-a">
               <a class="nav-link" href="/">Home</a>
@@ -48,37 +45,41 @@
               <a class="nav-link actives" href="/resources">Resources</a>
           </li>
           <li class="nav-item nav-a">
-            <a class="nav-link" href="/blog">Stuff I do</a>
-        </li>
-        <li class="nav-item nav-a">
-            <a class="nav-link nav-hov" href="/process">Process</a>
-        </li>
-        <!--dropdown-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/projects/mothership">Mothership</a>
-            <a class="dropdown-item" href="/projects/pantosphere">The Pantosphere</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item disabled" href="/projects/onyx-tower">Onyx Tower (coming soon)</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-      <ul class="nav navbar-nav ml-auto w-25 justify-content-end">
-          
-          <li class="nav-item">
-            <button onclick="myFunction()" class="badge badge-dark" style="display: block;">Dark Mode</button>
+              <a class="nav-link" href="/blog">Stuff I do</a>
           </li>
-          
+          <li class="nav-item nav-a">
+              <a class="nav-link nav-hov" href="/process">Process</a>
+          </li>
+          <li class="nav-item nav-a">
+              <a class="nav-link nav-hov" href="/chart">Chart</a>
+          </li>
+          <!--dropdown
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/projects/mothership">Mothership</a>
+                  <a class="dropdown-item" href="/projects/pantosphere">The Pantosphere</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="/projects/onyx-tower">Onyx Tower (coming soon)</a>
+              </div>
+          </li>-->
       </ul>
-  
+  </div>
+  <ul class="nav navbar-nav ml-auto w-25 justify-content-end">
+    <!--
+      <li class="nav-item">
+          <button onclick="myFunction()" class="badge badge-dark" style="display: block;">Dark Mode</button>
+      </li>
+    -->
+      <li class="nav-item">
+        <button id="theme-toggle" class="badge btn btn-outline-warning" style="display: block;" onclick="modeSwitcher()"></button>
+      </li>
+  </ul>
 </nav>
 <main>
-    
-    <br>
+            <br>
 <div class="home-wrapper">
 <br>
 
@@ -113,7 +114,7 @@
             
     
     
-    <a href="/tag/blender" class="badge badge-pill tag-badge tag-badge-small" style="">blender (3) </a>
+    <a href="/tag/blender" class="badge badge-pill tag-badge tag-badge-small" style="">blender (2) </a>
         
         
             
@@ -134,8 +135,7 @@
       </div>
 
 </div>
-  
-  </main><div class="page-footer">
+        </main><div class="page-footer">
     <div class="row">
         <footer class="small-text">
             <a>© 2020 Isabel Solin. All Rights Reserved</a>
@@ -148,55 +148,101 @@
 
 
 </div><a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-  
 
-<!--scripts-->
+        <!--scripts-->
+        
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <script src="/script.js"></script>
-    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Import Particles.js and app.js files -->
-    
-<script src="/particles.js"></script>
-<script src="/app.js"></script>
+        <script src="/script.js"></script>
+        
+        
 
-    <script>
-      function darkmode() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
+        <!-- Import Particles.js and app.js files -->
+
+        <script src="/particles.js"></script>
+        <script src="/app.js"></script>
+        
+        <script>
+            function darkmode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+
+            $(function () {
+                $(`.nav-link[href="${location.pathname}"]`).parent().addClass("actives");
+            });
+
+            $("#particle-button").click(function () {
+                toggle.particlesJS.load("particles-js", "particles.json");
+            });
+
+            $("#end-button").click(function () {
+                $("#particles-js-side").toggle();
+            });
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script><!--Script credit: https://derekkedziora.com/blog/dark-mode-revisited-->
+<script>
+    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+    let theme = sessionStorage.getItem('theme');
+
+    if (systemInitiatedDark.matches) {
+      document.getElementById("theme-toggle").innerHTML = "Light Modex";
+    } else {
+      document.getElementById("theme-toggle").innerHTML = "Dark Modew";
+    }
+
+    function prefersColorTest(systemInitiatedDark) {
+      if (systemInitiatedDark.matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');		
+        document.getElementById("theme-toggle").innerHTML = "Light Modez";
+        sessionStorage.setItem('theme', '');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode1 ☾";
+        sessionStorage.setItem('theme', '');
       }
-
-      $(function () { 
-            $(`.nav-link[href="${location.pathname}"]`).parent().addClass("actives"); 
-          });
-      
-      
-      $("#particle-button").click(function(){
-          toggle.particlesJS.load('particles-js','particles.json');  
-      });
-
-      $("#end-button").click(function() {
-        $("#particles-js-side").toggle();
-      });
-
-      $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-      
-      </script>
-      
-     
-      
-      
-    
-  </body>
+    }
+    systemInitiatedDark.addListener(prefersColorTest);
 
 
+    function modeSwitcher() {
+      let theme = sessionStorage.getItem('theme');
+      if (theme === "dark") {
+        document.documentElement.setAttribute('data-theme', 'light');
+        sessionStorage.setItem('theme', 'light');
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode2 ☾";
+      }	else if (theme === "light") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        sessionStorage.setItem('theme', 'dark');
+        document.getElementById("theme-toggle").innerHTML = "Light Mode3";
+      } else if (systemInitiatedDark.matches) {	
+        document.documentElement.setAttribute('data-theme', 'light');
+        sessionStorage.setItem('theme', 'light');
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode4";
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        sessionStorage.setItem('theme', 'dark');
+        document.getElementById("theme-toggle").innerHTML = "Light Mode5";
+      }
+    }
+
+    if (theme === "dark") {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+      document.getElementById("theme-toggle").innerHTML = "Light Mode";
+    } else if (theme === "light") {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+      document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+    }
+  </script>
+</body>
 </html>
