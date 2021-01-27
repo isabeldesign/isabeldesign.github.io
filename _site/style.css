@@ -2008,7 +2008,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left-color: var(--chart-arrow-head);
 }
 
-.divider{
+.dividers{
   content: "";
   display: inline-block;
   position: absolute;
@@ -2019,7 +2019,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   z-index: 2;
 }
 
-.sub-divider{
+.sub-dividers{
   content: "";
   display: inline-block;
   position: absolute;
@@ -2031,7 +2031,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   z-index: 2;
 }
 
-.today-line{
+.today-lines{
   content: "";
   display: inline-block;
   position: absolute;
