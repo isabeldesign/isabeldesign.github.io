@@ -112,7 +112,7 @@ html, html[data-theme="light"] {
 
 
   --chart-arrow: hsla(281, 100%, 81%, 0.9);
-  --chart-arrow-head: hsla(259, 86%, 48%, 0.9);
+  --chart-arrow-head: hsla(281, 100%, 70%, 1);
 
   --chart-divider: rgb(213, 170, 255);
   --chart-subdivider: rgb(238, 220, 255);
@@ -1526,26 +1526,26 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
 
 }*/
 /* width */
-/*
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 7px;
-}*/
+}
 
-/* Track 
+/* Track */
 ::-webkit-scrollbar-track {
   background: var(--accent1); 
-}*/
+}
  
-/* Handle 
+/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
-}*/
+}
 
-/* Handle on hover 
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
-}*/
+}
 
 
 
@@ -1811,6 +1811,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 10px solid rgb(82, 53, 247);
+  border-top-color: var(--chart-arrow-head);
 }
 
 .arrow-con-flipped{
@@ -1839,6 +1840,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 10px solid rgb(1, 238, 255);
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
+  border-left-color: var(--chart-arrow-head);
 }
 
 
@@ -1866,6 +1868,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 10px solid rgb(0, 58, 82);
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
+  border-left-color: var(--chart-arrow-head);
 }
 
 .arrow-con-reflected{
@@ -1894,6 +1897,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 10px solid rgb(170, 144, 30);
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
+  border-left-color: var(--chart-arrow-head);
 }
 
 .dd:hover{
@@ -1926,6 +1930,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 10px solid rgb(166, 150, 255);
+  border-top-color: var(--chart-arrow-head);
 }
 
 
@@ -1950,6 +1955,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 10px solid rgb(255, 0, 0);
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
+  border-left-color: var(--chart-arrow-head);
 }
 
 .arrow-legend{
@@ -1999,6 +2005,7 @@ box-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px
   border-left: 10px solid rgb(119, 119, 119);
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
+  border-left-color: var(--chart-arrow-head);
 }
 
 .divider{
