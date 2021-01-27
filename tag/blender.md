@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: Blender
+title: blender
 tag: blender
 ---

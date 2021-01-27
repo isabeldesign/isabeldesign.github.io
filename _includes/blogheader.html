@@ -1,15 +1,15 @@
 
 
-<h2 class="title titleunderline">Blog</h2>
+<h2 class="title">Blog</h2>
 <br><br>
-<h5 class="sub-para">At any given time, I am always trialling or learning something new - whether it be a new technique, software or style. Most often these trials won't form a cohesive project or design outcome, but are worthwhile to share and catalogue</h5>
+<h5 class="sub-para">Where I write stuff.</h5>
 
 
-    <div>
-      <hr>
-      <!--tags listing-->  
-      Tags:   
-      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small mb-2" style="{% if page.url == "/blog" %} color: var(--text) {% endif %} ">all</a>
+    <div >
+      <hr class="styled">
+      <div class="tag-container">
+      <span style="margin-right:5px; font-size: 12px; font-weight: 400; letter-spacing: 1px;">TAGS: </span>
+      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small tag-header active" style="{% if page.url == "/blog;" %} color: var(--text) {% endif %} ">all</a>
     
 
 
@@ -23,9 +23,10 @@
             {% assign tagitems = tag | split: '#' %}
     
     
-    <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small" style="{% if tagitems[0] == page.title %} color: var(--text) {% endif %}">{{ tagitems[0] }} ({{ tagitems[1] }}) </a>
+    <a href="/tag/{{ tagitems[0] }}" class="badge badge-pill tag-badge tag-badge-small tag-header " style="{% if tagitems[0] == page.title %} background-color: var(--accent2);  {% endif %}">{{ tagitems[0] }} ({{ tagitems[1] }}) </a>
         
         {% endfor %}
-     
+        </div>
+        <hr class="styled">
     </div>
     

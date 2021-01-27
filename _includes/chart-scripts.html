@@ -1,0 +1,178 @@
+<script>
+    //this lights up the current project when dashboard element 1 is hovered
+    $(function() {
+    $('#dashboard-1').hover(function() {
+      $('#current-task').css('background-color', 'yellow');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#current-task').css('background-color', '');
+    });
+  });
+
+
+
+
+    $(function() {
+    $('#a').hover(function() {
+      $('#b').css('background-color', 'yellow');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#b').css('background-color', '');
+    });
+  });
+
+  $(function() {
+    $('.aa').hover(function() {
+      $('.bb').css('background-color', 'violet');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('.bb').css('background-color', '');
+    });
+  });
+
+ 
+
+
+
+//art: vce-studio, painting, digital-still
+
+//VCE Studio
+$(".vce-studio").click(function() {
+    $(".task-title").text("VCE Studio Arts");
+  }, function() {
+    if ($(".task-title").text() === 'VCE Studio Arts') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('VCE Studio Arts');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("9/10");
+        $(".task-category").text("Art");
+        $(".task-skills").text("Oil Painting, Modular Origami, Photography");
+        $(".task-description").text("Units 1/2 & 3/4 Studio Art, where I explored several mediums, materials and ideas. In Units 3/4 I produced a series of works under the theme of 'What is beyond us?', which drew inspiration from space, religion and evolution. Was first time I had the agency to produce artworks at my own direction.");
+    }
+});
+
+//painting
+$(".painting").click(function() {
+    $(".task-title").text("Painting");
+  }, function() {
+    if ($(".task-title").text() === 'Painting') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Painting');
+        $(".task-status").text("Abandoned");
+        $(".task-rate").text("6/10");
+        $(".task-category").text("Art");
+        $(".task-description").text("Sick of sitting at my computer to generate art, I bought expensive oil paint supplies during lockdown in anticipation of an iso moment of creative genius. I'd been meaning to do so ever since I finished VCE Studio Art, where I was fortunte to have a plethora of paints and supplies accessible to me, and unfortunately (for my wallet) fell in love with oils. I ended up spending way too long trying to figure out subject matter. Didn't have time to keep working on it before Uni restarted :(");
+        $(".task-skills").text("Oil Painting");
+    }
+});
+        
+ //digital still
+$(".digital-still").click(function() {
+    $(".task-title").text("Digital Still Life");
+  }, function() {
+    if ($(".task-title").text() === 'Digital Still Life') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Digital Still Life');
+        $(".task-status").text("Planned");
+        $(".task-rate").text("N/A");
+        $(".task-category").text("N/A");
+        $(".task-description").text("Off the back of my recent dabbles in Blender, I have a backlog inspiration and ideas of various non-architectural renders/compositions that I would like to produce as finished final pieces of digital artwork.");
+        $(".task-skills").text("N/A ");
+    }
+});
+
+//design: graphic, vcd, fodr, dig-des, delta, aavs, epsilon, aat
+//graphic design
+$(".graphic").click(function() {
+    $(".task-title").text("Graphic Design");
+  }, function() {
+    if ($(".task-title").text() === 'Graphic Design') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Graphic Design');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("7/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
+        $(".task-description").text("One year for Christmas I asked my parents for Photoshop. which became my first introduction to graphic design and digital artwork. I developed my skills by dabbling in various adhoc graphic design opportunities, including an annual gig doing  graphic design for my local sport clubs national and state competitions. At this time I was mostly self-taught, which sometimes made learning and practicing my new found skills and passions difficult. I did not have any formal guidance or training (my school art teacher was not very tech savvy), and was very self referential in where I drew inspiration and ideas.");
+    }
+});
+//vcd
+$(".vcd").click(function() {
+    $(".task-title").text("VCE Visual Communication & Design");
+  }, function() {
+    if ($(".task-title").text() === 'VCE Visual Communication & Design') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('VCE Visual Communication & Design');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("9/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
+        $(".task-description").text("");
+    }
+});
+
+
+
+
+
+//click to show all coursework
+$(".coursework-button").click(function(){
+  $(".coursework").toggleClass("coursework-highlight");
+});
+ 
+//click to show all complete
+$(".complete-button").click(function(){
+  $(".complete").toggleClass("complete-highlight");
+});
+
+//makes on click blue
+$(function() {
+          $('.activated').click(function() { 
+          $('.activated').not(this).removeClass('active-bar')
+           $(this).toggleClass('active-bar')
+          })
+        })
+        
+      
+
+
+
+//visualisation: dig-tech, internship, blender
+
+//programming: python, algo, creative-c, eportfolio
+
+  $(".workforce").hover(function() {
+            $(".text-info").html("The workforce is amazing.<br> love it");
+        }, function() {
+            $(".text-info").html("in");
+        });
+
+        $(".economics").hover(function() {
+            $(".text-info").html("I love the economy.");
+        }, function() {
+            $(".text-info").html("in");
+        });
+
+
+
+
+//this lights up all connected arrows *TO* creating coding
+$("#creative-coding").click(function(){
+  $(".to-cc").toggleClass("active-line");
+  $("#creative-coding").toggleClass("active-time-bar");
+});
+
+
+
+
+  </script>

@@ -59,8 +59,12 @@
                 $('[data-toggle="tooltip"]').tooltip();
             });
         </script>
-
+        {%- include chart-scripts.html -%}
+        
+        <!--darkmode must be at bottom to avoid flash-->
         {%- include dark-mode.html -%}
+
+        
         
     </body>
 </html>

@@ -1,0 +1,49 @@
+I"š
+<p>
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+</p>
+
+<div>
+Back at it again with another <a href="https://www.youtube.com/watch?v=Hf2esGA7vCc&amp;list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR" class="link">BenderGuru tutorial series</a> - but this time, a  chair. The tutorial followed a set of refence photos, with the goal to model wooden chair with a focus on accuracy. 
+
+
+
+This series involved more modelling than my previous Blender Donut render. Thanks to my experience using 3DS Max and VRay, I am already fairly familar and competent when it comes to 3D Modelling and Visualisation principles and concepts (UV unwrapping, material properties/textures). However, I still am learning how to apply these concepts to a new platform. 
+
+
+There are some things that Blender just does so much better in than Max+VRay. For example, Blender has preset 'shaders' (materials) for things like hair, glass and velvet. It also has an integrated denoisifier component that can be composited with render outputs (inlcuding animation frames!). This made it SUPER easy to produce a 100 frame animation, with an end result that was fairly fast and noise free. 
+
+
+The workflow capabilies alone make Blender (so far at least) far superior to any other program or software I've tried. Did I mention its also free?
+</div>
+
+<!--
+
+
+
+  <video width="320" height="240" controls>
+    <source src="/assets/images/blender/comp.mp4">
+        Your browser does not support the video tag.
+    </video>
+-->
+:ET

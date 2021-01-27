@@ -26,15 +26,19 @@
 
  
 
+<!--google analytics-->
+
+
 </head>
 
     <body class="main-container"><nav class="navbar navbar-expand-md">
-  <a href="/" class="navbar-brand d-flex mr-auto w-25">Isabel Design</a>
+  <a  class="navbar-brand d-flex mr-auto w-25">Isabel Design</a>
   <button class="navbar-toggler ustify-content-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
       menu
   </button>
   <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="collapsingNavbar3">
       <ul class="navbar-nav w-100 justify-content-center" style="align-items: center;">
+        
           <li class="nav-item nav-a">
               <a class="nav-link" href="/">Home</a>
           </li>
@@ -45,13 +49,13 @@
               <a class="nav-link actives" href="/resources">Resources</a>
           </li>
           <li class="nav-item nav-a">
-              <a class="nav-link" href="/blog">Stuff I do</a>
+              <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item nav-a">
-              <a class="nav-link nav-hov" href="/process">Process</a>
+              <a class="nav-link nav-hov" href="/process">Process*</a>
           </li>
           <li class="nav-item nav-a">
-              <a class="nav-link nav-hov" href="/chart">Chart</a>
+              <a class="nav-link nav-hov" href="/chart">Chart*</a>
           </li>
           <!--dropdown
           <li class="nav-item dropdown">
@@ -83,16 +87,16 @@
 <div class="home-wrapper">
 <br>
 
-<h2 class="title titleunderline">Blog</h2>
+<h2 class="title">Blog</h2>
 <br><br>
-<h5 class="sub-para">At any given time, I am always trialling or learning something new - whether it be a new technique, software or style. Most often these trials won't form a cohesive project or design outcome, but are worthwhile to share and catalogue</h5>
+<h5 class="sub-para">Where I write stuff.</h5>
 
 
-    <div>
-      <hr>
-      <!--tags listing-->  
-      Tags:   
-      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small mb-2" style=" ">all</a>
+    <div >
+      <hr class="styled">
+      <div class="tag-container">
+      <span style="margin-right:5px; font-size: 12px; font-weight: 400; letter-spacing: 1px;">TAGS: </span>
+      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small tag-header active" style=" ">all</a>
     
 
 
@@ -102,69 +106,114 @@
             
     
     
-    <a href="/tag/3dsmax" class="badge badge-pill tag-badge tag-badge-small" style=" color: var(--text) ">3dsmax (1) </a>
+    <a href="/tag/3dsmax" class="badge badge-pill tag-badge tag-badge-small tag-header " style=" background-color: var(--accent2);  ">3dsmax (1) </a>
         
         
             
     
     
-    <a href="/tag/Project" class="badge badge-pill tag-badge tag-badge-small" style="">Project (4) </a>
+    <a href="/tag/blender" class="badge badge-pill tag-badge tag-badge-small tag-header " style="">blender (2) </a>
         
         
             
     
     
-    <a href="/tag/blender" class="badge badge-pill tag-badge tag-badge-small" style="">blender (2) </a>
+    <a href="/tag/project" class="badge badge-pill tag-badge tag-badge-small tag-header " style="">project (4) </a>
         
         
             
     
     
-    <a href="/tag/visualisation" class="badge badge-pill tag-badge tag-badge-small" style="">visualisation (3) </a>
+    <a href="/tag/visualisation" class="badge badge-pill tag-badge tag-badge-small tag-header " style="">visualisation (3) </a>
         
         
-     
+        </div>
+        <hr class="styled">
     </div>
     <br><br>
-
-
-      <div class="blog-posts">
-        <div class="col">
-          
-           <div class="card blog-card flex-md-row mb-4">
-            <img class=" blog-card-img flex-auto d-none d-md-block" src="/assets/images/residential-vis/windows.gif" alt="Residential Visualisation">
-              <div class="card-body d-flex flex-column align-items-start">
-                <p>
-                  
-                    <a class="badge badge-pill tag-badge tag-badge-small mb-2" href="/tag/visualisation">visualisation</a>
-                  
-                    <a class="badge badge-pill tag-badge tag-badge-small mb-2" href="/tag/3dsmax">3dsmax</a>
-                  
-                </p>
-                <h3 class="mb-6" style="font-weight: bold">
-                  <a href="/2020/11/27/Residential-Visualisation.html" style=" letter-spacing: 1.5px" class="mb-6">Residential Visualisation</a>
-                </h3>
-                <div class="mb-2 text-muted"> 27 Nov 2020
-                </div>
-                <div class="text-break text-wrap">
-                  
-      
-
-
-In April-May 2020 I undertook a internship at a small Architecture firm in Melbourne. The internship was undertaken for credit for my und...
-                </div>
-          </div>
-        </div>
+   <div class="row">
+    
+    <div class="col-sm-6 col-sm-6 mr-auto">
+      <div class="card blogcard mb-4">
+        <a href="/2020/11/27/Residential-Visualisation.html">
+        <img class=" card-img-top img-fluid" src="/assets/images/residential-vis/windows.gif" alt="Residential Visualisation" style="height: 300px;">
+      </a>
+      <div class="card-text" style="padding:10px;" >
         
+        <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/visualisation">visualisation</a>
+      
+        <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/3dsmax">3dsmax</a>
+      
+      </div>
+      <!--
+        <div class="card-img-overlay" style="padding:10px;">
+          
+              <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/visualisation">visualisation</a>
+            
+              <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/3dsmax">3dsmax</a>
+            
+        </div>
+        -->
+
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-9 ">
+                <a href="/2020/11/27/Residential-Visualisation.html" class="card-heading">Residential Visualisation</a>
+            </div>
+            <div class="col-sm-3">
+              <span class="card-date" style="font-size: small;">27 Nov 2020</span>
+            </div>
+            
+          </div>
+          <div>
+          <a style="font-size: small;" >
+            
+
+<p>
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+</p>
+
+            
+          </a>
+        </div>
         </div>
       </div>
+      <!-- /.card -->
+    </div>
+    
+    
+
+    
+  </div>
+  <!-- /.row -->
 
 </div>
         </main><div class="page-footer">
     <div class="row">
         <footer class="small-text">
             <a>© 2020 Isabel Solin. All Rights Reserved</a>
-            <!-- LikeBtn.com BEGIN --><small>
+            <!-- LikeBtn.com BEGIN -->
+            <small>
             <a class="likebtn-wrapper small-text" data-theme="review" data-ef_voting="push" data-identifier="like-button" data-dislike_enabled="false"></a></small>
             <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
             <!-- LikeBtn.com END -->
@@ -213,25 +262,203 @@ In April-May 2020 I undertook a internship at a small Architecture firm in Melbo
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip();
             });
-        </script><!--Script credit: https://derekkedziora.com/blog/dark-mode-revisited-->
+        </script><script>
+    //this lights up the current project when dashboard element 1 is hovered
+    $(function() {
+    $('#dashboard-1').hover(function() {
+      $('#current-task').css('background-color', 'yellow');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#current-task').css('background-color', '');
+    });
+  });
+
+
+
+
+    $(function() {
+    $('#a').hover(function() {
+      $('#b').css('background-color', 'yellow');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#b').css('background-color', '');
+    });
+  });
+
+  $(function() {
+    $('.aa').hover(function() {
+      $('.bb').css('background-color', 'violet');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('.bb').css('background-color', '');
+    });
+  });
+
+ 
+
+
+
+//art: vce-studio, painting, digital-still
+
+//VCE Studio
+$(".vce-studio").click(function() {
+    $(".task-title").text("VCE Studio Arts");
+  }, function() {
+    if ($(".task-title").text() === 'VCE Studio Arts') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('VCE Studio Arts');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("9/10");
+        $(".task-category").text("Art");
+        $(".task-skills").text("Oil Painting, Modular Origami, Photography");
+        $(".task-description").text("Units 1/2 & 3/4 Studio Art, where I explored several mediums, materials and ideas. In Units 3/4 I produced a series of works under the theme of 'What is beyond us?', which drew inspiration from space, religion and evolution. Was first time I had the agency to produce artworks at my own direction.");
+    }
+});
+
+//painting
+$(".painting").click(function() {
+    $(".task-title").text("Painting");
+  }, function() {
+    if ($(".task-title").text() === 'Painting') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Painting');
+        $(".task-status").text("Abandoned");
+        $(".task-rate").text("6/10");
+        $(".task-category").text("Art");
+        $(".task-description").text("Sick of sitting at my computer to generate art, I bought expensive oil paint supplies during lockdown in anticipation of an iso moment of creative genius. I'd been meaning to do so ever since I finished VCE Studio Art, where I was fortunte to have a plethora of paints and supplies accessible to me, and unfortunately (for my wallet) fell in love with oils. I ended up spending way too long trying to figure out subject matter. Didn't have time to keep working on it before Uni restarted :(");
+        $(".task-skills").text("Oil Painting");
+    }
+});
+        
+ //digital still
+$(".digital-still").click(function() {
+    $(".task-title").text("Digital Still Life");
+  }, function() {
+    if ($(".task-title").text() === 'Digital Still Life') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Digital Still Life');
+        $(".task-status").text("Planned");
+        $(".task-rate").text("N/A");
+        $(".task-category").text("N/A");
+        $(".task-description").text("Off the back of my recent dabbles in Blender, I have a backlog inspiration and ideas of various non-architectural renders/compositions that I would like to produce as finished final pieces of digital artwork.");
+        $(".task-skills").text("N/A ");
+    }
+});
+
+//design: graphic, vcd, fodr, dig-des, delta, aavs, epsilon, aat
+//graphic design
+$(".graphic").click(function() {
+    $(".task-title").text("Graphic Design");
+  }, function() {
+    if ($(".task-title").text() === 'Graphic Design') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Graphic Design');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("7/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
+        $(".task-description").text("One year for Christmas I asked my parents for Photoshop. which became my first introduction to graphic design and digital artwork. I developed my skills by dabbling in various adhoc graphic design opportunities, including an annual gig doing  graphic design for my local sport clubs national and state competitions. At this time I was mostly self-taught, which sometimes made learning and practicing my new found skills and passions difficult. I did not have any formal guidance or training (my school art teacher was not very tech savvy), and was very self referential in where I drew inspiration and ideas.");
+    }
+});
+//vcd
+$(".vcd").click(function() {
+    $(".task-title").text("VCE Visual Communication & Design");
+  }, function() {
+    if ($(".task-title").text() === 'VCE Visual Communication & Design') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('VCE Visual Communication & Design');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("9/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
+        $(".task-description").text("");
+    }
+});
+
+
+
+
+
+//click to show all coursework
+$(".coursework-button").click(function(){
+  $(".coursework").toggleClass("coursework-highlight");
+});
+ 
+//click to show all complete
+$(".complete-button").click(function(){
+  $(".complete").toggleClass("complete-highlight");
+});
+
+//makes on click blue
+$(function() {
+          $('.activated').click(function() { 
+          $('.activated').not(this).removeClass('active-bar')
+           $(this).toggleClass('active-bar')
+          })
+        })
+        
+      
+
+
+
+//visualisation: dig-tech, internship, blender
+
+//programming: python, algo, creative-c, eportfolio
+
+  $(".workforce").hover(function() {
+            $(".text-info").html("The workforce is amazing.<br> love it");
+        }, function() {
+            $(".text-info").html("in");
+        });
+
+        $(".economics").hover(function() {
+            $(".text-info").html("I love the economy.");
+        }, function() {
+            $(".text-info").html("in");
+        });
+
+
+
+
+//this lights up all connected arrows *TO* creating coding
+$("#creative-coding").click(function(){
+  $(".to-cc").toggleClass("active-line");
+  $("#creative-coding").toggleClass("active-time-bar");
+});
+
+
+
+
+  </script>
+<!--darkmode must be at bottom to avoid flash--><!--Script credit: https://derekkedziora.com/blog/dark-mode-revisited-->
 <script>
     let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
     let theme = sessionStorage.getItem('theme');
 
     if (systemInitiatedDark.matches) {
-      document.getElementById("theme-toggle").innerHTML = "Light Modex";
+      document.getElementById("theme-toggle").innerHTML = "Light Mode";
     } else {
-      document.getElementById("theme-toggle").innerHTML = "Dark Modew";
+      document.getElementById("theme-toggle").innerHTML = "Dark Mode";
     }
 
     function prefersColorTest(systemInitiatedDark) {
       if (systemInitiatedDark.matches) {
         document.documentElement.setAttribute('data-theme', 'dark');		
-        document.getElementById("theme-toggle").innerHTML = "Light Modez";
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
         sessionStorage.setItem('theme', '');
       } else {
         document.documentElement.setAttribute('data-theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode1 ☾";
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode ☾";
         sessionStorage.setItem('theme', '');
       }
     }
@@ -243,19 +470,19 @@ In April-May 2020 I undertook a internship at a small Architecture firm in Melbo
       if (theme === "dark") {
         document.documentElement.setAttribute('data-theme', 'light');
         sessionStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode2 ☾";
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode ☾";
       }	else if (theme === "light") {
         document.documentElement.setAttribute('data-theme', 'dark');
         sessionStorage.setItem('theme', 'dark');
-        document.getElementById("theme-toggle").innerHTML = "Light Mode3";
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
       } else if (systemInitiatedDark.matches) {	
         document.documentElement.setAttribute('data-theme', 'light');
         sessionStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode4";
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
       } else {
         document.documentElement.setAttribute('data-theme', 'dark');
         sessionStorage.setItem('theme', 'dark');
-        document.getElementById("theme-toggle").innerHTML = "Light Mode5";
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
       }
     }
 

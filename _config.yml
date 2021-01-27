@@ -2,3 +2,5 @@ name: My Jekyll Website
 title: Isabel Design
 url: https://isabeldesign.github.io
 
+# Google Analytics
+google_analytics: G-HTXYH4ZV7H

@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: Visualisation
+title: visualisation
 tag: visualisation
 ---

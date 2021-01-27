@@ -1,131 +1,365 @@
 ---
 layout: default
 ---
-<br><br>
+<br>
+<h2 class="title">{{page.title}}</h2>
+
+
+<h5 class="sub-para">Interactive chart. Click and hover.</h5>
+
 <div class="dashboard-wrapper">
-<div class="row dashboard-header">
-  <div class="col dashboard-item">
-    <p>Dashboard item 1</p>
-    <br>
-    <br>
-  </div>
-  <div class="col dashboard-item">
-    <p>Dashboard item 2</p>
-  </div>
-  <div class="col dashboard-item">
-    <p>Dashboard item 2</p>
-  </div>
-</div>
-
-
-<div class="contain">
-  
- <div class="header-col cell1">
-   <p class="small">placeholder</p>
    
-   <ul class="categories">
-            
-    <li class="categories-text">Art</li>
-    <li>Design</li>
-    <li>Technology</li>
-    <li>Other</li>
-    <li>sTUFF</li>
-   
-      
-  </ul>
-
- </div>
-<div class="idk cell2">
- 
-    <div id="timetable" class="clearfix">
-      <div class="timetable_content ">
-        <ul class="years clearfix">
-          <li>2014</li>
-          <li>2015</li>
-          <li>2016</li>
-          <li>2018</li>
-          <li>2019</li>
-          <li>2020</li>
-          <li>2021</li>
-        </ul>
-        <!--
-        <ul class="half-year clearfix" style="position: static">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        -->
-        <ul class="timeslots">
-            
-          <li>
-            <div class="time-bar">
-              <div class="school"></div>
-
-              <div class="sub-divider" style="left:110px"></div>
-              <div class="divider" style="left:219px"></div>
-              <div class="sub-divider" style="left:333px"></div>
-              <div class="divider" style="left:448px"></div>
-              <div class="sub-divider" style="left:562px"></div>
-              <div class="divider" style="left:676px"></div>
-              <div class="sub-divider" style="left:790px"></div>
-              <div class="divider" style="left:905px"></div>
-              <div class="sub-divider" style="left:1020px"></div>
-              <div class="divider" style="left:1134px"></div>
-              <div class="sub-divider" style="left:1248px"></div>
-              <div class="divider" style="left:1362px"></div>
-              <div class="sub-divider" style="left:1476px"></div>
-              <div class="divider" style="left:1590px"></div>
-              item1</div>
-            
-          </li>
-          
-          <li>
-            
-            
-            <div class="time-bar" style="margin-left: 250px;width: 250px">item2<div class="arrow-con"></div></div>
-           
-          </li>
-            <li class="item-uno">
-            <span class="time-bar" style="margin-left:400px;width: 200px">item3</span>
-            
-          </li>
-            <li class="item-uno">
-            <span class="time-bar" style="margin-left: 150px;width: 200px">item4<div class="arrow-con" style="width:100px"></div></span>
-            
-            <span class="time-bar" style="margin-left: 100px;width: 250px">item5</span>
-            
-              
-          </li>
-          <li>
-              <div class="time-bar" style="margin-left: 10px;width: 450px" id="item6">item6</div>
-          </li>
-          <li>
-            <span class="time-bar" style="margin-left: 900px;width: 450px">item7</span>
-        </li>
-        <li>
-          <span class="time-bar" style="margin-left: 700px;width: 300px">item8</span>
-        
-      </li>
-      
-            
-        </ul>
-        
+   <!--<div class="row">
+      <div class="col dashboard-item" id="dashboard-1">
+         <p class="dashboard-header">Current</p>
+         
+         <div class="tooltips">Hover over me
+            <span class="tooltipstext">Tooltip text</span>
+          </div>
+         <br>
+         <br>
       </div>
       
+      <div class="col dashboard-item">
+         <p class="dashboard-header">Skills</p>
+         
+         
+   
+    
+
+         https://codepen.io/web-tiki/pen/qEGvMN?editors=1010
+         <div style="background-color: aliceblue; transform: scale(1); height: 130px">
+
+         <svg viewbox="0 0 100 100">
+            <circle cx="30" cy="30" r="30" fill="#FDB900"/>
+            <path fill="none" stroke-linecap="round" stroke-width="3" stroke="#fff"
+                  stroke-dasharray="900"
+                  d="M20 20
+                     a 10 10 0 0 1 0 20
+                     a 10 10 0 0 1 0 -20">
+                     
+            </path>
+            <text id="count" x="20" y="20" text-anchor="middle" dy="7" font-size="10">75%</text>
+          </svg>
+         </div>
+      </div>
+      <div class="col dashboard-item">
+         <p class="dashboard-header">Details</p>
+         <div class="dashboard-item-wrapper">
+         <div class="row">
+            <div class="col" style="font-size: .8em">
+               Inspired by:
+               <br>
+               Inspired to do:
+               <br>
+               Description:
+            </div>
+            <div class="col">
+               <div class="text-info-front">front </div>
+               <div class="text-info">Hover over a task!</div>
+            </div>
+         </div>
+         
+      </div>
+      </div>
+   </div>-->
+   <div class="contain">
+      <div class="header-col cell1">
+        <div style="height:24px;"></div>
+         <div class="categories" id="a" style="margin-top: 5px;">
+            Art
+         </div>
+         <div class="categories aa">
+          Design
+       </div>
+       <div class="categories" >
+        Visualisation
+     </div>
+      
+     <div class="categories" >
+      Programming
+   </div>
+     
+      </div>
+      <div class="idk cell2">
+         <div id="timetable" class="clearfix">
+            <div class="timetable_content ">
+               <ul class="years clearfix">
+                   
+                  <li>2012-2015</li>
+                  <li>2015-2016</li>
+                  <li>2017</li>
+                  <li>2018</li>
+                  <li>2019</li>
+                  <li>2020</li>
+                  <li>2021</li>
+               </ul>
+               <!--
+                  <ul class="half-year clearfix" style="position: static">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  -->
+                  
+               <ul class="timeslots">
+                  <li>
+                    
+                     <div class="line-bar" >
+                        <div class="sub-divider" style="left:150px"></div>
+                        <div class="divider" style="left:300px"></div>
+                        <div class="sub-divider" style="left:450px"></div>
+                        <div class="divider" style="left:600px"></div>
+                        <div class="sub-divider" style="left:750px"></div>
+                        <div class="divider" style="left:900px"></div>
+                        <div class="sub-divider" style="left:1050px"></div>
+                        <div class="divider" style="left:1200px"></div>
+                        <div class="sub-divider" style="left:1350px"></div>
+                        <div class="divider" style="left:1500px"></div>
+                        <div class="sub-divider" style="left:1650px"></div>
+                        <div class="divider" style="left:1800px"></div>
+                        <div class="sub-divider" style="left:1950px"></div>
+                        <div class="divider" style="left:2100px"></div>
+                        <div class="sub-divider" style="left:2250px"></div>
+
+                        <div class="today-line" style="left:1820px"></div>
+                        
+
+                        <div class="time-bar-future activated digital-still" style="width:120px; left:1504px">Digital Still Life
+                        </div>
+
+                        <div class="time-bar vce-studio-bar activated" style="width:265px; left: 223px; bottom: 0px">
+                           <div >
+                           <div class="vce-studio">VCE Studio Art</div>
+                           </div>
+                        <div>
+                          <div class="arrow-line " style="width: 1043px; right:-1043px;"></div>
+                          <div class="arrow-con to-cc" style="width: 605px; right:-605px; height: 143px; border-top-right-radius: 1em;"></div>
+                        </div>
+                       </div>
+                      
+                       
+                       <div class="time-bar painting activated" style="width:55px; left: 1620px;">Painting
+                        
+                        <div class="arrow-straight" style="width:199px; right:-199px">
+                        </div>  
+                     </div>
+
+                       
+
+
+                     </div>
+                  </li>
+                  <li>
+                    <div class="time-bar complete tooltips" style="width:135px; left: 363px; z-index: 99999">
+                      Applied Arch Tech
+                      
+                        <span class="tooltipstext">Unisubject </span>
+                      
+                     
+                   </div>
+                    
+                  
+                    <div class="time-bar complete coursework" style="width:118px; left: 225px;">
+                      Studio Epsilon
+                      
+                   </div>
+                   
+                  
+                   <div class="time-bar economics coursework" style="width:40px; left: 250px;">
+                    AAVS
+                    <div class="arrow-con-flipped" style="height:45px"></div>
+                    <div class="arrow-loop" style="width:83px; right:-65px; " href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="aavs to epsilon."></div>
+                 </div>
+                   <div class="time-bar coursework" style="width:118px; left: 275px;">
+                    Studio Delta
+                    
+                    <div class="arrow-loop" style="width:83px; right:-20px" href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="delta to aavs.">
+                  
+                  </div>
+                    
+                 </div>
+                 <div class="time-bar "  style="width:135px; left: 137px; ">
+                  Digital Design
+                  <div class="arrow-con to-cc"  style="height:89px;width:130px;right:-130px; border-top-right-radius: 1em;"></div>
+                  <div class="arrow-line" style="right:-160px; width: 100px;" ></div>
+                  <!--<div class="arrow-line bb" href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="dd to delta" style="width:160px; right:-160px"></div>-->
+               </div>
+                 <div class="time-bar" style="margin-left: 87px;width: 135px;">
+                  FODR
+                    <div class="arrow-line bb" href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="fodr to dd" style="width:159px; right:-159px"></div>
+                 </div>
+                    <div class="time-bar" style="width:265px; left: 78px;">
+                     <div class="vcd">
+                        VCE Visual Communication & Design
+                     </div>
+                      
+                      <div class="arrow-straight" style="bottom:100px"></div>
+                   </div>
+                   <div class="time-bar graphic" style="width:200px; left: 40px;">
+                     <div class="graphics">
+                        Graphic Design
+                     </div>
+                     
+                     <div class="arrow-straight" style="width:60px; right:-60px">
+                     </div>
+                  </div>
+                   
+                  </li>
+                  
+                  <li>
+                    <!--visualiation-->
+                    <div class="time-bar" style="width:85px; left:1320px;">
+                      Blender Trials
+                    <!--  <div class="arrow-con-reflected" style="height:45px; border-top-left-radius: 0.7em;"></div>-->
+                      <div class="arrow-con-reflected-up" style="height:99px; top: -99px;width:20px; right:36px; "></div>
+                   </div>
+                    <div class="time-bar" style="width:65px; left:1335px;">
+                      Internship
+                      <div class="arrow-straight" style="width:8px; right:-8px"></div>
+                   </div>
+                    <div class="time-bar"  style="width:130px; left: 1350px;">
+                      Digital Techniques
+                      <div class="arrow-straight" style="width:8px; right:-8px"></div>
+                   </div>
+                     
+                     
+                  </li>
+                  <li id="b">
+                    <!--computing-->
+                    <div class="time-bar-future" style="width:120px; left: 1318px;">Link Generator
+                  </div>
+                    <div id="current-task" class="time-bar" style="width:110px; left: 1290px;" >
+                      ePortfolio Website
+                      <div class="arrow-straight" style="width:50px; right:-50px"></div>
+                   </div>
+                    <div id="creative-coding" class="time-bar" style="width:90px; left: 810px;" >
+                      <a>Creative Coding</a>
+                      <div id="to-cc" class="arrow-straight" style="width:502px; right:-502px"></div>
+                   </div>
+                    <div class="time-bar" style="width:125px; left: 600px;">
+                      C
+                   </div>
+                    <div class="time-bar" style="width:125px; left: 602px;">
+                      Python
+                      <div class="arrow-straight"  style="bottom:100px"></div>
+                      <div class="arrow-loop to-cc"  style="bottom:100px; width:480px; right:-420px;"></div>
+                   </div>
+                   
+                  </li>
+                  
+                  
+
+
+                  
+               </ul>
+            </div>
+         </div>
+      </div>
+      
+   </div>
+   <div class="row">
+      <div class="col-4 dashboard-item">
+         <div class="dashboard-item-wrapper">
+            <div>
+               <span class="dashboard-title" >Legend/Filter</span> 
+               <div class="col" >
+                  <div class="row">
+                     <div class="time-bar" style="min-width:80px; right:10px">Project</div>
+                     <div class="time-bar-future" style="right: 10px;min-width:90px;">Future Project</div>
+                     
+
+                  </div>
+                  <div class="row">
+                     <span class="text-info-subheading" >Connection:</span>
+                     <div>
+                        <div class="arrow-legend"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="row">
+                     <button class="coursework-button" >Click to show all coursework</button>
+                  </div>
+                  <div class="row">
+                     <button class="complete-button" >Click to show all complete projects</button>
+                  </div>
+
+               </div>
+               
+               
+              <div>
+              
+            </div>
+
+
+         </div>
+
+
+
+
+         </div>
+         
+      </div>
+     
+    <div class="col dashboard-item">
+      <div class="dashboard-item-wrapper">
+         <!--<svg class="circle-svg" height="20" width="20" style="display: inline;background-color: yellow;">
+            <circle class="circle" cx="10" cy="6" r="6" fill="red" />
+          </svg>-->
+      <span class="task-title" >Click over a task!</span> 
+      
+      <div class="row">
+         <div class="col">
+            <span class="text-info-subheading" >Status:</span>
+            <span class="task-status" ></span> 
+         </div>
+         <div class="col">
+            <span class="text-info-subheading">Rating:</span>
+            <span class="task-rate"></span> 
+         </div>
+         <div class="col">
+            <span class="text-info-subheading">Category:</span>
+            <span class="task-category"></span> 
+         </div>
+      </div>
+      <div class="row mb-2">
+         <div class="col">
+         <span class="text-info-subheading">Skills:</span>
+         <span class="task-skills"></span> 
+      </div>
+      </div>
+      <div class="row">
+         <div class="col">
+         <span class="text-info-subheading"></span>
+         <p class="task-description" ></p> 
+      </div>
+      </div>
       
     </div>
+   </div>
+ </div>
    
+  
 </div>
-</div>
-</div>
+
+<!-- <p>Legend:</p>
+       
+       <br>
+       <p>Uni subject</p>
+       <p> Ran out of time to do it properly</p>
+       <p>Inspired to learn to continue exploring passion </p>
+       <p>Inspired to learn out of hate for previous</p>
+       <p>to do in future (this can be the same as the other timebar bits but can be faded or dashed outline/low opacity)</p>
+       <p>today line</p> -->
+       

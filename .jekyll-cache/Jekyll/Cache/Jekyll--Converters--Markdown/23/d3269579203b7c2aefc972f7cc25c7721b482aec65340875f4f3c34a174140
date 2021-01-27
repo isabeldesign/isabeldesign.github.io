@@ -1,0 +1,61 @@
+I"’<p><br /></p>
+<div class="home-wrapper">
+<br />
+
+<h2 class="title titleunderline">Blog</h2>
+<br /><br />
+<h5 class="sub-para">Where I write stuff.</h5>
+
+
+    <div>
+      <hr />
+      <div class="tag-container">
+    
+      <span><small>Tags:</small></span>
+
+      
+
+
+        
+        
+        
+            
+    
+    
+    <a href="/tag/3dsmax" class="badge badge-pill tag-badge tag-badge-small" style="">3dsmax (1) </a>
+        
+        
+            
+    
+    
+    <a href="/tag/Project" class="badge badge-pill tag-badge tag-badge-small" style=" color: var(--text) ">Project (4) </a>
+        
+        
+            
+    
+    
+    <a href="/tag/blender" class="badge badge-pill tag-badge tag-badge-small" style="">blender (2) </a>
+        
+        
+            
+    
+    
+    <a href="/tag/visualisation" class="badge badge-pill tag-badge tag-badge-small" style="">visualisation (3) </a>
+        
+        
+        <a href="/blog" class="badge badge-pill tag-badge tag-badge-small mb-2" style=" ">all</a>
+    
+        </div>
+        <hr />
+    </div>
+    <br /><br />
+
+
+      <div class="blog-posts">
+        <div class="col">
+          
+        </div>
+      </div>
+
+</div>
+:ET

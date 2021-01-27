@@ -1,10 +1,10 @@
 ---
 title: The Pantosphere
-layout: post-wide
-tags: Project
+layout: project-post
+tags: project
 img: /assets/images/pantosphere/ss1.jpg
 permalink: /projects/pantosphere
-category: project
+header-color: hsla(180, 100%, 50%, 0.1)
 ---
 
 {% include /projects/pantosphere.html %}

@@ -1,0 +1,314 @@
+I"Æ<p><br /></p>
+<div class="home-wrapper">
+<br />
+
+<h2 class="title">Blog</h2>
+<br /><br />
+<h5 class="sub-para">Where I write stuff.</h5>
+
+
+    <div>
+      <hr class="styled" />
+      <div class="tag-container">
+      <span style="margin-right:5px; font-size: 12px; font-weight: 400; letter-spacing: 1px;">TAGS: </span>
+      <a href="/blog" class="badge badge-pill tag-badge tag-badge-small tag-header active" style=" ">all</a>
+    
+
+
+        
+        
+        
+            
+    
+    
+    <a href="/tag/3dsmax" class="badge badge-pill tag-badge tag-badge-small tag-header " style="">3dsmax (1) </a>
+        
+        
+            
+    
+    
+    <a href="/tag/blender" class="badge badge-pill tag-badge tag-badge-small tag-header " style="">blender (2) </a>
+        
+        
+            
+    
+    
+    <a href="/tag/project" class="badge badge-pill tag-badge tag-badge-small tag-header " style=" background-color: var(--accent2);  ">project (4) </a>
+        
+        
+            
+    
+    
+    <a href="/tag/visualisation" class="badge badge-pill tag-badge tag-badge-small tag-header " style="">visualisation (3) </a>
+        
+        
+        </div>
+        <hr class="styled" />
+    </div>
+    <br /><br />
+   <div class="row">
+    
+    <div class="col-sm-6 col-sm-6 mr-auto">
+      <div class="card blogcard mb-4">
+        <a href="http://google.com">
+        <img class=" card-img-top img-fluid" src="/assets/images/crown.png" alt="Onyx Tower" style="height: 300px;" />
+      </a>
+      <div class="card-text" style="padding:10px;">
+        
+        <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+      
+      </div>
+      <!--
+        <div class="card-img-overlay" style="padding:10px;">
+          
+              <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+            
+        </div>
+        -->
+
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-9 ">
+                <a href="/projects/Onyx-Tower" class="card-heading">Onyx Tower</a>
+            </div>
+            <div class="col-sm-3">
+              <span class="card-date" style="font-size: small;">12 Dec 2020</span>
+            </div>
+            
+          </div>
+          <div>
+          <a style="font-size: small;">
+            
+
+<p>
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star checked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+</p>
+
+            
+          </a>
+        </div>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    
+    <div class="col-sm-6 col-sm-6 mr-auto">
+      <div class="card blogcard mb-4">
+        <a href="http://google.com">
+        <img class=" card-img-top img-fluid" src="/assets/images/money/money.jpg" alt="Money" style="height: 300px;" />
+      </a>
+      <div class="card-text" style="padding:10px;">
+        
+        <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+      
+      </div>
+      <!--
+        <div class="card-img-overlay" style="padding:10px;">
+          
+              <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+            
+        </div>
+        -->
+
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-9 ">
+                <a href="/projects/money" class="card-heading">Money</a>
+            </div>
+            <div class="col-sm-3">
+              <span class="card-date" style="font-size: small;">29 Jul 2019</span>
+            </div>
+            
+          </div>
+          <div>
+          <a style="font-size: small;">
+            
+
+<p>
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+</p>
+
+            
+          </a>
+        </div>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    
+    <div class="col-sm-6 col-sm-6 mr-auto">
+      <div class="card blogcard mb-4">
+        <a href="http://google.com">
+        <img class=" card-img-top img-fluid" src="/assets/images/mothership/hero.jpg" alt="The Mothership" style="height: 300px;" />
+      </a>
+      <div class="card-text" style="padding:10px;">
+        
+        <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+      
+      </div>
+      <!--
+        <div class="card-img-overlay" style="padding:10px;">
+          
+              <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+            
+        </div>
+        -->
+
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-9 ">
+                <a href="/projects/mothership" class="card-heading">The Mothership</a>
+            </div>
+            <div class="col-sm-3">
+              <span class="card-date" style="font-size: small;">19 Jul 2019</span>
+            </div>
+            
+          </div>
+          <div>
+          <a style="font-size: small;">
+            
+
+<p>
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+</p>
+
+            
+          </a>
+        </div>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    
+    <div class="col-sm-6 col-sm-6 mr-auto">
+      <div class="card blogcard mb-4">
+        <a href="http://google.com">
+        <img class=" card-img-top img-fluid" src="/assets/images/pantosphere/ss1.jpg" alt="The Pantosphere" style="height: 300px;" />
+      </a>
+      <div class="card-text" style="padding:10px;">
+        
+        <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+      
+      </div>
+      <!--
+        <div class="card-img-overlay" style="padding:10px;">
+          
+              <a class="badge badge-pill badge-outline tag-badge tag-badge-small" href="/tag/project">project</a>
+            
+        </div>
+        -->
+
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-9 ">
+                <a href="/projects/pantosphere" class="card-heading">The Pantosphere</a>
+            </div>
+            <div class="col-sm-3">
+              <span class="card-date" style="font-size: small;">15 Jun 2019</span>
+            </div>
+            
+          </div>
+          <div>
+          <a style="font-size: small;">
+            
+
+<p>
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+
+<!----><span class="fa fa-star unchecked"></span>
+
+
+</p>
+
+            
+          </a>
+        </div>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    
+    
+
+    
+  </div>
+  <!-- /.row -->
+
+</div>
+:ET
