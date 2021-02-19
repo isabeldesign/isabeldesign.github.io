@@ -7,7 +7,7 @@ img: /assets/images/blender/blenderchair.png
 header-color: hsla(84,50%,74%,0.1)
 rating: 4
 ---
- {% include star-rating.html rating=4 %}
+
 
 Back at it again with another <a href="https://www.youtube.com/watch?v=Hf2esGA7vCc&list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR" class="link">BenderGuru tutorial series</a> - but this time, a chair. The tutorial used a set of refence photos of an existing chair, with the goal of creating a 3d model as close to the original as possible. 
 <br>

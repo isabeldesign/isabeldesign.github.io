@@ -3,6 +3,14 @@
     <head><!-- Required meta tags -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<!-- Favicon CSS -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
@@ -97,32 +105,7 @@
 
 1 min read
  </span>
-        
-
-<p>
-
-
-<!----><span class="fa fa-star checked"></span>
-
-
-
-<!----><span class="fa fa-star checked"></span>
-
-
-
-<!----><span class="fa fa-star checked"></span>
-
-
-
-<!----><span class="fa fa-star checked"></span>
-
-
-
-<!----><span class="fa fa-star unchecked"></span>
-
-
-</p>
-
+       
       </div>
       <div class="blog-title-tags">
         
@@ -140,11 +123,7 @@
       
       <div class="blog-paragraph">
         <div class="blog-title-sub mb-2">
-          <span class="date">21 Jun 2020     •</span>
-          <span> 
-
-1 min read
- </span>
+         
         </div>
         
         
@@ -311,7 +290,7 @@ Blender 2.8 is a ‘free and open source 3D creation suite’. BlenderGuru (Andr
 //art: vce-studio, painting, digital-still
 
 //VCE Studio
-$(".vce-studio").click(function() {
+$("#studio").click(function() {
     $(".task-title").text("VCE Studio Arts");
   }, function() {
     if ($(".task-title").text() === 'VCE Studio Arts') {
@@ -320,15 +299,15 @@ $(".vce-studio").click(function() {
     } else {
         $(".task-title").text('VCE Studio Arts');
         $(".task-status").text("Complete");
-        $(".task-rate").text("9/10");
+        $(".task-rate").text("9/10 ");
         $(".task-category").text("Art");
         $(".task-skills").text("Oil Painting, Modular Origami, Photography");
-        $(".task-description").text("Units 1/2 & 3/4 Studio Art, where I explored several mediums, materials and ideas. In Units 3/4 I produced a series of works under the theme of 'What is beyond us?', which drew inspiration from space, religion and evolution. Was first time I had the agency to produce artworks at my own direction.");
+        $(".task-description").text("Explored theme 'What is beyond us?', drawing on themes and inspiration from outer-space, religion and evolution. Was the first time I was given the agency and resources (with guidance) to produce artworks at my own direction.");
     }
 });
 
 //painting
-$(".painting").click(function() {
+$("#painting").click(function() {
     $(".task-title").text("Painting");
   }, function() {
     if ($(".task-title").text() === 'Painting') {
@@ -337,12 +316,14 @@ $(".painting").click(function() {
     } else {
         $(".task-title").text('Painting');
         $(".task-status").text("Abandoned");
-        $(".task-rate").text("6/10");
+        
+        $(".task-rate").append('<i class="small fa fa-star checked"></i><i class="small fa fa-star unchecked"></i><i class="small fa fa-star unchecked"></i><i class="small fa fa-star unchecked"></i>');
         $(".task-category").text("Art");
-        $(".task-description").text("Sick of sitting at my computer to generate art, I bought expensive oil paint supplies during lockdown in anticipation of an iso moment of creative genius. I'd been meaning to do so ever since I finished VCE Studio Art, where I was fortunte to have a plethora of paints and supplies accessible to me, and unfortunately (for my wallet) fell in love with oils. I ended up spending way too long trying to figure out subject matter. Didn't have time to keep working on it before Uni restarted :(");
+        $(".task-description").text("Splurged on expensive oil paints, spent too long deciding on subject matter to actually finish anything before Uni went back :(");
         $(".task-skills").text("Oil Painting");
     }
-});
+})
+
         
  //digital still
 $(".digital-still").click(function() {
@@ -391,6 +372,129 @@ $(".vcd").click(function() {
         $(".task-rate").text("9/10");
         $(".task-category").text("Design");
         $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
+        $(".task-description").text("Strengthed my skills and confidence in visual communication and design.");
+    }
+});
+
+//dd
+$("#dd").click(function() {
+    $(".task-title").text("Digtial Design");
+  }, function() {
+    if ($(".task-title").text() === 'Digtial Design') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Digtial Design');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("9/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
+        $(".task-description").text("");
+    }
+});
+
+
+//blender
+$("#blender").click(function() {
+    $(".task-title").text("Blender Trials");
+  }, function() {
+    if ($(".task-title").text() === 'Blender Trials') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Blender Trials');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("8/10");
+        $(".task-category").text("Visualisation");
+        $(".task-skills").text("Blender 3D");
+        $(".task-description").text("text");
+    }
+});
+
+
+//internship
+$("#internship").click(function() {
+    $(".task-title").text("Residential Renders");
+  }, function() {
+    if ($(".task-title").text() === 'Residential Renders') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Residential Renders');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("6/10");
+        $(".task-category").text("3ds Max");
+        $(".task-skills").text("Residential Renders");
+        $(".task-description").text("text");
+    }
+});
+
+
+//python
+$("#python").click(function() {
+    $(".task-title").text("Python");
+  }, function() {
+    if ($(".task-title").text() === 'Python') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Python');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("8/10");
+        $(".task-category").text("Computing");
+        $(".task-skills").text("Python");
+        $(".task-description").text("text");
+    }
+});
+
+//algo
+$("#algo").click(function() {
+    $(".task-title").text("C");
+  }, function() {
+    if ($(".task-title").text() === 'C') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('C');
+        $(".task-status").text("Failed");
+        $(".task-rate").text("3/10");
+        $(".task-category").text("Computing");
+        $(".task-skills").text("C");
+        $(".task-description").text("Foundation of Algorithms - Next step in computing minor sequence after python, was in cohort with B-SCI students and assumed knowledge included 'logs'!? New language, focus on algorithms which was interesting and I wanted to do well at it, but I didn't have the capacity to do well. Put me off programming, but made me realise I needed to find another direction if I wanted to continue learning more.");
+    }
+});
+
+//creative cooidng
+$("#creative-coding").click(function() {
+    $(".task-title").text("Creative Coding");
+  }, function() {
+    if ($(".task-title").text() === 'Creative Coding') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Creative Coding');
+        $(".task-status").text("Abandoned");
+        $(".task-rate").text("5/10");
+        $(".task-category").text("Computing");
+        $(".task-skills").text("Processing, p5.js");
+        $(".task-description").text("Wanted to learn, had trouble knowing where to start and overall felt very out of my depth. Wanted to use coding and scripting logic to make art - attempted to use try generative scripting. Wasn't able to produce any outcomes from it before I had to restart semester.");
+    }
+});
+
+
+//eportflio
+$("#eportfolio").click(function() {
+    $(".task-title").text("ePortfolio");
+  }, function() {
+    if ($(".task-title").text() === 'ePortfolio') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('ePortfolio');
+        $(".task-status").text("Ongoing");
+        $(".task-rate").text("TBC");
+        $(".task-category").text("Computing");
+        $(".task-skills").text("Html, CSS, Javascript, Jekyll, Github");
         $(".task-description").text("");
     }
 });
@@ -402,30 +506,158 @@ $(".vcd").click(function() {
 //click to show all coursework
 $(".coursework-button").click(function(){
   $(".coursework").toggleClass("coursework-highlight");
+  $(".coursework-button").toggleClass("filter-button-highlight");
 });
  
 //click to show all complete
 $(".complete-button").click(function(){
   $(".complete").toggleClass("complete-highlight");
+  $(".complete-button").toggleClass("filter-button-highlight");
+});
+
+//click to show current project
+$(".current-button").click(function(){
+  $(".current-project").toggleClass("current-highlight");
+  $(".current-button").toggleClass("filter-button-highlight");
+  $('.current-project').not(this).removeClass('filter-button-highlight')
+});
+
+//click to fade all non-coursework
+$(".not-coursework-button").click(function(){
+  $(".not-coursework").toggleClass("coursework-fade");
+  $(".arrow-loop").toggleClass("coursework-fade");
+  $(".arrow-con").toggleClass("coursework-fade");
+  $(".arrow-con-flipped").toggleClass("coursework-fade");
+  $(".arrow-con-reflected-up").toggleClass("coursework-fade");
+  $(".arrow-con-reflected").toggleClass("coursework-fade");
+  $(".arrow-line").toggleClass("coursework-fade");
+  $(".arrow-straight").toggleClass("coursework-fade");
+  $(".not-coursework-button").toggleClass("filter-button-highlight");
 });
 
 //makes on click blue
 $(function() {
-          $('.activated').click(function() { 
-          $('.activated').not(this).removeClass('active-bar')
-           $(this).toggleClass('active-bar')
-          })
-        })
-        
-      
+    $('.activated').click(function() {
+        $('.activated').not(this).removeClass('active-bar')
+        $(this).toggleClass('active-bar')
+    })
+});
 
+//ART
+//VCE Studio
+$('#studio').click(function() {
+    $('div').not('.to-studio').removeClass('active-arrow')
+    $('.to-studio').toggleClass('active-arrow')
+});
+//Painting
+$('#painting').click(function() {
+    $('div').not('.to-painting').removeClass('active-arrow')
+    $('.to-painting').toggleClass('active-arrow')
+});
+
+
+//DESIGN
+//Graphic
+$('#graphic').click(function() {
+    $('div').not('.to-graphic').removeClass('active-arrow')
+    $('.to-graphic').toggleClass('active-arrow')
+});
+//VCD
+$('#vcd').click(function() {
+    $('div').not('.to-vcd').removeClass('active-arrow')
+    $('.to-vcd').toggleClass('active-arrow')
+});
+
+//FODR
+$('#fodr').click(function() {
+    $('div').not('.to-fodr').removeClass('active-arrow')
+    $('.to-fodr').toggleClass('active-arrow')
+});
+
+$('#blender').click(function() {
+    $('div').not('.to-blender').removeClass('active-arrow')
+    $('.to-blender').toggleClass('active-arrow')
+});
+
+$('#aat').click(function() {
+    $('div').not('.to-aat').removeClass('active-arrow')
+    $('.to-aat').toggleClass('active-arrow')
+});
+
+$('#aavs').click(function() {
+    $('div').not('.to-aavs').removeClass('active-arrow')
+    $('.to-aavs').toggleClass('active-arrow')
+});
+
+$('#digtech').click(function() {
+    $('div').not('.to-digtech').removeClass('active-arrow')
+    $('.to-digtech').toggleClass('active-arrow')
+});
+
+$('#delta').click(function() {
+    $('div').not('.to-delta').removeClass('active-arrow')
+    $('.to-delta').toggleClass('active-arrow')
+});
+
+$('#dd').click(function() {
+    $('div').not('.to-dd').removeClass('active-arrow')
+    $('.to-dd').toggleClass('active-arrow')
+});
+
+$('#epsilon').click(function() {
+    $('div').not('.to-epsilon').removeClass('active-arrow')
+    $('.to-epsilon').toggleClass('active-arrow')
+});
+
+$('#internship').click(function() {
+    $('div').not('.to-internship').removeClass('active-arrow')
+    $('.to-internship').toggleClass('active-arrow')
+});
+
+$('#python').click(function() {
+    $('div').not('.to-python').removeClass('active-arrow')
+    $('.to-python').toggleClass('active-arrow')
+});
+
+$('#algo').click(function() {
+    $('div').not('.to-algo').removeClass('active-arrow')
+    $('.to-algo').toggleClass('active-arrow')
+});
+
+$('#creative-coding').click(function() {
+    $('div').not('.to-creativecoding').removeClass('active-arrow')
+    $('.to-creativecoding').toggleClass('active-arrow')
+});
+
+$('#eportfolio').click(function() {
+    $('div').not('.to-eportfolio').removeClass('active-arrow')
+    $('.to-eportfolio').toggleClass('active-arrow')
+});
+
+$('#links').click(function() {
+    $('div').not('.to-links').removeClass('active-arrow')
+    $('.to-links').toggleClass('active-arrow')
+});
+
+$('#digital-art').click(function() {
+    $('div').not('.to-digitalart').removeClass('active-arrow')
+    $('.to-digitalart').toggleClass('active-arrow')
+});
+
+
+
+//this lights up all connected arrows *TO* creating coding
+//$("#creative-coding").click(function(){
+//  $(".to-cc").toggleClass("active-line");
+//  $("#creative-coding").toggleClass("active-time-bar");
+//});
 
 
 //visualisation: dig-tech, internship, blender
 
 //programming: python, algo, creative-c, eportfolio
 
-  $(".workforce").hover(function() {
+  $(".workforce").click(function() {
             $(".text-info").html("The workforce is amazing.<br> love it");
         }, function() {
             $(".text-info").html("in");
@@ -440,11 +672,6 @@ $(function() {
 
 
 
-//this lights up all connected arrows *TO* creating coding
-$("#creative-coding").click(function(){
-  $(".to-cc").toggleClass("active-line");
-  $("#creative-coding").toggleClass("active-time-bar");
-});
 
 
 
@@ -468,7 +695,7 @@ $("#creative-coding").click(function(){
         sessionStorage.setItem('theme', '');
       } else {
         document.documentElement.setAttribute('data-theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode ☾";
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
         sessionStorage.setItem('theme', '');
       }
     }
@@ -480,7 +707,7 @@ $("#creative-coding").click(function(){
       if (theme === "dark") {
         document.documentElement.setAttribute('data-theme', 'light');
         sessionStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode ☾";
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
       }	else if (theme === "light") {
         document.documentElement.setAttribute('data-theme', 'dark');
         sessionStorage.setItem('theme', 'dark');

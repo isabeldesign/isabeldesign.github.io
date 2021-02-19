@@ -1,0 +1,60 @@
+I"K<p><br /></p>
+<div class="wrapper">
+
+  <h2 class="title titleunderline">Process</h2>
+
+  <p>still to do:</p>
+<ul>
+    <li>
+        <a href="/link">Finish the final link generator thing</a>
+    </li>
+    <li>
+        <a><del>Darkmode when changing between pages</del></a>
+    </li>
+    <li>
+        <a>Add arrow between studio arts and vcd</a>
+    </li>
+    <li>
+        <a><del>Footer</del></a>
+    </li>
+    <li>
+        <a><del>Pagination to blog pages styling</del></a>
+    </li>
+    <li>
+        <a>404 pages</a>
+    </li>
+    <li>
+        <a><del>Website favicon</del></a>
+    </li>
+    <li>
+        <a>Homescreen prompt to scroll down and hit dark mode</a>
+    </li>
+    <li>
+        <a>Fade in/out animations to project pages</a>
+    </li>
+    <li>
+        <a><del>Set up Google Analytics</del></a>
+    </li>
+    <li>
+        <a>Hit Counter?</a>
+    </li>
+    <li>
+        <a>Optimize html for accessability</a>
+    </li>
+    <li>
+        <a>Consolidate _layouts and _includes</a>
+    </li>
+    <li>
+        <a>Remove the html part from blog post links</a>
+    </li>
+
+
+    
+</ul>
+
+
+
+ 
+
+</div>
+:ET

@@ -1,7 +1,7 @@
 ---
 title: The Mothership
 layout: project-post
-tags: project
+tags: coursework
 img: /assets/images/mothership/hero.jpg
 permalink: /projects/mothership
 category: project

@@ -63,30 +63,58 @@ layout: default
       </div>
       </div>
    </div>-->
+   <div class="main-dashboard">
+   
+         <div class="dashboard-item-wrapper1">
+         
+              
+               
+               <div>
+                     
+                
+            
+                  <button type="button" class="btn btn-outline-dark btn-sm coursework-button">Coursework</button>
+               
+               
+                     <button class="btn btn-outline-dark btn-sm  complete-button" >Complete projects</button>
+                  
+                     <button class="btn btn-outline-dark btn-sm  current-button" >Current project</button>
+                  
+                     <button class="btn btn-outline-dark btn-sm not-coursework-button" >Non-coursework</button>
+                
+            </div>
+           
+             
+       </div>
+       
+      
    <div class="contain">
       <div class="header-col cell1">
-        <div style="height:24px;"></div>
-         <div class="categories" id="a" style="margin-top: 5px;">
+        
+        <div class="year-corner " style="padding-top: 5px;">
+         Year
+        </div>
+         <div class="categories" id="a" style="border-left: 3px solid; border-left-color: var(--art-category); border-top: 1px solid rgb(204, 204, 204); height: 56px">
             Art
          </div>
-         <div class="categories aa">
+         <div class="categories aa" style="border-left: 3px solid; border-left-color: var(--design-category)">
           Design
        </div>
-       <div class="categories" >
+       <div class="categories" style="border-left: 3px solid; border-left-color: var(--visualisation-category); height: 55px;">
         Visualisation
      </div>
       
-     <div class="categories" >
-      Programming
+     <div class="categories" style="border-left: 3px solid; border-left-color: var(--programming-category); height: 61px;">
+      Computing
    </div>
      
       </div>
-      <div class="idk cell2">
+      <div class="idk cell2 ">
          <div id="timetable" class="clearfix">
             <div class="timetable_content ">
                <ul class="years clearfix">
                    
-                  <li>2012-2015</li>
+                  <li>2012-2014</li>
                   <li>2015-2016</li>
                   <li>2017</li>
                   <li>2018</li>
@@ -133,128 +161,215 @@ layout: default
                         <div class="divider" style="left:2100px"></div>
                         <div class="sub-divider" style="left:2250px"></div>
 
-                        <div class="today-line" style="left:1820px"></div>
+                        <div class="today-line" style="left:1820px">
+                        </div>
                         
 
-                        <div class="time-bar-future activated digital-still" style="width:120px; left:1504px">Digital Still Life
+                        <div id="digital-art" class="btn  time-bar-future activated digital-still-bar" style="width:120px; left:1504px; background-color: var(--art-category);
+                        ">
+                        <div class="digital-still" data-toggle="tooltip"  data-placement="bottom" title="etc">
+                           Digital Still Life
+                        </div>
+                        
                         </div>
 
-                        <div class="time-bar vce-studio-bar activated" style="width:265px; left: 223px; bottom: 0px">
-                           <div >
-                           <div class="vce-studio">VCE Studio Art</div>
-                           </div>
-                        <div>
-                          <div class="arrow-line " style="width: 1043px; right:-1043px;"></div>
-                          <div class="arrow-con to-cc" style="width: 605px; right:-605px; height: 143px; border-top-right-radius: 1em;"></div>
-                        </div>
+                        
+
+                        <div id="studio" class="btn time-bar vce-studio-bar activated" style="width:265px; left: 223px; bottom: 0px; background-color: var(--art-category);">
+                          
+                              <div class="vce-studio">
+                                 VCE Studio Art
+                              </div>
+                           
+                          <div class="arrow-line activated-arrow to-painting" style="width: 1043px; right:-1043px;"></div>
+                          <div class="arrow-line activated-arrow to-studio" style="width: 1043px; right:-1043px;"></div>
+
+                          <div class="arrow-con to-creativecoding activated-arrow" style="width: 605px; right:-605px; height: 143px; border-top-right-radius: 1em;"></div>
+                          <div class="arrow-con to-studio activated-arrow" style="width: 605px; right:-605px; height: 143px; border-top-right-radius: 1em;"></div>
                        </div>
                       
                        
-                       <div class="time-bar painting activated" style="width:55px; left: 1620px;">Painting
+                       <div id="painting" class="btn time-bar not-coursework activated painting-bar" style="width:55px; left: 1620px; background-color: var(--art-category);">
                         
-                        <div class="arrow-straight" style="width:199px; right:-199px">
-                        </div>  
-                     </div>
-
+                        <div class="painting">
+                           Painting
+                        </div>
+                        
+                        <div class="arrow-line activated-arrow to-painting" style="width:199px; right:-199px"></div>  
+                        <div class="arrow-line activated-arrow to-digitalart" style="width:199px; right:-199px"></div> 
                        
-
-
+                        
                      </div>
+
+
+                     
+                     
                   </li>
                   <li>
-                    <div class="time-bar complete tooltips" style="width:135px; left: 363px; z-index: 99999">
-                      Applied Arch Tech
+                    <div id="aat" class="btn time-bar complete activated" style="width:135px; left: 363px; background-color: var(--design-category);">
+                     
+                     <div class="aat" data-toggle="tooltip"  data-placement="bottom" title="onyx tower">
+                       Onyx Tower
+                     </div>
                       
-                        <span class="tooltipstext">Unisubject </span>
                       
                      
                    </div>
                     
                   
-                    <div class="time-bar complete coursework" style="width:118px; left: 225px;">
-                      Studio Epsilon
+                    <div id="epsilon" class="btn time-bar complete coursework activated" style="width:118px; left: 225px; background-color: var(--design-category);">
                       
+                      <div class="epsilon" data-toggle="tooltip"  data-placement="bottom" title="epsilon">
+                        The Mothership
+                     </div>
                    </div>
                    
                   
-                   <div class="time-bar economics coursework" style="width:40px; left: 250px;">
-                    AAVS
-                    <div class="arrow-con-flipped" style="height:45px"></div>
-                    <div class="arrow-loop" style="width:83px; right:-65px; " href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="aavs to epsilon."></div>
-                 </div>
-                   <div class="time-bar coursework" style="width:118px; left: 275px;">
-                    Studio Delta
+                   <div id="aavs" class="btn time-bar activated coursework" style="width:40px; left: 250px; background-color: var(--design-category);">
+                     <div class="aavs" data-toggle="tooltip"  data-placement="bottom" title="aavs">
+                        AAVS
+                       
+                     </div>
                     
-                    <div class="arrow-loop" style="width:83px; right:-20px" href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="delta to aavs.">
-                  
+
+                    <div class="arrow-con-flipped to-aavs" style="height:45px; "></div>
+                    <div class="arrow-con-flipped to-digtech" style="height:45px; "></div>
+
+
+                    <div class="arrow-loop to-epsilon" style="width:83px; right:-65px; " data-toggle="tooltip"  data-placement="top" title="aavs to epsilon."></div>
+                    <div class="arrow-loop to-aavs" style="width:83px; right:-65px; " data-toggle="tooltip"  data-placement="top" title="aavs to epsilon."></div>
+                 </div>
+
+                   <div id="delta" class="btn time-bar coursework  activated" style="width:118px; left: 275px; background-color: var(--design-category);">
+                     <div class="delta" data-toggle="tooltip"  data-placement="bottom" title="delta">
+                        Voyager Library
+                     </div>
+                    
+                    <div class="arrow-loop to-delta" style="width:83px; right:-20px"  data-toggle="tooltip"  data-placement="top" title="delta to aavs.">
                   </div>
+                  <div class="arrow-loop to-aavs" style="width:83px; right:-20px"  data-toggle="tooltip"  data-placement="top" title="delta to aavs."></div>
                     
                  </div>
-                 <div class="time-bar "  style="width:135px; left: 137px; ">
-                  Digital Design
-                  <div class="arrow-con to-cc"  style="height:89px;width:130px;right:-130px; border-top-right-radius: 1em;"></div>
-                  <div class="arrow-line" style="right:-160px; width: 100px;" ></div>
-                  <!--<div class="arrow-line bb" href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="dd to delta" style="width:160px; right:-160px"></div>-->
+
+
+               
+                  <div id="dd" class="btn time-bar activated"  style="width:135px; left: 137px; background-color: var(--design-category);">
+
+                     <div class="dig-des" data-toggle="tooltip"  data-placement="bottom" title="digital design">Visual Scripting</div>
+                 
+                     <div class="arrow-con to-creativecoding"  style="height:89px;width:130px;right:-130px; border-top-right-radius: 1em;"></div>
+                     <div class="arrow-con to-dd"  style="height:89px;width:130px;right:-130px; border-top-right-radius: 1em;"></div>
+
+                     <div class="arrow-line to-dd" style="right:-160px; width: 159px;" ></div>
+                     <div class="arrow-line to-delta" style="right:-160px; width: 159px;" ></div>
+                 
+                  </div>
+            
+
+
+
+                 <div id="fodr" class="btn time-bar activated" style="margin-left: 93px;width: 128px; background-color: var(--design-category);">
+                  <div class="fodr" data-toggle="tooltip"  data-placement="bottom" title="fodr">
+                     FODR
+                  </div>
+                    <div class="arrow-line to-fodr" data-toggle="tooltip"  data-placement="top" title="fodr to dd" style="width:159px; right:-159px"></div>
+                    <div class="arrow-line to-dd" data-toggle="tooltip"  data-placement="top" title="fodr to dd" style="width:159px; right:-159px"></div>
                </div>
-                 <div class="time-bar" style="margin-left: 87px;width: 135px;">
-                  FODR
-                    <div class="arrow-line bb" href="http://www.scalemodelersworld.com/online-scale-converter-tool.html" data-toggle="tooltip"  data-placement="top" title="fodr to dd" style="width:159px; right:-159px"></div>
-                 </div>
-                    <div class="time-bar" style="width:265px; left: 78px;">
+                    <div id="vcd" class="btn time-bar activated" style="width:265px; left: 78px; background-color: var(--design-category);">
                      <div class="vcd">
                         VCE Visual Communication & Design
                      </div>
                       
-                      <div class="arrow-straight" style="bottom:100px"></div>
+                      <div class="arrow-line to-vcd" style="width:25px; right: -25px" data-toggle="tooltip"  data-placement="bottom" title="With established love for design and curiosity in technology, wanted to know and do more."></div>
+                      <div class="arrow-line to-fodr" style="width:25px; right: -25px" data-toggle="tooltip"  data-placement="bottom" title="With established love for design and curiosity in technology, wanted to know and do more."></div>
                    </div>
-                   <div class="time-bar graphic" style="width:200px; left: 40px;">
-                     <div class="graphics">
+                   
+                   <div id="graphic" class="btn time-bar activated" style="width:200px; left: 40px; background-color: var(--design-category);">
+                     <div class="graphic" >
                         Graphic Design
                      </div>
                      
-                     <div class="arrow-straight" style="width:60px; right:-60px">
-                     </div>
+                     <div class="arrow-line to-graphic" style="width:57px; right:-58px" data-toggle="tooltip"  data-placement="bottom" title="Wanted to learn more in a classroom setting, rather than self teaching. Maybe a pathway to design as a career?"></div>
+                     <div class="arrow-line to-vcd" style="width:57px; right:-58px" data-toggle="tooltip"  data-placement="bottom" title="Wanted to learn more in a formal class setting. Maybe a pathway to design as a career?"></div>
                   </div>
                    
                   </li>
                   
                   <li>
                     <!--visualiation-->
-                    <div class="time-bar" style="width:85px; left:1320px;">
-                      Blender Trials
-                      <div class="arrow-con-reflected" style="height:45px; width:20px; right:15px;border-top-left-radius: 0.7em;"></div>
-                      <div class="arrow-con-reflected-up" style="height:99px; top: -99px;width:20px; right:36px; "></div>
+                    <div id="blender" class="btn time-bar not-coursework  activated" style="width:85px; left:1335px; background-color: var(--visualisation-category);" 
+                    >
+                      
+                      <div class="blender" data-toggle="tooltip"  data-placement="bottom" title="blender">
+                        Blender Trials
+                     </div>
+                      <div class="arrow-con-reflected to-blender" style="height:45px; width:20px; right:15px;border-top-left-radius: 0.7em;"></div>
+                      <div class="arrow-con-reflected to-aat" style="height:45px; width:20px; right:15px;border-top-left-radius: 0.7em;"></div>
+                      <div class="arrow-con-reflected-up to-painting" style="height:99px; top: -99px;width:20px; right:36px; "></div>
+                      <div class="arrow-con-reflected-up to-blender" style="height:99px; top: -99px;width:20px; right:36px; "></div>
                    </div>
-                    <div class="time-bar" style="width:65px; left:1335px;">
-                      Internship
-                      <div class="arrow-straight" style="width:8px; right:-8px"></div>
+
+                   
+                    <div id="internship" class="btn time-bar activated" style="width:60px; left:1347px; background-color: var(--visualisation-category);">
+                     <div class="internship " data-toggle="tooltip"  data-placement="bottom" title="internship">
+                        Arch Vis
+                     </div>
+                      <div class="arrow-line to-blender" style="width:10px; right:-10px"></div>
+                      <div class="arrow-line to-internship" style="width:10px; right:-10px"></div>
                    </div>
-                    <div class="time-bar"  style="width:130px; left: 1350px;">
-                      Digital Techniques
-                      <div class="arrow-straight" style="width:8px; right:-8px"></div>
+
+                    <div id="digtech" class="btn time-bar activated"  style="width:120px; left: 1350px; background-color: var(--visualisation-category);">
+                     <div class="dig-tech " data-toggle="tooltip"  data-placement="bottom" title="dig tech">
+                        3ds Max Rendering
+                     </div>
+                      
+                      <div class="arrow-line to-digtech" style="width:18px; right:-18px"></div>
+                      <div class="arrow-line to-internship" style="width:18px; right:-18px"></div>
                    </div>
                      
                      
                   </li>
                   <li id="b">
                     <!--computing-->
-                    <div class="time-bar-future" style="width:120px; left: 1318px;">Link Generator
+                    <div id="links" class="btn time-bar-future not-coursework activated" style="width:120px; left: 1318px; background-color: var(--programming-category);">Link Generator
                   </div>
-                    <div id="current-task" class="time-bar" style="width:110px; left: 1290px;" >
-                      ePortfolio Website
-                      <div class="arrow-straight" style="width:50px; right:-50px"></div>
+                    <div id="eportfolio" class="btn time-bar current-project activated" style="width:110px; left: 1290px; background-color: var(--programming-category);" >
+                      
+                      <div class="eportfolio " data-toggle="tooltip"  data-placement="bottom" title="e port">
+                        ePortfolio Website
+                     </div>
+                      
+                      <div class="arrow-line to-eportfolio" style="width:50px; right:-50px"></div>
+                      <div class="arrow-line to-links" style="width:50px; right:-50px"></div>
                    </div>
-                    <div id="creative-coding" class="time-bar" style="width:90px; left: 810px;" >
-                      <a>Creative Coding</a>
-                      <div id="to-cc" class="arrow-straight" style="width:502px; right:-502px"></div>
+
+
+                    <div id="creative-coding" class="btn time-bar not-coursework current-project activated" style="width:90px; left: 810px; background-color: var(--programming-category);" >
+                        <div class="creative-c" data-toggle="tooltip"  data-placement="bottom" title="creative coding">
+                           Creative Coding
+                        </div>
+                      <div class="arrow-line current-project to-creativecoding" style="width:502px; right:-502px"></div>
+                      <div class="arrow-line current-project to-eportfolio" style="width:502px; right:-502px"></div>
                    </div>
-                    <div class="time-bar" style="width:125px; left: 600px;">
-                      C
+
+
+                    <div id="algo"  class="btn time-bar activated" style="width:125px; left: 600px; background-color: var(--programming-category);">
+                      
+                      <div class="algo">
+                        C
+                     </div>
                    </div>
-                    <div class="time-bar" style="width:125px; left: 602px;">
-                      Python
-                      <div class="arrow-straight"  style="bottom:100px"></div>
-                      <div class="arrow-loop to-cc"  style="bottom:100px; width:480px; right:-420px;"></div>
+                    <div id="python" class="btn time-bar activated" style="width:125px; left: 602px; background-color: var(--programming-category);">
+                      
+                      <div class="python" >
+                        Python
+                     </div>
+                     
+                     <div class="arrow-loop to-python"  style="bottom:100px; width:480px; right:-420px;"></div>
+                     <div class="arrow-loop to-creativecoding" data-toggle="tooltip"  data-placement="top" title="python to creative coding" style="bottom:100px; width:480px; right:-420px;"></div>
+                     <div class="arrow-line to-python"  style="width:19px; right: -19px;"></div>
+                      <div class="arrow-line to-algo"  style="width:19px; right: -19px;"></div>
+                      
                    </div>
                    
                   </li>
@@ -267,8 +382,72 @@ layout: default
             </div>
          </div>
       </div>
+     
+   </div>
+   
+   
+
+
+  
+   <div>
+      <div class="dashboard-item">
+         <div class="dashboard-item-wrapper">
+         
+               
+         
+            
+         
+               <div class="row">
+                  
+             
+                <div class="col-3">
+                  <span class="task-title">Click a project!</span> 
+                  <svg class="circle-svg" height="20" width="20" style="display: inline;background-color: transparent;">
+                     <circle class="circle" cx="10" cy="8" r="6" fill="red" />
+                   </svg>
+               </div>
+               
+                  
+               </div>
+               <div class=" stats-row" >
+                  <div class="stats-item">
+                     
+                     <span class="text-info-subheading">Rating:</span>
+                     <span class="task-rate"></span> 
+                  </div>
+                     <div class="stats-item">
+                           <span class="text-info-subheading">Status:  </span>
+                           <span class="task-status"></span>
+                           
+                     </div>
+                     <div class="stats-item">
+                        
+                        <span class="text-info-subheading">Skills:</span>
+                        <span class="task-skills"></span> 
+                     </div>
+               </div>
+            
+            <div>
+              
+               <div class="task-description" style="text-align: bottom;"></div>
+               <div class="task-inspired-by" style="text-align: bottom;"></div>
+               <div class="task-inspired-to" style="text-align: bottom;"></div>
+               
+            
+            </div>
+                    
+           
+         
+           
+         
+       </div>
+       
+      </div>
       
    </div>
+   
+</div>
+<!--
    <div class="row">
       <div class="col-4 dashboard-item">
          <div class="dashboard-item-wrapper">
@@ -294,6 +473,9 @@ layout: default
                   <div class="row">
                      <button class="complete-button" >Click to show all complete projects</button>
                   </div>
+                  <div class="row">
+                     <button class="not-coursework-button" >fade non coursework stuff</button>
+                  </div>
 
                </div>
                
@@ -313,10 +495,11 @@ layout: default
       </div>
      
     <div class="col dashboard-item">
+      
       <div class="dashboard-item-wrapper">
-         <!--<svg class="circle-svg" height="20" width="20" style="display: inline;background-color: yellow;">
+         <svg class="circle-svg" height="20" width="20" style="display: inline;background-color: yellow;">
             <circle class="circle" cx="10" cy="6" r="6" fill="red" />
-          </svg>-->
+          </svg>
       <span class="task-title" >Click over a task!</span> 
       
       <div class="row">
@@ -346,11 +529,34 @@ layout: default
       </div>
       </div>
       
-    </div>
+    </div>-->
    </div>
  </div>
-   
+
   
+</div>
+<div class="project-wrapper">
+   <div  style="color: rgb(212, 212, 212)">
+      <br>
+      <p class="help" style="font-size: .8em;">
+         <strong>Things to ask about:</strong>
+         <br> <br>
+         Formatting?? Does the current bottom part look okay or is it meh because the descrptions are all stretched out.
+         <br> <br>
+         What kind of filters shoudl I have and how shoudld they be highlighted?
+         <br> <br>
+         What do I call fodr
+         <br> <br>
+         tool tips yay or nay??
+         <br> <br>
+         is the clicking  and interactions intuitive??
+         <br> <br>
+         arch vis or internship?
+         <br> <br>
+         3ds max rendering vs ??
+      </p>
+      
+   </div>
 </div>
 
 <!-- <p>Legend:</p>
