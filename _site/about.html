@@ -616,6 +616,20 @@ $(".blog-button").click(function(){
   $(".blog-button").toggleClass("filter-button-highlight");
 });
 
+
+//click to fade all non-key events
+$(".key-button").click(function(){
+  $(".not-key").toggleClass("key-fade");
+  $(".arrow-loop").toggleClass("key-fade");
+  $(".arrow-con").toggleClass("key-fade");
+  $(".arrow-con-flipped").toggleClass("key-fade");
+  $(".arrow-con-reflected-up").toggleClass("key-fade");
+  $(".arrow-con-reflected").toggleClass("key-fade");
+  $(".arrow-line").toggleClass("key-fade");
+  $(".arrow-straight").toggleClass("key-fade");
+  $(".key-button").toggleClass("filter-button-highlight");
+});
+
 //makes on click blue
 $(function() {
     $('.activated').click(function() {

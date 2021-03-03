@@ -1530,7 +1530,7 @@ box-shadow: var(--active-box-shadow);
 
 
 /* FILTERS */
-.coursework-button, .complete-button, .not-coursework-button, .current-button, .blog-button{
+.coursework-button, .complete-button, .not-coursework-button, .current-button, .blog-button, .key-button{
   border: 1px silver solid;
   font-size: .7em;
   height: 20px;
@@ -1547,7 +1547,7 @@ box-shadow: var(--active-box-shadow);
 
 
 .filter-button-highlight{
-  background-color: rgb(161, 161, 161) !important;
+  background-color: hsl(266, 30%, 53%) !important;
   color: var(--main-text-opposite);
   
 }
@@ -1569,6 +1569,11 @@ box-shadow: var(--active-box-shadow);
 }
 
 .blog-fade{
+  opacity: 0.2 !important;
+ 
+}
+
+.key-fade{
   opacity: 0.2 !important;
  
 }
