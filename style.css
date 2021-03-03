@@ -548,7 +548,7 @@ body {
   /* The sections */
   .section1{
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     position: relative;
     display: flex;
     align-items: center;
