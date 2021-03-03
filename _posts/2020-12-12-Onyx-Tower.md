@@ -9,8 +9,11 @@ rating: 4
 ---
 
 {% include /projects/onyx.html %}
+<div style="text-align: center" >Article under construction <br><small>(aha get it, under construction)</small></div>
+<br>
 
-<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" style="width: 400px">
+<div style="text-align: center; display: block; margin-left: auto; margin-right: auto;">
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" style="width: 400px;">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -18,7 +21,7 @@ rating: 4
      </ol>
     
 <div class="carousel-inner" >
-      <div class="carousel-item active">
+      <div class="carousel-item active" style="align-items: center; ">
         <img class="d-block w-100" src="/assets/images/onyx/m1-hero.jpg" alt="M1 Hero shot">
       </div>
       <div class="carousel-item">
@@ -31,3 +34,4 @@ rating: 4
 </div>
     
   </div>
+</div>

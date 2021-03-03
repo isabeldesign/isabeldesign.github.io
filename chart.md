@@ -1,5 +1,5 @@
 ---
-layout: gantt-div
+layout: gantt-chart
 permalink: /chart
 title: Chart
 ---

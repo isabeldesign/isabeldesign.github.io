@@ -54,17 +54,16 @@
               <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item nav-a">
+            <a class="nav-link nav-hov" href="/chart">Chart</a>
+        </li>
+          <li class="nav-item nav-a">
               <a class="nav-link actives" href="/resources">Resources</a>
           </li>
           <li class="nav-item nav-a">
               <a class="nav-link" href="/blog">Blog</a>
           </li>
-          <li class="nav-item nav-a">
-              <a class="nav-link nav-hov" href="/process">Process*</a>
-          </li>
-          <li class="nav-item nav-a">
-              <a class="nav-link nav-hov" href="/chart">Chart*</a>
-          </li>
+         
+         
           <!--dropdown
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,7 +85,7 @@
       </li>
     -->
       <li class="nav-item">
-        <button id="theme-toggle" class="badge btn btn-outline-warning" style="display: block;" onclick="modeSwitcher()"></button>
+        <button id="theme-toggle" class="badge btn btn-outline-warning mode-toggle" style="display: block;" onclick="modeSwitcher()"></button>
       </li>
   </ul>
 </nav>
@@ -154,7 +153,7 @@
         </main><div class="page-footer">
     <div class="row">
         <footer class="small-text">
-            <a>© 2020 Isabel Solin. All Rights Reserved</a>
+            <a>© 2021 Isabel Solin. All Rights Reserved</a>
             <!-- LikeBtn.com BEGIN -->
             <small>
             <a class="likebtn-wrapper small-text" data-theme="review" data-ef_voting="push" data-identifier="like-button" data-dislike_enabled="false"></a></small>
@@ -219,25 +218,7 @@
 
 
 
-    $(function() {
-    $('#a').hover(function() {
-      $('#b').css('background-color', 'yellow');
-    }, function() {
-      // on mouseout, reset the background colour
-      $('#b').css('background-color', '');
-    });
-  });
 
-  $(function() {
-    $('.aa').hover(function() {
-      $('.bb').css('background-color', 'violet');
-    }, function() {
-      // on mouseout, reset the background colour
-      $('.bb').css('background-color', '');
-    });
-  });
-
- 
 
 
 
@@ -248,15 +229,16 @@ $("#studio").click(function() {
     $(".task-title").text("VCE Studio Arts");
   }, function() {
     if ($(".task-title").text() === 'VCE Studio Arts') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('VCE Studio Arts');
         $(".task-status").text("Complete");
         $(".task-rate").text("9/10 ");
         $(".task-category").text("Art");
-        $(".task-skills").text("Oil Painting, Modular Origami, Photography");
-        $(".task-description").text("Explored theme 'What is beyond us?', drawing on themes and inspiration from outer-space, religion and evolution. Was the first time I was given the agency and resources (with guidance) to produce artworks at my own direction.");
+        $(".task-skills").text("Oil Painting, Origami, Photography");
+        $(".task-description").text("Explored theme 'What is beyond us?', drawing on themes and inspiration from outer-space, religion and evolution. Was the first time I was given the agency and resources (with guidance) to produce artworks at my own direction. Media and mediums included oil paints, origami, and digital photography.");
+        $(".task-links").html('<a class="task-links-color" href="https://en.wikipedia.org/wiki/Cosmos:_A_Spacetime_Odyssey">- Cosmos: A Spacetime Odyssey<a><br><a class="task-links-color" href="https://www.youtube.com/watch?v=NAN1kt4SG9E">- The 116 images NASA wants aliens to see<a><br><a class="task-links-color" href="https://en.wikipedia.org/wiki/Quattrocento">- Quattrocento Paintings<a>');
     }
 });
 
@@ -265,36 +247,40 @@ $("#painting").click(function() {
     $(".task-title").text("Painting");
   }, function() {
     if ($(".task-title").text() === 'Painting') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('Painting');
         $(".task-status").text("Abandoned");
         
-        $(".task-rate").append('<i class="small fa fa-star checked"></i><i class="small fa fa-star unchecked"></i><i class="small fa fa-star unchecked"></i><i class="small fa fa-star unchecked"></i>');
+        $(".task-rate").text('6/10');
         $(".task-category").text("Art");
-        $(".task-description").text("Splurged on expensive oil paints, spent too long deciding on subject matter to actually finish anything before Uni went back :(");
+        $(".task-description").text("Bursting with ideas and artistic inspiration, I finally splurged on expensive oil paints, but spent too long deciding on subject matter to actually finish anything before Uni went back. I had forgotten how much I enjoyed painting, but how much harder it was to make things look realistic. ");
         $(".task-skills").text("Oil Painting");
+        $(".task-links").html('<a class="task-links-color" href="https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Australia#Second_lockdown">Lockdown 2.0</a><br><a></a>');
     }
 })
 
         
  //digital still
 $(".digital-still").click(function() {
-    $(".task-title").text("Digital Still Life");
+    $(".task-title").text("Rendered Artwork");
   }, function() {
-    if ($(".task-title").text() === 'Digital Still Life') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+    if ($(".task-title").text() === 'Rendered Artwork') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
-        $(".task-title").text('Digital Still Life');
+        $(".task-title").text('Rendered Artwork');
         $(".task-status").text("Planned");
         $(".task-rate").text("N/A");
-        $(".task-category").text("N/A");
-        $(".task-description").text("Off the back of my recent dabbles in Blender, I have a backlog inspiration and ideas of various non-architectural renders/compositions that I would like to produce as finished final pieces of digital artwork.");
+        $(".task-category").text("Art");
+        $(".task-description").text("Off the back of my trials dabbles in Blender, with some semi chronic neck pain from sitting at my computer, I still have an artistic itch to scratch. I am have a backlog of ideas and subject matter I want explore via digitally rendered compositions, similar to paintings, that would be produce as finished final pieces of digital artwork, similar to a painting. This may not be a realistic task to do along side my semesters coursework, but it will likely stay at the back of my mind for a while (and so too the ever-growing list of inspiration and ideas). I also haven’t given up on oil painting yet – I won’t allow myself to do after burning a hole in my pocket to buy the supplies.");
         $(".task-skills").text("N/A ");
+        $(".task-links").html('<a></a><br><a></a>');
     }
 });
+
+ 
 
 //design: graphic, vcd, fodr, dig-des, delta, aavs, epsilon, aat
 //graphic design
@@ -302,58 +288,155 @@ $(".graphic").click(function() {
     $(".task-title").text("Graphic Design");
   }, function() {
     if ($(".task-title").text() === 'Graphic Design') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('Graphic Design');
         $(".task-status").text("Complete");
         $(".task-rate").text("7/10");
         $(".task-category").text("Design");
-        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
-        $(".task-description").text("One year for Christmas I asked my parents for Photoshop. which became my first introduction to graphic design and digital artwork. I developed my skills by dabbling in various adhoc graphic design opportunities, including an annual gig doing  graphic design for my local sport clubs national and state competitions. At this time I was mostly self-taught, which sometimes made learning and practicing my new found skills and passions difficult. I did not have any formal guidance or training (my school art teacher was not very tech savvy), and was very self referential in where I drew inspiration and ideas.");
+        $(".task-skills").text("Photoshop, Illustrator, Gif Making");
+        $(".task-description").text("Asked for Photoshop for Christmas one year, and the rest is history. I developed skills by dabbling in adhoc graphic design opportunities, such as designing a local sports club’s annual competition materials and branding. Initially I was self-teaching myself everything, and hence became very self-referential in where I drew inspiration and ideas. ");
+        $(".task-links").html('<a class="task-links-color" href="https://www.designspiration.com/">- Designspiration</a><br><a class="task-links-color" href="https://www.tumblr.com/">- Tumblr</a>');
     }
 });
 //vcd
-$(".vcd").click(function() {
+$("#vcd").click(function() {
     $(".task-title").text("VCE Visual Communication & Design");
   }, function() {
     if ($(".task-title").text() === 'VCE Visual Communication & Design') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('VCE Visual Communication & Design');
         $(".task-status").text("Complete");
+        $(".task-rate").text("10/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Adobe Suite, Model Making, Laser Cutting, 3D Printing, Modular Origami");
+        $(".task-description").text("Worked towards a final portfolio of designs for a proposed new museum in CBD. Designed a façade extension to an existing heritage building and graphic & branding materials. Worked with fab lab resources (3d printing & laser cutting) to produce a scale model. Lacking skills in (or knowledge of) 3D modelling, I turned to origami methodologies to create forms. Was my favorite subject in school, and it solidified my passion for design and technology. ");
+        $(".task-links").html('<a class="task-links-color" href="https://en.wikipedia.org/wiki/Miura_fold">- Miura fold<a><br><a class="task-links-color" href="https://www.origami-resource-center.com/modular.html">- Modular Origami Crease Patterns<a><br><a href="https://en.wikipedia.org/wiki/Sonobe">- Sonobe Unit<a><br><a class="task-links-color" href="https://en.wikipedia.org/wiki/Autodesk_123D">- 123D<a>');
+    }
+});
+
+//fodr
+$("#fodr").click(function() {
+    $(".task-title").text("FODR");
+  }, function() {
+    if ($(".task-title").text() === 'FODR') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('FODR');
+        $(".task-status").text("Complete");
         $(".task-rate").text("9/10");
         $(".task-category").text("Design");
-        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
-        $(".task-description").text("Strengthed my skills and confidence in visual communication and design.");
+        $(".task-skills").text("Axonometric Drawing, Rhino, 3D Modelling");
+        $(".task-description").html("Foundations of Design: Representation (ARCH10001) was my introduction to design via architecture. Leading up to Uni, there had been times where I wanted to do and create things, but I didn't know what the steps or tools were to materialize it - and this subject ended up showing me how. It was so exciting to know that this pathway I had chosen was going to take me in the exact direction I had always been interested in, even though I didn't know what it was until I started.");
+        $(".task-links").html('<a  class="task-links-color" href="https://support.apple.com/en-au/boot-camp">- Bootcamp</a> (biggest lie of my life was that macs are for designers)<br><a></a>');
+    }
+});
+
+
+//aavs
+$("#aavs").click(function() {
+    $(".task-title").text("AAVS");
+  }, function() {
+    if ($(".task-title").text() === 'AAVS') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('AAVS');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("10/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("VR, Grasshopper");
+        $(".task-description").html('AA Visiting School (ABPL30063) was a <u>pivotal</u> experience for me. I was exposed to new and radical ideas and approaches to architecture and architectural thinking. Participating in this subject revealed to me that there are many pathways I can take with a degree in architecture that are non-conventional, untapped, and yet to be fully explored – which is exactly the kind of thing I want to work towards. It was milestone in my implementation of Grasshopper, I developed a script to produce the 3d basis for a VR experience from scratch. I go into depth on what I actually did <a class="task-links-color" href="projects/pantosphere">in a blog post.</a>  ');
+        $(".task-links").html('<a></a><br><a></a>');
+    }
+});
+
+//delta
+$("#delta").click(function() {
+    $(".task-title").text("Voyager Library");
+  }, function() {
+    if ($(".task-title").text() === 'Voyager Library') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Voyager Library');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("9/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Speculative Designing, Grasshopper.");
+        $(".task-description").html('Design Studio Delta (ARCH30001) was the first time I as introduced to the concept of “speculative” architecture, and the first time I *got* design studios. Up until this point, I hadn’t really gelled with any of the design briefs I had been working with. My final project, ‘Library: Voyager’, was preceded with unique (and somewhat left of field) projective mapping exercises that encouraged students to draw upon our individual opinions and influences to form personal agendas that we could express through architecture. I borrowed stylistic, aesthetic and metaphoric inspiration from vintage space exploration imagery and events in my finals, and paid homage to story of the Voyager 1 and 2 space probes that I studied in VCE Studio Art. The agency we had in this subject to engage with our own choice of precedents, techniques and styles meant I could integrate a lot of Grasshopper scripting in my work, a carry on from Digital Design. My final outcome was based around a concept that was highly personal and embodied many precedents that I felt passionate about.');
+        $(".task-links").html('<a></a><br><a></a>');
     }
 });
 
 //dd
 $("#dd").click(function() {
-    $(".task-title").text("Digtial Design");
+    $(".task-title").text("Visual Scripting");
   }, function() {
-    if ($(".task-title").text() === 'Digtial Design') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+    if ($(".task-title").text() === 'Visual Scripting') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
-        $(".task-title").text('Digtial Design');
+        $(".task-title").text('Visual Scripting');
         $(".task-status").text("Complete");
         $(".task-rate").text("9/10");
         $(".task-category").text("Design");
-        $(".task-skills").text("Adobe Photoshop, Adobe Illustrator, Gif Making.");
-        $(".task-description").text("");
+        $(".task-skills").text("Grasshopper, Real Time Rendering, Axonometric Diagramming");
+        $(".task-description").html('In Digital Design (ARCH20004), I was introduced to visual scripting via a Rhino 3D plugin called Grasshopper (among other things like unreal engine). A polarizing tool – I fell in LOVE. Grasshopper was like coding for people who don’t know what logs are (see ‘C’). The more I worked at it, the more I could see how powerful a tool it was – and I wanted to master it. A (un)likely major issue that prevented me from realizing my lofty design outcomes actually ended up being my computer – which suffered pretty substantial crashes for the entirety of the subject, and was a continual frustration. This was the beginning of the end of my mac.');
+        $(".task-links").html('<a class="task-links-color" href="https://www.grasshopper3d.com/">- Grasshopper 3D</a><br><a></a>');
+    }
+});
+
+//epsilon
+$("#epsilon").click(function() {
+    $(".task-title").text("The Mothership");
+  }, function() {
+    if ($(".task-title").text() === 'The Mothership') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('The Mothership');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("6/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("How to fight for my ideas");
+        $(".task-description").html('The Mothership is an outcome my capstone studio, Design Studio Epilson (ARCH30002). It started out with a heavy blow: we were designing… a Community Healthcare Centre? By this point, I knew more about the world of architecture and design, what I was good at, and what I wanted to try and work towards in the future. A healthcare center was NOT ticking any of those boxes. My solution to this was to challenge and reinvent the brief by setting it 100 into the future. However, I would characterize my experience in the studio as a continual fight against convention – both in my drive to design something new, novel, functional, and fun, and also my serial criticism and push back from guest crits and tutors who didn’t really know what to do with me or my ideas. This was in stark contrast to Library: Voyager, where speculative thinking was encouraged. This fight hampered my ability to flesh out my project and ideas. <a class="task-links-color" href="/assets/images/mothership/speech.jpg" target="_blank">In my final presentation I was actually compelled to defend my decision to make a capstone project a speculative one in the first place.</a>');
+        $(".task-links").html('<a></a><br><a></a>');
+
+        
+    }
+});
+
+//aat
+$("#aat").click(function() {
+    $(".task-title").text("Onyx Tower");
+  }, function() {
+    if ($(".task-title").text() === 'Onyx Tower') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Onyx Tower');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("8/10");
+        $(".task-category").text("Design");
+        $(".task-skills").text("Construction Detailing, Blender, ");
+        $(".task-description").html('Applied Architectural Technology (ABPL90118) was one of the first subjects of Masters, where I designed and detailed a skyscraper. I prioritized taking this core class in the midst of covid to ensure I could stay away from having to make the notorious skyscraper models (in groups too, eek). My blender trials had been done in preparation for this subject and the series of city skyscraper renders I would need to produce. While I lack confidence in construction subjects, this ended up being one of my highest scoring subjects to date. A challenge I faced in this subject was my ability to access construction details, manufacturing specs and reliable cad blocks. You could tell which students had work experience and exposure to the industry and those who didn’t, by how well they were able to source this information independently. This was one of the drivers to create the #cadblocks section of my resources page. ');
+        $(".task-links").html('<a class="task-links-color" href="/resources">- Resources Page</a><br><a></a>');
     }
 });
 
 
+//visualisation
 //blender
 $("#blender").click(function() {
     $(".task-title").text("Blender Trials");
   }, function() {
     if ($(".task-title").text() === 'Blender Trials') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('Blender Trials');
@@ -361,25 +444,43 @@ $("#blender").click(function() {
         $(".task-rate").text("8/10");
         $(".task-category").text("Visualisation");
         $(".task-skills").text("Blender 3D");
-        $(".task-description").text("text");
+        $(".task-description").html('Out of hatred and spite for 3ds max, I took it upon myself to pick up Blender – which I had seen and heard about on the interwebs. I was aware of it already but didn’t realize that it had really evolved from a small, hobbyist software, to something on track to matching max (if it hasn’t already).<a class="task-links-color" href="/tag/blender"> You can find some examples of my early trials on my blog.</a>');
+        $(".task-links").html('<a class="task-links-color" href="https://www.reddit.com/r/blender/">- r/Blender</a><br><a class="task-links-color" href="https://www.reddit.com/r/blenderhelp/">- r/Blenderhelp</a><br><a class="task-links-color" href="https://www.blenderguru.com/">- Blender Guru</a>');
     }
 });
-
+//dig tech
+$("#digtech").click(function() {
+    $(".task-title").text("Money");
+  }, function() {
+    if ($(".task-title").text() === 'Money') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Money');
+        $(".task-status").text("Complete");
+        $(".task-rate").text("7/10");
+        $(".task-category").text("Visualisation");
+        $(".task-skills").text("3ds Max, Aninmation");
+        $(".task-description").html("Finally, the long awaited opportunity to learn how to render – the last major outstanding thing that I didn’t know how to do in comparison with my peers. My debut into the world of visualization came in the form of Autodesk 3ds Max. Aided with a new laptop and NVIDIA graphics card, I was ready to go. The issues that arose however, was that as much as I was ready and keen to get going, 3ds Max was not. While at times it felt like I was spending more time wrangling the technology than actually creating anything, I was determined to make it work for me, and I became hooked on the alluring power of rendering. A strange love-hate relationship developed at this time with rendering. Not including render times, this 170 hour commitment easily pushed 300, which is enough to damaged my psyche. The end result of this subject was a poster and animation, that in retrospect I am shocked I was able to pull off. What now is a reoccurring theme in my best work, my work is fun, and that is what I think makes it so great. ");
+        $(".task-links").html('<a></a><br><a></a>');
+    }
+});
 
 //internship
 $("#internship").click(function() {
     $(".task-title").text("Residential Renders");
   }, function() {
     if ($(".task-title").text() === 'Residential Renders') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('Residential Renders');
         $(".task-status").text("Complete");
-        $(".task-rate").text("6/10");
-        $(".task-category").text("3ds Max");
-        $(".task-skills").text("Residential Renders");
-        $(".task-description").text("text");
+        $(".task-rate").text("5/10");
+        $(".task-category").text("Visualisation");
+        $(".task-skills").text("3ds Max");
+        $(".task-description").html("What do you get when you mix an overly <strike>desperate</strike> eager architecture student who has never stepped foot in an architectural office, who is willing to do anything to prove they are worthy and have some sort of skills, and an architecture firm who has accidently committed to taking on a Revit ignorant intern at the exact moment a global pandemic hits? Answer: a render monkey. Read more in my blog post here. ");
+        $(".task-links").html('<a></a><br><a></a>');
     }
 });
 
@@ -389,15 +490,16 @@ $("#python").click(function() {
     $(".task-title").text("Python");
   }, function() {
     if ($(".task-title").text() === 'Python') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('Python');
-        $(".task-status").text("Complete");
-        $(".task-rate").text("8/10");
-        $(".task-category").text("Computing");
-        $(".task-skills").text("Python");
-        $(".task-description").text("text");
+        $(".task-status").html("Complete");
+        $(".task-rate").html("8/10");
+        $(".task-category").html("Computing");
+        $(".task-skills").html("Python");
+        $(".task-description").text("Media Computation (COMP10003) was an introductory programming class geared at design students. I learnt how to code in Python, and I thought it was really fun. I’d always wanted to learn to code and was hopeful I could continue taking coding subjects to form a minor in Computing. One of my final assignments was to create a virtual greeting card – mine prompted users to select a planet in our solar system, and to input a birthdate. My code then generated a birthday card greeting for how old they are on that planet.  ");
+        $(".task-links").html('<a class="task-links-color" href="https://groklearning.com/">- Grok</a><br><a class="task-links-color" href="https://www.exploratorium.edu/ronh/age/">- Your age on other worlds</a>');
     }
 });
 
@@ -406,7 +508,7 @@ $("#algo").click(function() {
     $(".task-title").text("C");
   }, function() {
     if ($(".task-title").text() === 'C') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('C');
@@ -414,7 +516,8 @@ $("#algo").click(function() {
         $(".task-rate").text("3/10");
         $(".task-category").text("Computing");
         $(".task-skills").text("C");
-        $(".task-description").text("Foundation of Algorithms - Next step in computing minor sequence after python, was in cohort with B-SCI students and assumed knowledge included 'logs'!? New language, focus on algorithms which was interesting and I wanted to do well at it, but I didn't have the capacity to do well. Put me off programming, but made me realise I needed to find another direction if I wanted to continue learning more.");
+        $(".task-description").text("Foundations of Algorithms (COMP10002) was the next step in computing minor sequence after Python. I was in cohort with B-SCI students where  knowledge of math things like 'logs' was assumed. I learnt a new language (C) with a focus on algorithms which was interesting, and I wanted to do well at it, but I just didn't have the capacity to do so. The experience put me off programming for a while and made me realize I needed to find another direction if I wanted to continue learning more.");
+        $(".task-links").html('<a></a><br><a></a>');
     }
 });
 
@@ -432,6 +535,7 @@ $("#creative-coding").click(function() {
         $(".task-category").text("Computing");
         $(".task-skills").text("Processing, p5.js");
         $(".task-description").text("Wanted to learn, had trouble knowing where to start and overall felt very out of my depth. Wanted to use coding and scripting logic to make art - attempted to use try generative scripting. Wasn't able to produce any outcomes from it before I had to restart semester.");
+        $(".task-links").html('<a></a><br><a></a>');
     }
 });
 
@@ -441,7 +545,7 @@ $("#eportfolio").click(function() {
     $(".task-title").text("ePortfolio");
   }, function() {
     if ($(".task-title").text() === 'ePortfolio') {
-        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills").text('');
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
         $(".task-title").text('Click over a task!');
     } else {
         $(".task-title").text('ePortfolio');
@@ -449,11 +553,28 @@ $("#eportfolio").click(function() {
         $(".task-rate").text("TBC");
         $(".task-category").text("Computing");
         $(".task-skills").text("Html, CSS, Javascript, Jekyll, Github");
-        $(".task-description").text("");
+        $(".task-description").text("My ePortfolio is everything you see here. I had dabbled in the art of HTML and CSS back in the day, and had always been interested in actually using it for a project. After trialing platforms like Wix, I knew “drag and drop” website builders wouldn’t work for me. I started to complete some basic (and free) online web design courses to get me up to scratch with basic technical knowledge while wrapping up my 2020 calendar year. With every new thing I try, I always strive to do the best I can, get as much out of it as possible, and make it fun. This ePortfolio is a direct reflection of that. When everything is all said and done with this website, I do intend on writing about the experience from a technical perspective, in a way that is digestible to people like me – designers with a non comp sci background. Resources like that are far and few online. In the mean time, as I was in the skeletal stages of building my site, here are some of the key resources and articles that finally helped me to understand how to implement stuff.");
+        $(".task-links").html('<a></a><br><a></a>');
     }
 });
 
-
+//links
+$("#links").click(function() {
+    $(".task-title").text("Link Generator");
+  }, function() {
+    if ($(".task-title").text() === 'Link Generator') {
+        $(" .task-status, .task-rate, .task-category, .task-description, .task-skills, .task-links").text('');
+        $(".task-title").text('Click over a task!');
+    } else {
+        $(".task-title").text('Link Generator');
+        $(".task-status").text("Planned");
+        $(".task-rate").text("N/A");
+        $(".task-category").text("Computing");
+        $(".task-description").text("The link generator will be an alternative way of presenting all the different, weird and unusual passions and things and interests that I just want other people to know about. Stay tuned. ");
+        $(".task-skills").text("N/A ");
+        $(".task-links").html('<a></a><br><a></a>');
+    }
+});
 
 
 
@@ -487,6 +608,19 @@ $(".not-coursework-button").click(function(){
   $(".arrow-line").toggleClass("coursework-fade");
   $(".arrow-straight").toggleClass("coursework-fade");
   $(".not-coursework-button").toggleClass("filter-button-highlight");
+});
+
+//click to fade all non-blog
+$(".blog-button").click(function(){
+  $(".not-blog").toggleClass("blog-fade");
+  $(".arrow-loop").toggleClass("blog-fade");
+  $(".arrow-con").toggleClass("blog-fade");
+  $(".arrow-con-flipped").toggleClass("blog-fade");
+  $(".arrow-con-reflected-up").toggleClass("blog-fade");
+  $(".arrow-con-reflected").toggleClass("blog-fade");
+  $(".arrow-line").toggleClass("blog-fade");
+  $(".arrow-straight").toggleClass("blog-fade");
+  $(".blog-button").toggleClass("filter-button-highlight");
 });
 
 //makes on click blue
